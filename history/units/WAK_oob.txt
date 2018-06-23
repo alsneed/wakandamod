@@ -1,0 +1,129 @@
+leader = {
+	name = "Alberto Barbossa"
+	picture = african_general_1
+	date = 1836.1.1
+	type = land
+	personality = gutsy
+	background = old_school
+	prestige = 1.0
+}
+
+leader = {
+	name = "Karim Bogus"
+	picture = african_general_2
+	date = 1836.1.1
+	type = land
+	personality = audacious
+	background = cavalry_school
+	prestige = 0.80
+}
+
+army = {
+	name = "Wakanda Defence Force"
+	location = 2025
+	regiment = {
+		name= "I. WDF Guard"
+		type = guard
+		home = 2025
+	}
+	regiment = {
+		name= "II. WDF Guard"
+		type = guard
+		home = 2031
+	}
+	regiment = {
+		name= "III. WDF Guard"
+		type = guard
+		home = 2025
+	}
+	regiment = {
+		name= "IV. WDF Guard"
+		type = guard
+		home = 2028
+	}
+	regiment = {
+		name= "V. WDF Guard"
+		type = guard
+		home = 1847
+	}
+	regiment = {
+		name= "VI. WDF Guard"
+		type = guard
+		home = 1864
+	}
+	regiment = {
+		name= "VII. WDF Guard"
+		type = guard
+		home = 2025
+	}
+	regiment = {
+		name= "VIII. WDF Guard"
+		type = guard
+		home = 2031
+	}
+	regiment = {
+		name= "VIV. WDF Guard"
+		type = guard
+		home = 2026
+	}
+	regiment = {
+		name= "X. WDF Guard"
+		type = guard
+		home = 2028
+	}
+}
+
+army = {
+	name = "Army of Panther Kang"
+	location = 1864
+	regiment = {
+		name= "I. Wakandan Infantry"
+		type = infantry
+		home = 1847
+	}
+	regiment = {
+		name= "II. Wakandan Infantry"
+		type = infantry
+		home = 1864
+	}
+	regiment = {
+		name= "III. Wakandan Infantry"
+		type = infantry
+		home = 2025
+	}
+	regiment = {
+		name= "IV. Wakandan Infantry"
+		type = infantry
+		home = 2031
+	}
+	regiment = {
+		name= "V. Wakandan Infantry"
+		type = infantry
+		home = 2026
+	}
+	regiment = {
+		name= "I. Wakandan Calvery"
+		type = hussar
+		home = 2028
+	}
+	regiment = {
+		name= "II. Wakandan Calvery"
+		type = hussar
+		home = 1847
+	}
+	regiment = {
+		name= "I. Wakandan Artillery"
+		type = artillery
+		home = 1864
+	}
+	regiment = {
+		name= "II. Wakandan Artillery"
+		type = artillery
+		home = 2025
+	}
+	regiment = {
+		name= "III. Wakandan Artillery"
+		type = artillery
+		home = 2031
+	}
+}

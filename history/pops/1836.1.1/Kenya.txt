@@ -96,73 +96,73 @@
 2026 = {
 	aristocrats = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 1000
 	}
 
 	clergymen = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 5000
 	}
 	
 	bureaucrats = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 6400
 	}
 
 	artisans = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 2500
 	}
 
 	soldiers = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 50000
 	}
 
 	farmers = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 482500
 	}
 
 	aristocrats = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 5000
 	}
 
 	clergymen = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 7500
 	}
 
 	artisans = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 15000
 	}
 
 	soldiers = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 25000
 	}
 
 	farmers = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 27000
 	}
 
 	slaves = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 1100
 	}
 }
@@ -269,73 +269,73 @@
 2028 = {
 	aristocrats = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 3750
 	}
 
 	clergymen = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 4000
 	}
 	
 	bureaucrats = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 6400
 	}
 
 	artisans = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 7750
 	}
 
 	soldiers = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 10000
 	}
 
 	farmers = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 25350
 	}
 
 	aristocrats = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 3750
 	}
 
 	clergymen = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 5000
 	}
 
 	artisans = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 1100
 	}
 
 	soldiers = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 4000
 	}
 
 	farmers = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 29225
 	}
 
 	slaves = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 700
 	}
 }
@@ -345,61 +345,61 @@
 2025 = {
 	aristocrats = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 2500
 	}
 
 	clergymen = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 1500
 	}
 
 	artisans = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 6500
 	}
 
 	soldiers = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 25300
 	}
 
 	farmers = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 148750
 	}
 	
 	aristocrats = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 1000
 	}
 
 	clergymen = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 1000
 	}
 
 	artisans = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 2500
 	}
 
 	soldiers = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 1000
 	}
 
 	farmers = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 49750
 	}
 }
@@ -409,67 +409,67 @@
 2031 = {
 	aristocrats = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 4000
 	}
 
 	clergymen = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 2000
 	}
 
 	artisans = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 8500
 	}
 
 	soldiers = {
 		culture = wakandan
-		religion = animist	
+		religion = coptic	
 		size = 4250
 	}
 
 	farmers = {
 		culture = wakandan
-		religion = animist
+		religion = coptic
 		size = 182250
 	}
 
 	aristocrats = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 500
 	}
 
 	clergymen = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 500
 	}
 
 	artisans = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 2000
 	}
 
 	soldiers = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 4000
 	}
 
 	farmers = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 36500
 	}
 
 	slaves = {
 		culture = wakandan_mutant
-		religion = animist
+		religion = coptic
 		size = 1100
 	}
 }
@@ -478,7 +478,7 @@
 2032 = {
 	aristocrats = {
 		culture = kikuyu
-		religion = animist
+		religion = coptic
 		size = 650
 	}
 

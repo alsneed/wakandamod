@@ -2,5 +2,6 @@ owner = WAK
 controller = WAK
 add_core = WAK
 trade_goods = coal
-life_rating = 40
+terrain = mountain
+life_rating = 65
 

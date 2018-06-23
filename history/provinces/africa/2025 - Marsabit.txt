@@ -1,6 +1,6 @@
 owner = WAK
 controller = WAK
 add_core = WAK
-trade_goods = cattle
-terrain = semidesert
-life_rating = 40
+trade_goods = sulphur
+terrain = wakanda
+life_rating = 65

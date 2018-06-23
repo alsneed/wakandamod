@@ -2,5 +2,5 @@ owner = WAK
 controller = WAK
 add_core = WAK
 trade_goods = iron
-terrain = savanna
-life_rating = 40
+terrain = mountain
+life_rating = 65

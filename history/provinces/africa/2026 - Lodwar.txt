@@ -1,6 +1,6 @@
 owner = WAK
 controller = WAK
 add_core = WAK
-trade_goods = grain
+trade_goods = precious_metal
 terrain = savanna
 life_rating = 40

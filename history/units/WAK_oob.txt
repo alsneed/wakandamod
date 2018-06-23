@@ -46,31 +46,6 @@ army = {
 		type = guard
 		home = 1847
 	}
-	regiment = {
-		name= "VI. WDF Guard"
-		type = guard
-		home = 1864
-	}
-	regiment = {
-		name= "VII. WDF Guard"
-		type = guard
-		home = 2025
-	}
-	regiment = {
-		name= "VIII. WDF Guard"
-		type = guard
-		home = 2031
-	}
-	regiment = {
-		name= "VIV. WDF Guard"
-		type = guard
-		home = 2026
-	}
-	regiment = {
-		name= "X. WDF Guard"
-		type = guard
-		home = 2028
-	}
 }
 
 army = {

@@ -1,6 +1,6 @@
 owner = WAK
 controller = WAK
 add_core = WAK
-trade_goods = wool
+trade_goods = coal
 life_rating = 40
 

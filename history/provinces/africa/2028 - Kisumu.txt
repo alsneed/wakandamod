@@ -1,0 +1,6 @@
+owner = WAK
+controller = WAK
+add_core = WAK
+trade_goods = fish
+terrain = montane_forest
+life_rating = 40

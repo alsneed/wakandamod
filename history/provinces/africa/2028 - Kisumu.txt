@@ -1,6 +1,6 @@
 owner = WAK
 controller = WAK
 add_core = WAK
-trade_goods = iron
-terrain = mountain
+trade_goods = wool
+terrain = farmlands
 life_rating = 65

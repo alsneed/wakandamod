@@ -416,8 +416,8 @@ spriteTypes = {
 		}
 		
 	spriteType = {
-		name = "GFX_terrainimg_wakanda"
-		texturefile = "gfx\\interface\\terrain_wakanda.tga"
+		name = "GFX_terrainimg_zana"
+		texturefile = "gfx\\interface\\terrain_zana.tga"
 		norefcount = yes
 	}
 }

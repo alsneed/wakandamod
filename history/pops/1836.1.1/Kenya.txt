@@ -384,6 +384,12 @@
 		religion = coptic
 		size = 1000
 	}
+	
+	capitalists = {
+		culture = wakandan
+		religion = coptic
+		size = 4000
+	}
 
 	artisans = {
 		culture = wakandan

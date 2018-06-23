@@ -4,3 +4,4 @@ add_core = WAK
 trade_goods = iron
 terrain = mountain
 life_rating = 65
+railroad = 1

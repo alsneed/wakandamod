@@ -4,3 +4,4 @@ add_core = WAK
 trade_goods = wool
 terrain = farmlands
 life_rating = 65
+railroad = 1

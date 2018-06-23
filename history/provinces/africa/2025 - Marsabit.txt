@@ -4,3 +4,9 @@ add_core = WAK
 trade_goods = sulphur
 terrain = zana
 life_rating = 65
+railroad = 1
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}

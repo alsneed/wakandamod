@@ -67,24 +67,9 @@ army = {
 		home = 2025
 	}
 	regiment = {
-		name= "IV. Wakandan Infantry"
-		type = infantry
-		home = 2031
-	}
-	regiment = {
-		name= "V. Wakandan Infantry"
-		type = infantry
-		home = 2026
-	}
-	regiment = {
 		name= "I. Wakandan Calvery"
 		type = hussar
 		home = 2028
-	}
-	regiment = {
-		name= "II. Wakandan Calvery"
-		type = hussar
-		home = 1847
 	}
 	regiment = {
 		name= "I. Wakandan Artillery"

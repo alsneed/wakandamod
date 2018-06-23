@@ -4,4 +4,15 @@ add_core = WAK
 trade_goods = coal
 terrain = mountain
 life_rating = 65
+railroad = 1
+state_building = {
+	level = 1
+	building = cement_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = liquor_distillery
+	upgrade = yes
+}
 

@@ -356,7 +356,7 @@
 	}
 
 	artisans = {
-		culture = wakandan
+		culture = wakandan_mutant
 		religion = coptic
 		size = 6500
 	}
@@ -382,13 +382,19 @@
 	clergymen = {
 		culture = wakandan
 		religion = coptic
-		size = 1000
+		size = 3000
 	}
 	
 	capitalists = {
 		culture = wakandan
 		religion = coptic
-		size = 4000
+		size = 12000
+	}
+	
+	labourers = {
+		culture = wakandan
+		religion = coptic
+		size = 2210000
 	}
 
 	artisans = {
@@ -403,8 +409,8 @@
 		size = 1000
 	}
 
-	farmers = {
-		culture = wakandan
+	labourers = {
+		culture = wakandan_mutant
 		religion = coptic
 		size = 49750
 	}

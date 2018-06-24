@@ -18,6 +18,14 @@ WAK_fascist;White Gorilla Cult;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 WAK_ADJ;Wakandan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 wakandan;Wakandan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 wakandan_mutant;Wakandan Mutant;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+wakandan_isolation_mod;Wakandan Isolationism;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+wakandan_isolation_mod_desc;CHANGE THIS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+wakanda_forever_mod;Wakanda Awakens;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+wakanda_forever_mod_desc;CHANGE THIS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+wakandan_isolation_flag;Wakandan Isolationism;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+wakanda_forever_flag;Wakandan Awakens;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+wakanda_forever_dec_title;Wakanda Forever!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+wakanda_forever_dec_desc;CHANGE THIS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 PROV2025;Birnin Zana;;;;;;;;;;;;;;x
 PROV2031;Mena Ngai;;;;;;;;;;;;;;x
 PROV2026;Birnin Bashenga;;;;;;;;;;;;;;x

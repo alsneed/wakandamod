@@ -7,7 +7,10 @@ nationalvalue = nv_order
 literacy = 85.00
 civilized = yes
 prestige = 0
+consciousness = 0
+nonstate_consciousness = 0
 
+#==================reforms===========================
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
@@ -38,9 +41,7 @@ border_policy = closed_borders
 centralization = federalism
 colonial_policy = no_colonies 
 
-set_country_flag = animist_country
-
-
+#==================upper house====================
 ruling_party = WAK_conservative
 upper_house = {
 	fascist = 0
@@ -52,15 +53,13 @@ upper_house = {
 	communist = 0
 }
 
+#==================tech school====================
 schools = army_tech_school
 
-# Starting Consciousness
-consciousness = 0
-nonstate_consciousness = 0
-
+#==================army===========================
 oob = "WAK_oob.txt"
 
-# techs
+#==================techs==========================
 #army doc
 post_napoleonic_thought = 1
 strategic_mobility = 1
@@ -90,7 +89,7 @@ clipper_design = 1
 #financial instritution
 private_banks = 1
 stock_exchange = 1
-business_banks = 1
+#business_banks = 1
 
 #monetary sys
 no_standard = 1
@@ -114,18 +113,17 @@ scientific_management = 1
 
 #phil
 late_enlightenment_philosophy = 1
-idealism = 1
-empiricism = 1
+#idealism = 1
+#empiricism = 1
 
 #social thought
-malthusian_thought = 1
+enlightenment_thought = 1
 positivism = 1
 functionalism = 1
 
 #pol thought
 malthusian_thought = 1
 ideological_thought = 1
-state_n_government = 1
 
 #psy
 introspectionism = 1
@@ -149,10 +147,15 @@ mechanized_mining = 1
 #infra
 experimental_railroad = 1
 early_railroad = 1
-iron_railroad = 1
+#iron_railroad = 1
 
 #chem
 basic_chemistry = 1
 medicine = 1
-inorganic_chemistry = 1
+#inorganic_chemistry = 1
+
+#==================init effects====================
+set_country_flag = wakandan_isolation_flag
+decision = wakandan_isolation_dec
+
 

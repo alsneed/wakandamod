@@ -1,0 +1,62 @@
+political_decisions = {
+	wakandan_isolation_dec = {
+		picture = "wakanda_forever"
+		potential = { 
+			ai = yes
+			tag = WAK
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = wakandan_isolation_mod
+				duration = 36500
+			}
+		}
+	}
+	
+	wakanda_forever_dec = {
+		picture = "wakanda_forever"
+		
+		potential = {
+			tag = WAK
+			NOT = { has_country_flag = wakanda_forever_flag}
+		}
+		
+		allow = {
+			war = no
+			has_country_flag = wakandan_isolation_flag
+		}
+		
+		effect = {
+			prestige = 50
+			add_country_modifier = {
+				name = wakanda_forever_mod
+				duration = 36500
+			}
+			set_country_flag = wakanda_forever_flag
+			
+			ENG_2024 = { 
+				add_core = WAK 
+				life_rating = 35
+			}
+			ETH_1859 = { add_core = WAK }
+			ETH_1865 = { add_core = WAK }
+			SOM_1868 = { add_core = WAK }
+			SOM_1872 = { add_core = WAK }
+			ETH_1852 = { add_core = WAK }
+			ETH_1853 = { add_core = WAK }
+			ENG_1848 = { add_core = WAK }
+			
+			1875 = { life_rating = 30 }
+			1866 = { life_rating = 30 }
+			1876 = { life_rating = 30 }
+			1870 = { life_rating = 30 }
+			
+			
+			remove_country_modifier = wakandan_isolation_mod
+			clr_country_flag = wakandan_isolation_flag
+			
+		}
+		
+	}
+}

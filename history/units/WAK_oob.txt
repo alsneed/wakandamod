@@ -1,6 +1,6 @@
 leader = {
 	name = "Alberto 'Moore' Barbosa"
-	picture = african_general_1
+	picture = alberto
 	date = 1836.1.1
 	type = land
 	personality = gutsy
@@ -10,7 +10,7 @@ leader = {
 
 leader = {
 	name = "Tyrese 'Viper' Freemane"
-	picture = african_general_2
+	picture = viper
 	date = 1836.1.1
 	type = land
 	personality = audacious
@@ -21,7 +21,7 @@ leader = {
 
 leader = {
 	name = "Martin Luther Kang Jr."
-	picture = african_general_3
+	picture = clyde
 	date = 1836.1.1
 	type = land
 	personality = audacious
@@ -32,7 +32,7 @@ leader = {
 
 leader = {
 	name = "Ayodolfu O'Hitlluh"
-	picture = african_general_4
+	picture = hitler
 	date = 1836.1.1
 	type = land
 	personality = audacious

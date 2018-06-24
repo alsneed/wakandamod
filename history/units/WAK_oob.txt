@@ -40,6 +40,16 @@ leader = {
 	prestige = 0.80
 }
 
+leader = {
+	name = "Billy 'CIA' Williamson"
+	picture = cia
+	date = 1836.1.1
+	type = land
+	personality = audacious
+	background = school_of_the_bayonet
+	prestige = 0.80
+}
+
 army = {
 	name = "Wakanda Defence Force"
 	location = 2025

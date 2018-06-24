@@ -394,7 +394,7 @@
 	labourers = {
 		culture = wakandan
 		religion = coptic
-		size = 2210000
+		size = 221000
 	}
 
 	artisans = {

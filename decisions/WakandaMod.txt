@@ -1,6 +1,6 @@
 political_decisions = {
 	wakandan_isolation_dec = {
-		picture = "wakanda_forever"
+		picture = wakanda_forever
 		potential = { 
 			ai = yes
 			tag = WAK
@@ -35,6 +35,7 @@ political_decisions = {
 			}
 			set_country_flag = wakanda_forever_flag
 			
+			
 			ENG_2024 = { 
 				add_core = WAK 
 				life_rating = 35
@@ -57,6 +58,30 @@ political_decisions = {
 			clr_country_flag = wakandan_isolation_flag
 			
 		}
+		
+	}
+	
+	wakandan_emancipation_dec = {
+		picture = wak_eman
+		
+		potential = { 
+			primary_culture = wakandan 
+			NOT = {accepted_culture = wakandan_mutant}
+			
+		}
+	
+		allow = {
+			war = no
+			NOT = {has_country_flag = wakandan_isolation_flag}
+			year = 1848
+		}
+		
+			effect = {
+			add_accepted_culture = wakandan_mutant
+			prestige = 23
+			militancy = -4
+			consciousness = -4
+			}
 		
 	}
 }

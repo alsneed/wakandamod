@@ -1743,12 +1743,18 @@
 	farmers = {
 		culture = wakandan
 		religion = coptic
-		size = 258000
+		size = 129000
+	}
+	
+	farmers = {
+		culture = wakandan_mutant
+		religion = catholic
+		size = 129000
 	}
 
 	aristocrats = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 1250
 	}
 
@@ -1772,7 +1778,7 @@
 	
 	slaves = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 1100
 	}
 

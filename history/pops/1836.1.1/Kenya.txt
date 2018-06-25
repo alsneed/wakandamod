@@ -114,14 +114,20 @@
 
 	artisans = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 2500
 	}
 
 	soldiers = {
 		culture = wakandan
 		religion = coptic
-		size = 50000
+		size = 30000
+	}
+	
+	soldiers = {
+		culture = wakandan_mutant
+		religion = catholic
+		size = 25000
 	}
 
 	farmers = {
@@ -132,31 +138,31 @@
 
 	aristocrats = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 5000
 	}
 
 	clergymen = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 7500
 	}
 
 	artisans = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 15000
 	}
 
 	soldiers = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 25000
 	}
 
 	farmers = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 27000
 	}
 
@@ -269,7 +275,7 @@
 2028 = {
 	aristocrats = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 3750
 	}
 
@@ -281,7 +287,7 @@
 	
 	bureaucrats = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 6400
 	}
 
@@ -299,8 +305,8 @@
 
 	farmers = {
 		culture = wakandan_mutant
-		religion = coptic
-		size = 25350
+		religion = catholic
+		size = 273500
 	}
 
 	aristocrats = {
@@ -312,7 +318,7 @@
 	clergymen = {
 		culture = wakandan
 		religion = coptic
-		size = 5000
+		size = 8000
 	}
 
 	artisans = {
@@ -323,19 +329,19 @@
 
 	soldiers = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 4000
 	}
 
 	farmers = {
 		culture = wakandan
 		religion = coptic
-		size = 29225
+		size = 67225
 	}
 
 	slaves = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 700
 	}
 }
@@ -394,7 +400,7 @@
 	labourers = {
 		culture = wakandan
 		religion = coptic
-		size = 221000
+		size = 281000
 	}
 
 	artisans = {
@@ -404,15 +410,15 @@
 	}
 
 	soldiers = {
-		culture = wakandan
-		religion = coptic
+		culture = wakandan_mutant
+		religion = catholic
 		size = 1000
 	}
 
 	labourers = {
 		culture = wakandan_mutant
-		religion = coptic
-		size = 49750
+		religion = catholic
+		size = 98750
 	}
 }
 
@@ -451,37 +457,37 @@
 
 	aristocrats = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 500
 	}
 
 	clergymen = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 500
 	}
 
 	artisans = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 2000
 	}
 
 	soldiers = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 4000
 	}
 
 	farmers = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 36500
 	}
 
 	slaves = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 1100
 	}
 }

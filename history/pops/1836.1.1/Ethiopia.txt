@@ -1232,7 +1232,7 @@
 	
 	bureaucrats = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 5500
 	}
 
@@ -1250,7 +1250,7 @@
 
 	soldiers = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 45000
 	}
 
@@ -1262,7 +1262,7 @@
 
 	slaves = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 2700
 	}
 	
@@ -1292,13 +1292,13 @@
 
 	farmers = {
 		culture =wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 10000
 	}
 
 	slaves = {
 		culture = wakandan_mutant
-		religion = coptic
+		religion = catholic
 		size = 700
 	}
 }

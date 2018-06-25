@@ -15,7 +15,7 @@ political_decisions = {
 			add_country_modifier = {
 				name = king_wewuz
 			
-				duration = 36500
+				duration = 15400
 			}
 		}
 	}
@@ -74,13 +74,13 @@ political_decisions = {
 		potential = { 
 			primary_culture = wakandan 
 			year = 1840
-			NOT = {culture = wakandan mutant}
+			NOT = {accepted_culture = wakandan mutant}
 			
 		}
 	
 		allow = {
 			war = no
-			has_country_flag = wakanda_forever_mod
+			has_country_flag = wakanda_forever_flag
 			year = 1848
 		}
 		
@@ -93,7 +93,7 @@ political_decisions = {
 		
 	}
 	
-	wak_mut_int = {
+	wak_mut_int_dec = {
 		
 		
 		potential = {
@@ -126,17 +126,22 @@ political_decisions = {
 		
 	}
 		
-	wak_coronation = { 
+	wak_coronation_dec = { 
 			
 		
 		potential = {
 		tag = WAK
+		culture = wakandan_mutant
+		year = 1880
+		NOT = {has_country_flag =  king_dazryte_flag}
+		
 		}
 		
 		allow = {
 		money = 100000
 		war = no
 		year = 1880
+		
 		}
 		
 		effect = {
@@ -147,9 +152,7 @@ political_decisions = {
 		king_dazryte
 		}
 		
-		remove_country_modifier = {
-		king_wewuz
-		}
+		
 	}
 	
 	

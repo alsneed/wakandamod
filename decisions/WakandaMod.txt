@@ -1,6 +1,6 @@
 political_decisions = {
 	wakandan_isolation_dec = {
-		picture = wakanda_forever
+		picture = wakanda_forever_dec
 		potential = { 
 			ai = yes
 			tag = WAK
@@ -21,7 +21,7 @@ political_decisions = {
 	}
 	
 	wakanda_forever_dec = {
-		picture = "wakanda_forever"
+		
 		
 		potential = {
 			tag = WAK
@@ -124,13 +124,12 @@ political_decisions = {
 			
 		}
 		
-		}
+	}
 		
 	wak_coronation = { 
 			
 		
 		potential = {
-		year = 1872
 		tag = WAK
 		}
 		
@@ -142,8 +141,16 @@ political_decisions = {
 		
 		effect = {
 		prestige = 80
-		add_country_modifier = king_dazryte
-		remove_country_modifier = king_wewuz
+		
+		add_country_modifier  = {
+		
+		king_dazryte
+		}
+		
+		remove_country_modifier = {
+		king_wewuz
 		}
 	}
+	
+	
 }

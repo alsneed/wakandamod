@@ -1,13 +1,14 @@
 
 
 #===========wakanda=============
+
 wakandan_isolation_mod = {
 	cb_generation_speed_modifier = -1.00
 	prestige = -10.00
 	icon = 8
 }
 
-king_wewuz = {
+king_wewuz_mod = {
 	prestige = 0.01
 	non_accepted_pop_militancy_modifier = 0.6
 	diplomatic_points_modifier = 0.10
@@ -20,25 +21,27 @@ king_wewuz = {
 
 wakanda_forever_mod = {
 	research_points_modifier = 1.00
-	#global_population_growth = 0.06
+	global_population_growth = 0.06
+	org_regain = 0.10
+	land_organisation = 0.10
 	icon = 7
 }
 
-wakanda_ass = {
+wakanda_ass_mod = {
 	assimilation_rate = 40
 	pop_militancy_modifier = -0.5
 	pop_consciousness_modifier = 0.5
 	}
 	
 	
-king_dazryte = {
+king_dazryte_mod = {
 	prestige = 0.02
 	core_pop_militancy_modifier = -0.10
 	non_accepted_pop_militancy_modifier = -0.2
 	diplomatic_points_modifier = 0.25
 	influence_modifier = 0.25
 	ruling_party_support = 0.60
-	org_regain = 10
+	org_regain = 0.9
 	badboy = -0.25
 	icon = 17
 }

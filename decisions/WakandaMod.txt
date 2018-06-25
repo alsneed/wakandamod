@@ -34,7 +34,8 @@ political_decisions = {
 				duration = 36500
 			}
 			set_country_flag = wakanda_forever_flag
-			
+			nationalize = yes
+			news = yes
 			
 			ENG_2024 = { 
 				add_core = WAK 
@@ -66,6 +67,7 @@ political_decisions = {
 		
 		potential = { 
 			primary_culture = wakandan 
+			year = 1840
 			NOT = {accepted_culture = wakandan_mutant}
 			
 		}
@@ -81,7 +83,29 @@ political_decisions = {
 			prestige = 23
 			militancy = -4
 			consciousness = -4
+			badboy = -3
 			}
 		
 	}
+	
+	wak_mut_int = {
+		picture = wak_eman
+		
+		potential = {
+		accepted_culture = wakandan_mutant
+		tag = WAK
+		}
+		
+		allow = {
+			war = no
+			has_country_flag = wakanda_forever_flag
+			year = 1871
+			}
+			
+			effect = {
+			province_2025 = {assimilate = yes}
+			province_2026 = {assimilate = yes}
+			province_1864 = {assimilate = yes}
+			province_2031 = {assimilate = yes}
+			
 }

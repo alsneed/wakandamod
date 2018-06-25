@@ -54,8 +54,8 @@ army = {
 	name = "Wakanda Defence Force"
 	location = 2025
 	regiment = {
-		name= "I. WDF Guard"
-		type = guard
+		name= "I. WDF armor"
+		type = armor
 		home = 2025
 	}
 		regiment = {
@@ -64,23 +64,23 @@ army = {
 		home = 1847
 	}
 	regiment = {
-		name= "II. WDF Guard"
-		type = guard
+		name= "II. WDF armor"
+		type = armor
 		home = 2031
 	}
 	regiment = {
-		name= "III. WDF Guard"
-		type = guard
+		name= "III. WDF armor"
+		type = armor
 		home = 2025
 	}
 	regiment = {
-		name= "IV. WDF Guard"
-		type = guard
+		name= "IV. WDF armor"
+		type = armor
 		home = 2028
 	}
 	regiment = {
-		name= "V. WDF Guard"
-		type = guard
+		name= "V. WDF armor"
+		type = armor
 		home = 1847
 	}
 }
@@ -105,7 +105,7 @@ army = {
 	}
 	regiment = {
 		name= "I. Wakandan Calvary"
-		type = hussar
+		type = airplane
 		home = 2028
 	}
 	regiment = {

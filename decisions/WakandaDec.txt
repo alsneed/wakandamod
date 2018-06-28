@@ -22,7 +22,6 @@ political_decisions = {
 	
 	wakanda_forever_dec = {
 		
-		
 		potential = {
 			tag = WAK
 			NOT = { has_country_flag = wakanda_forever_flag}
@@ -43,10 +42,7 @@ political_decisions = {
 			nationalize = yes
 			news = yes
 			
-			ENG_2024 = { 
-				add_core = WAK 
-				life_rating = 35
-			}
+			ENG_2024 = { add_core = WAK }
 			ETH_1859 = { add_core = WAK }
 			ETH_1865 = { add_core = WAK }
 			SOM_1868 = { add_core = WAK }
@@ -55,17 +51,62 @@ political_decisions = {
 			ETH_1853 = { add_core = WAK }
 			ENG_1848 = { add_core = WAK }
 			
-			1875 = { life_rating = 30 }
-			1866 = { life_rating = 30 }
-			1876 = { life_rating = 30 }
-			1870 = { life_rating = 30 }
-			
+			#colonizable land
+			1875 = { life_rating = 20 }
+			1866 = { life_rating = 20 }
+			1867 = { life_rating = 20 }
+			1870 = { life_rating = 20 }
+			2024 = { life_rating = 20 }
+			2027 = { life_rating = 20 }
+			2032 = { life_rating = 20 }
 			
 			remove_country_modifier = wakandan_isolation_mod
 			clr_country_flag = wakandan_isolation_flag
 			
+			any_country = {
+				limit = {
+					capital_scope = {
+						continent = europe
+					}
+				}
+				country_event = {
+					id = 14880
+					days = 14
+				}
+			}
+			
+			USA = {
+				limit = {
+					exists = USA
+				}
+				country_event = {
+					id = 14880
+					days = 14
+				}
+			}
+		}
+	}
+	
+	expand_vib_mine_dec = {
+		potential = {
+			has_country_flag = wakanda_forever_flag
+			NOT = { has_country_flag = vibranium_secured }
 		}
 		
+		allow = {
+			steam_turbine = 1
+			inorganic_chemistry = 1	
+		}
+		
+		effect = {
+		
+			add_province_modifier = {
+				name = vib_rush_mod
+				duration = 3650
+			}
+		
+			set_country_flag = vibranium_secured
+		}
 	}
 	
 	wakandan_emancipation_dec = {
@@ -74,7 +115,7 @@ political_decisions = {
 		potential = { 
 			primary_culture = wakandan 
 			year = 1840
-		
+			NOT = {accepted_culture = wakandan mutant}
 			
 		}
 	
@@ -82,7 +123,6 @@ political_decisions = {
 			war = no
 			has_country_flag = wakanda_forever_flag
 			year = 1848
-			NOT = {accepted_culture = wakandan mutant}
 		}
 		
 		effect = {

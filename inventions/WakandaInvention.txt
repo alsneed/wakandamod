@@ -1,0 +1,191 @@
+#vibranium infused fabric
+vib_fabric_inv = {
+	limit = { bessemer_process = 1 }
+	
+	chance = {
+		base = 0
+		
+		modifier = {
+			factor = 1
+			has_country_flag = vibranium_secured
+		}
+	}
+	
+	effect = {
+		infantry = {
+			defence = 2
+			supply_consumption = 0.20
+		}
+		guard = {
+			defence = 2
+			supply_consumption = 0.20
+		}
+		engineer = {
+			defence = 2
+			supply_consumption = 0.20
+		}
+		artillery = {
+			defence = 2
+			supply_consumption = 0.20
+		}
+		dragoon = {
+			defence = 2
+			supply_consumption = 0.20
+		}
+		hussar = {
+			defence = 2
+			supply_consumption = 0.20
+		}
+		cavalry = {
+			defence = 2
+			supply_consumption = 0.20
+		}
+		irregular = {
+			defence = 2
+			supply_consumption = 0.20
+		}
+		cuirassier = {
+			defence = 2
+			supply_consumption = 0.20
+		}
+	}
+}
+
+#vibranium armor
+vib_armor_inv = {
+	limit = { advanced_metallurgy = 1 }
+	
+	chance = {
+		base = 0
+		
+		modifier = {
+			factor = 2
+			invention = vib_fabric_inv = 1
+		}
+	}
+	
+	effect = {
+		infantry = {
+			defence = 3
+			supply_consumption = 0.20
+		}
+		guard = {
+			defence = 3
+			supply_consumption = 0.20
+		}
+		engineer = {
+			defence = 3
+			supply_consumption = 0.20
+		}
+		artillery = {
+			defence = 3
+			supply_consumption = 0.20
+		}
+		dragoon = {
+			defence = 3
+			supply_consumption = 0.20
+		}
+		hussar = {
+			defence = 3
+			supply_consumption = 0.20
+		}
+		cavalry = {
+			defence = 3
+			supply_consumption = 0.20
+		}
+		irregular = {
+			defence = 3
+			supply_consumption = 0.20
+		}
+		cuirassier = {
+			defence = 3
+			supply_consumption = 0.20
+		}
+	}
+}
+
+#vibranium suit
+vib_suit_inv = {
+	limit = { synthetic_polymers = 1 }
+	
+	chance = {
+		base = 0
+		
+		modifier = {
+			factor = 5
+			invention = vib_armor_inv = 1
+		}
+	}
+	
+	effect = {
+		infantry = {
+			defence = 5
+			supply_consumption = 0.50
+		}
+		guard = {
+			defence = 5
+			supply_consumption = 0.50
+		}
+		engineer = {
+			defence = 5
+			supply_consumption = 0.50
+		}
+		artillery = {
+			defence = 5
+			supply_consumption = 0.50
+		}
+		dragoon = {
+			defence = 5
+			supply_consumption = 0.50
+		}
+		hussar = {
+			defence = 5
+			supply_consumption = 0.50
+		}
+		cavalry = {
+			defence = 5
+			supply_consumption = 0.50
+		}
+		irregular = {
+			defence = 5
+			supply_consumption = 0.50
+		}
+		cuirassier = {
+			defence = 5
+			supply_consumption = 0.50
+		}
+	}
+}
+
+#vibranium plating
+vib_plate_inv = {
+	limit = { electric_furnace = 1 }
+	
+	chance = {
+		base = 0
+		
+		modifier = {
+			factor = 1
+			invention = vib_armor_inv = 1
+		}
+		modifier = {
+			factor = 2
+			invention = military_aviation
+		}
+		modifier = {
+			factor = 2
+			invention = tank_exploits
+		}
+	}
+	
+	effect = {
+		tank = {
+			defence = 8
+			supply_consumption = 0.60
+		}
+		plane = {
+			defence = 8
+			supply_consumption = 0.60
+		}
+	}
+}

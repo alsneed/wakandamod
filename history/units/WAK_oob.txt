@@ -104,8 +104,8 @@ army = {
 		home = 2025
 	}
 	regiment = {
-		name= "I. Air Raid Brigade"
-		type = planes
+		name= "I. Wakandan Hussar"
+		type = hussar
 		home = 2028
 	}
 	regiment = {

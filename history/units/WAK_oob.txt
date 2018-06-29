@@ -41,7 +41,7 @@ leader = {
 }
 
 leader = {
-	name = "Billy 'CIA' Williamson"
+	name = "Billy Williamson"
 	picture = cia
 	date = 1836.1.1
 	type = land

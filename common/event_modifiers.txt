@@ -30,6 +30,13 @@ vib_rush_mod = {
 	icon = 11
 }
 
+kara_bogan_mod = {
+	org_regain = 1.00
+	cb_generation_speed_modifier = 0.50
+	global_pop_militancy_modifier = -0.05
+	icon = 15
+}
+
 king_wewuz_mod = {
 	prestige = 0.01
 	non_accepted_pop_militancy_modifier = 0.6

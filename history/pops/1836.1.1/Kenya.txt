@@ -121,7 +121,7 @@
 	soldiers = {
 		culture = wakandan
 		religion = coptic
-		size = 30000
+		size = 3000
 	}
 	
 	soldiers = {
@@ -157,7 +157,7 @@
 	soldiers = {
 		culture = wakandan_mutant
 		religion = catholic
-		size = 25000
+		size = 2500
 	}
 
 	farmers = {
@@ -300,7 +300,7 @@
 	soldiers = {
 		culture = wakandan
 		religion = coptic
-		size = 10000
+		size = 8000
 	}
 
 	farmers = {

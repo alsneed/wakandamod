@@ -306,7 +306,7 @@
 	farmers = {
 		culture = wakandan_mutant
 		religion = catholic
-		size = 273500
+		size = 133500
 	}
 
 	aristocrats = {
@@ -336,7 +336,7 @@
 	farmers = {
 		culture = wakandan
 		religion = coptic
-		size = 67225
+		size = 9922
 	}
 
 	slaves = {

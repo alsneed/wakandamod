@@ -70,20 +70,24 @@ political_decisions = {
 			
 			any_country = {
 				limit = {
-					capital_scope = {
-						continent = europe
+					OR = {
+						is_culture_group = germanic
+						is_culture_group = beneluxian
+						is_culture_group = pan_swiss
+						is_culture_group = scandinavian
+						is_culture_group = british
+						is_culture_group = italian
+						is_culture_group = iberian
+						is_culture_group = french
+						is_culture_group = hungarian_culture_group
+						is_culture_group = polish_culture_group
+						is_culture_group = baltic
+						is_culture_group = iranian_turanian
+						is_culture_group = neo_european_cultures
+						is_culture_group = american_cultures
 					}
 				}
-				country_event = {
-					id = 14880
-					days = 14
-				}
-			}
-			
-			USA = {
-				limit = {
-					exists = USA
-				}
+				
 				country_event = {
 					id = 14880
 					days = 14
@@ -160,26 +164,24 @@ political_decisions = {
 			
 			any_country = {
 				limit = {
-					capital_scope = {
-						continent = europe
+					OR = {
+						is_culture_group = germanic
+						is_culture_group = beneluxian
+						is_culture_group = pan_swiss
+						is_culture_group = scandinavian
+						is_culture_group = british
+						is_culture_group = italian
+						is_culture_group = iberian
+						is_culture_group = french
+						is_culture_group = hungarian_culture_group
+						is_culture_group = polish_culture_group
+						is_culture_group = baltic
+						is_culture_group = iranian_turanian
+						is_culture_group = neo_european_cultures
+						is_culture_group = american_cultures
 					}
-					
-					NOT = { tag = TUR }
 				}
 				
-				relation = {
-					who = WAK
-					value = -50
-				}
-				
-				casus_belli = {
-					target = WAK
-					type = cut_down_to_size
-					months = 120
-				}
-			}
-			
-			USA = {
 				relation = {
 					who = WAK
 					value = -50

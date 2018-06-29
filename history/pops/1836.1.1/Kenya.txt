@@ -370,7 +370,7 @@
 	soldiers = {
 		culture = wakandan
 		religion = coptic
-		size = 25300
+		size = 12300
 	}
 
 	farmers = {

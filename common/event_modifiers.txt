@@ -13,6 +13,7 @@ wakandan_isolation_mod = {
 white_guilt_mod = {
 	global_population_growth = -0.002
 	prestige = -0.25
+	core_pop_militancy_modifier = 0.01
 	global_pop_consciousness_modifier = 0.01
 	icon = 18
 }
@@ -32,7 +33,7 @@ vib_rush_mod = {
 
 kara_bogan_mod = {
 	org_regain = 1.00
-	cb_generation_speed_modifier = 0.50
+	cb_generation_speed_modifier = 1.00
 	global_pop_militancy_modifier = -0.05
 	icon = 15
 }

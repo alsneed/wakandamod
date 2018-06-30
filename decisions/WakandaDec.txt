@@ -130,12 +130,16 @@ political_decisions = {
 		potential = {
 			has_country_flag = wakanda_forever_flag
 			NOT = { 
-				has_global_flag = anti_white_begin_flag
+				AND = {
+					has_global_flag = anti_white_begin_flag
+					has_global_flag = white_genocide_flag
+				}
 			}
 		}
 		
 		allow = {
 			all_core = { owned_by = WAK }
+			war = no
 			nationalism_n_imperialism = 1
 			OR = {
 				alliance_with = TUR
@@ -195,6 +199,29 @@ political_decisions = {
 			}
 			
 			set_global_flag = anti_white_begin_flag
+		}
+	}
+	
+	white_genocide_dec = {
+		
+		potential = {
+			tag = WAK
+			NOT = { has_global_flag = white_genocide_flag }
+		}
+		
+		allow = {
+			is_greater_power = yes
+			war = no
+			mass_politics = 1
+			invention = the_decline_of_the_west_and_the_lost_generation
+			government = absolute_monarchy
+			ruling_party = WAK_reactionary
+			has_global_flag = anti_white_begin_flag
+		}
+		
+		effect = {
+			clr_global_flag = anti_white_begin_flag
+			set_global_flag = white_genocide_flag
 		}
 	}
 	

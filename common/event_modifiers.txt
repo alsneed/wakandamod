@@ -18,6 +18,16 @@ white_guilt_mod = {
 	icon = 18
 }
 
+white_pride_mod = {
+	global_population_growth = 0.005
+	core_pop_militancy_modifier = -0.1
+	land_organisation = 0.50
+	naval_organisation = 0.50
+	non_accepted_pop_militancy_modifier = 0.05
+	non_accepted_pop_consciousness_modifier = 0.05
+	icon = 17
+}
+
 wakanda_forever_mod = {
 	research_points_modifier = 1.00
 	icon = 7
@@ -36,6 +46,18 @@ kara_bogan_mod = {
 	cb_generation_speed_modifier = 1.00
 	global_pop_militancy_modifier = -0.05
 	icon = 15
+}
+
+new_terra_mod = {
+	immigrant_attract = 2.00
+	life_rating = 1
+	icon = 7
+}
+
+new_terra_refused_mod {
+	pop_militancy_modifier = 0.01
+	pop_consciousness_modifier = 0.01
+	icon = 8
 }
 
 king_wewuz_mod = {

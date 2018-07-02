@@ -22,6 +22,7 @@ country_event = {
 			name = white_guilt_mod
 			duration = 3650
 		}
+		#add_country_flag = white_guilt_flag
 	}
 	
 	option = {
@@ -35,5 +36,357 @@ country_event = {
 			type = humiliate
 			months = 240
 		}
+	}
+}
+
+#wakanda declares white crusade
+country_event = {
+	id = 14881
+	title = "Wakanda declares white crusade"
+	desc = ""
+	
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes        
+	allow_multiple_instances = yes
+
+	#decision trigger
+	
+	option = {
+		name "Submit"
+		
+		prestige = -200.00
+		
+		any_pop = {
+			limit = {
+				OR = {
+					is_culture_group = germanic
+					is_culture_group = beneluxian
+					is_culture_group = pan_swiss
+					is_culture_group = scandinavian
+					is_culture_group = british
+					is_culture_group = italian
+					is_culture_group = iberian
+					is_culture_group = french
+					is_culture_group = hungarian_culture_group
+					is_culture_group = polish_culture_group
+					is_culture_group = baltic
+					is_culture_group = iranian_turanian
+					is_culture_group = neo_european_cultures
+					is_culture_group = american_cultures
+				}
+			}
+			
+			reduce_pop = 0.50
+			militancy = 10
+			consciousness = 10
+		}
+	}
+	
+	option = {
+		name = "Refuse"
+		
+		prestige = 20
+		
+		add_country_modifier = {
+			name = white_pride_mod
+			duration = 1488
+		}
+		
+		relation = {
+			who = WAK
+			value = -200
+		}
+		add_casus_belli = {
+			target = FROM
+			type = acquire_state
+			months = 1200
+		}
+		ai_chance = { factor = 100 }
+	}
+}
+
+#white genocide in wakanda owned states
+country_event = {
+	id = 14882
+	title = "A world... free of whites"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = yes
+	fire_only_once = no        
+	allow_multiple_instances = no
+	
+	trigger = {
+		tag = WAK
+		has_global_flag = white_genocide_flag
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "Kill them"
+		badboy = 40
+		any_pop = {
+			limit = {
+				OR = {
+					is_culture_group = germanic
+					is_culture_group = beneluxian
+					is_culture_group = pan_swiss
+					is_culture_group = scandinavian
+					is_culture_group = british
+					is_culture_group = italian
+					is_culture_group = iberian
+					is_culture_group = french
+					is_culture_group = hungarian_culture_group
+					is_culture_group = polish_culture_group
+					is_culture_group = baltic
+					is_culture_group = iranian_turanian
+					is_culture_group = neo_european_cultures
+					is_culture_group = american_cultures
+				}
+			}
+			
+			reduce_pop = 0.50
+		}
+	}
+	
+	option = {
+		name = "Spare them"
+		prestige = -5
+		any_pop = {
+			limit = {
+				OR = {
+					is_primary_culture = yes
+					is_accepted_culture = yes
+				}
+			}
+			
+			militancy = 2
+			consciousness = 2
+		}
+	}
+}
+
+#desert -> farm
+province_event = {
+	id = 14883
+	title = "Terraform land"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = yes
+	fire_only_once = no        
+	allow_multiple_instances = no
+	
+	trigger = {
+		war = no
+		is_core = WAK
+		owned_by = WAK
+		owner = {
+			money = 100000
+			has_country_flag = wakanda_forever_flag
+		}
+		
+		OR = {
+			terrain = semidesert
+			terrain = desert
+			terrain = plains
+			terrain = steppe
+			terrain = savanna
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+		
+		modifier = {
+			factor = 0.5
+			invention = tractors
+		}
+	}
+	
+	option = {
+		name = "Turn it"
+		owner = {
+			money = -100000
+		}
+		RGO_size = 1
+		add_province_modifier = {
+			name = new_terra_mod
+			duration = 730
+		}
+	}
+	
+	option = {
+		name = "Don't turn it"
+		add_province_modifier = {
+			name = new_terra_refused_mod
+			duration = 730
+		}
+	}
+}
+
+#illness
+country_event = {
+	id = 14884
+	title = "Illness 1"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = yes
+	fire_only_once = yes        
+	allow_multiple_instances = no
+	
+	trigger = {
+		year = 1840
+	}
+
+	mean_time_to_happen = {
+		month = 1
+	}
+	
+	option = {
+		name = "Name1"
+		country_event = {
+			id = 14885
+			days = 1825
+		}
+	}
+}
+
+#illness 2 dies
+country_event = {
+	id = 14885
+	title = "Dies"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = yes
+	fire_only_once = yes        
+	allow_multiple_instances = no
+	
+	#event trigger
+	
+	option = {
+		name = "Good"
+		
+		#remove first king modifier + flag
+		
+		country_event = {
+			id = 14886
+			days = 1
+		}
+	}
+}
+
+#wakanda succession
+country_event = {
+	id = 14886
+	title = "Wakanda succession"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = yes
+	fire_only_once = yes        
+	allow_multiple_instances = no
+	
+	#event trigger
+	
+	option = {
+		name = "Reactionary prince"
+		random_list = {
+			80 = {
+				country_event = {
+					id = 14887
+					days = 3
+				}
+			}
+			
+			20 = {
+				country_event = {
+					id 14889
+					days = 3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "liberal prince"
+		random_list = {
+			80 = {
+				country_event = {
+					id = 14888
+					days = 3
+				}
+			}
+			
+			20 = {
+				country_event = {
+					id 14889
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+#reactionary king victory
+country_event = {
+	id = 14887
+	title = "reactionary king"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = yes
+	fire_only_once = yes        
+	allow_multiple_instances = no
+	
+	#event trigger
+	
+	option = {
+		name = "Long live the kang!"
+		set_country_flag = reactionary_king_flag
+	}
+}
+
+#libral king victory
+country_event = {
+	id = 14888
+	title = "liberal king"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = yes
+	fire_only_once = yes        
+	allow_multiple_instances = no
+	
+	#event trigger
+	
+	option = {
+		name = "Long live the kang!"
+		set_country_flag = liberal_king_flag
+	}
+}
+
+#conservatice king victory
+country_event = {
+	id = 14889
+	title = "panther king"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = yes
+	fire_only_once = yes        
+	allow_multiple_instances = no
+	
+	#event trigger
+	
+	option = {
+		name = "Long live the kang!"
+		set_country_flag = conservative_king_flag
 	}
 }

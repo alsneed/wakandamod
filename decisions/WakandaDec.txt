@@ -307,6 +307,36 @@ political_decisions = {
 		}
 	}
 	
+	wewuzkang_dec = {
+		potential = {
+			tag = WAK
+			has_country_flag = wakanda_forever_flag
+		}
+		
+		allow = {
+			is_greater_power = yes
+			experimental_psychology = 1
+		}
+		
+		effect = {
+			EGY = {
+				all_core = {
+					add_core = WAK
+				}
+			}
+			
+			add_accepted_culture = misri
+			
+			USA = {
+				set_country_flag = blm_agitation_flag
+				add_country_modifier = {
+					name = my_ancestor_mod
+					duration = 36500
+				}
+			}
+		}
+	}
+	
 	wak_mut_int_dec = {
 		
 		

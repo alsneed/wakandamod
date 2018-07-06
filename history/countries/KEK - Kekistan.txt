@@ -1,0 +1,179 @@
+capital = 599
+primary_culture = ashkenazi
+culture = south_german
+culture = swiss_french
+culture = swiss_german
+culture = romansh
+culture = swiss_italian
+culture = swedish
+culture = finnish
+culture = maltese
+culture = french
+culture = north_german
+culture = dutch
+culture = flemish
+culture = sorbian
+culture = walloon
+culture = arpitan
+culture = english
+culture = english
+culture = czech
+culture = polish
+culture = north_italian
+culture = south_italian
+culture = volga_german
+
+religion = jewish
+government = presidential_dicatorship
+plurality = 0.15
+nationalvalue = nv_order
+literacy = 0.87
+civilized = yes
+prestige = 0
+consciousness = 0
+nonstate_consciousness = 0
+is_releasable_vassal = no
+
+#==================reforms===========================
+# Political reforms
+slavery = no_slavery
+upper_house_composition = appointed
+vote_franschise = none_voting
+public_meetings = no_meeting
+press_rights = free_press
+trade_unions = all_trade_unions
+voting_system = first_past_the_post
+political_parties = underground_parties
+
+# Social Reforms
+wage_reform = low_minimum_wage
+work_hours = twelve_hours
+safety_regulations = good_safety
+health_care = good_health_care
+unemployment_subsidies = low_subsidies
+pensions = good_pensions 
+school_reforms = good_schools
+
+
+# New Reforms
+conscription = mandatory_service
+debt_law = debtors_prisons
+penal_system = capital_punishment
+child_labor = child_labor_illegal
+citizens_rights = culture_voting_only
+border_policy = closed_borders
+centralization = federalism
+colonial_policy = no_colonies 
+
+#==================upper house====================
+ruling_party = WAK_conservative
+upper_house = {
+	fascist = 0
+	liberal = 10
+	conservative = 50
+	reactionary = 40
+	anarcho_liberal = 0
+	socialist = 0
+	communist = 0
+}
+
+#==================tech school====================
+schools = army_tech_school
+
+#==================army===========================
+oob = "WAK_oob.txt"
+
+#==================techs==========================
+#army doc
+post_napoleonic_thought = 1
+strategic_mobility = 1
+
+#light arm
+flintlock_rifles = 1
+muzzle_loaded_rifles = 1
+
+#heavy arm
+bronze_muzzle_loaded_artillery = 1
+iron_muzzle_loaded_artillery = 1
+
+#military sci
+military_staff_system = 1
+military_plans = 1
+
+#army comp
+army_command_principle = 1
+army_professionalism = 1
+
+#navy doc
+post_nelsonian_thought = 1
+
+#ship construct
+clipper_design = 1
+
+#financial instritution
+private_banks = 1
+stock_exchange = 1
+#business_banks = 1
+
+#monetary sys
+no_standard = 1
+ad_hoc_money_bill_printing = 1
+private_bank_money_bill_printing = 1
+
+#ETnC
+early_classical_theory_and_critique = 1
+late_classical_theory = 1
+collectivist_theory = 1
+
+#market func
+freedom_of_trade = 1
+market_structure = 1
+business_regulations = 1
+
+#org
+guild_based_production = 1
+organized_factories = 1
+scientific_management = 1
+
+#phil
+late_enlightenment_philosophy = 1
+#idealism = 1
+#empiricism = 1
+
+#social thought
+enlightenment_thought = 1
+positivism = 1
+functionalism = 1
+
+#pol thought
+malthusian_thought = 1
+ideological_thought = 1
+
+#psy
+introspectionism = 1
+associationism = 1
+
+#power
+piston_steam_engine = 1
+high_pressure_steam_engine = 1
+compound_steam_engine = 1
+
+#mech
+mechanical_production = 1
+interchangeable_parts = 1
+semi_automatization = 1
+
+#metal
+mechanized_mining = 1
+#puddling_process = 1
+#hot_blast = 1
+
+#infra
+experimental_railroad = 1
+early_railroad = 1
+#iron_railroad = 1
+
+#chem
+basic_chemistry = 1
+medicine = 1
+#inorganic_chemistry = 1

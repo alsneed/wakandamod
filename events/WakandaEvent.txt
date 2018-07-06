@@ -81,6 +81,11 @@ country_event = {
 			militancy = 10
 			consciousness = 10
 		}
+		
+		relation = {
+			who = WAK
+			value = 200
+		}
 	}
 	
 	option = {
@@ -97,11 +102,6 @@ country_event = {
 			who = WAK
 			value = -200
 		}
-		add_casus_belli = {
-			target = FROM
-			type = acquire_state
-			months = 1200
-		}
 		ai_chance = { factor = 100 }
 	}
 }
@@ -113,7 +113,7 @@ country_event = {
 	desc = ""
 	picture = ""
 	
-	is_triggered_only = yes
+	is_triggered_only = no
 	fire_only_once = no        
 	allow_multiple_instances = no
 	
@@ -177,7 +177,7 @@ province_event = {
 	desc = ""
 	picture = ""
 	
-	is_triggered_only = yes
+	is_triggered_only = no
 	fire_only_once = no        
 	allow_multiple_instances = no
 	
@@ -211,9 +211,9 @@ province_event = {
 	option = {
 		name = "Turn it"
 		owner = {
-			money = -100000
+			treasury = -100000
 		}
-		RGO_size = 1
+		RGO_size = 100
 		add_province_modifier = {
 			name = new_terra_mod
 			duration = 730
@@ -236,23 +236,25 @@ country_event = {
 	desc = ""
 	picture = ""
 	
-	is_triggered_only = yes
+	is_triggered_only = no
 	fire_only_once = yes        
 	allow_multiple_instances = no
 	
 	trigger = {
+		tag = WAK
+		has_country_flag = first_king_flag
 		year = 1840
 	}
 
 	mean_time_to_happen = {
-		month = 1
+		days = 730
 	}
 	
 	option = {
-		name = "Name1"
+		name = "This can't be good"
 		country_event = {
 			id = 14885
-			days = 1825
+			days = 2
 		}
 	}
 }
@@ -271,13 +273,15 @@ country_event = {
 	#event trigger
 	
 	option = {
-		name = "Good"
+		name = "dead nigger"
 		
 		#remove first king modifier + flag
+		clr_country_flag = first_king_flag
+		remove_country_modifier = king_wewuz_mod
 		
 		country_event = {
 			id = 14886
-			days = 1
+			days = 3
 		}
 	}
 }
@@ -307,7 +311,7 @@ country_event = {
 			
 			20 = {
 				country_event = {
-					id 14889
+					id = 14889
 					days = 3
 				}
 			}
@@ -326,7 +330,7 @@ country_event = {
 			
 			20 = {
 				country_event = {
-					id 14889
+					id = 14889
 					days = 3
 				}
 			}
@@ -388,5 +392,47 @@ country_event = {
 	option = {
 		name = "Long live the kang!"
 		set_country_flag = conservative_king_flag
+	}
+}
+
+#unciv nation turns civ
+country_event = {
+	id = 14889
+	title = "Civilization is here"
+	desc = "we are civilized"
+	picture = ""
+	
+	is_triggered_only = no
+	fire_only_once = no     
+	allow_multiple_instances = no
+	news = yes
+	
+	trigger = {
+		WAK = {
+			has_country_flag = civilize_africa_flag
+			is_greater_power = yes
+			
+			OR = {
+				is_our_vassal = THIS
+				in_sphere = THIS
+			}
+		}
+		civilized = no	
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	immediate = {
+		civilized = yes
+	}
+	
+	option = {
+		name = "Wakanda forever"
+		add_country_modifier = {
+			name = wakandan_tech_mod
+			duration = 7300
+		}
 	}
 }

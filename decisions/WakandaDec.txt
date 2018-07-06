@@ -102,7 +102,10 @@ political_decisions = {
 		picture = "vibranium"
 		
 		potential = {
-			has_country_flag = wakanda_forever_flag
+			tag = WAK
+			2026 = {
+				owned_by = THIS
+			}
 			NOT = { 
 				has_country_flag = vibranium_secured 
 			}
@@ -115,9 +118,12 @@ political_decisions = {
 		
 		effect = {
 		
-			add_province_modifier = {
-				name = vib_rush_mod
-				duration = 3650
+			2026 = {
+				RGO_size = 500000
+				add_province_modifier = {
+					name = vib_rush_mod
+					duration = 3650
+				}
 			}
 		
 			set_country_flag = vibranium_secured
@@ -261,28 +267,44 @@ political_decisions = {
 	}
 	
 	wakandan_emancipation_dec = {
-		
-		
+	
 		potential = { 
-			primary_culture = wakandan 
-			year = 1840
-			NOT = {accepted_culture = wakandan mutant}
-			
+			tag = WAK
+			has_country_flag = wakanda_forever_flag
+			NOT = { primary_culture = wakandan_mutant} 			
 		}
 	
 		allow = {
 			war = no
-			has_country_flag = wakanda_forever_flag
-			year = 1848
+			has_country_flag = reactionary_king_flag
 		}
 		
 		effect = {
-			add_accepted_culture = wakandan_mutant
-			prestige = 23
-			militancy = -4
-			
+			primary_culture = wakandan_mutant
+			add_accepted_culture = wakandan
+			add_country_modifier = {
+				name = mutant_convert_resist_mod
+				duration = 730
 			}
+		}
+	}
+	
+	civilize_africa_dec = {
+		potential = {
+			tag = WAK
+			has_country_flag = wakanda_forever_flag
+		}
 		
+		allow = {
+			is_greater_power = yes
+			money = 2000000
+		}
+		
+		effect = {
+			prestige = 30
+			treasury = -2000000
+			set_country_flag = civilize_africa_flag
+		}
 	}
 	
 	wak_mut_int_dec = {

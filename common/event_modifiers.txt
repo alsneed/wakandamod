@@ -60,6 +60,18 @@ new_terra_refused_mod {
 	icon = 8
 }
 
+mutant_convert_resist_mod = {
+	factory_output = -0.20
+	RGO_output = -0.20
+	global_pop_consciousness_modifier = 0.01
+	icon = 4
+}
+
+wakandan_tech_mod = {
+	research_points_modifier = 2.00
+	icon = 7
+}
+
 king_wewuz_mod = {
 	prestige = 0.01
 	non_accepted_pop_militancy_modifier = 0.6

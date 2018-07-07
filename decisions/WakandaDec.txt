@@ -5,6 +5,7 @@ political_decisions = {
 		potential = { 
 			ai = yes
 			tag = WAK
+			NOT = { has_country_flag = wakanda_forever_flag }
 		}
 		
 		effect = {
@@ -95,6 +96,10 @@ political_decisions = {
 				}
 			}
 		}
+		
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	
 	expand_vib_mine_dec = {
@@ -127,6 +132,10 @@ political_decisions = {
 			}
 		
 			set_country_flag = vibranium_secured
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	
@@ -213,6 +222,10 @@ political_decisions = {
 			
 			set_global_flag = anti_white_begin_flag
 		}
+		
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	
 	white_genocide_dec = {
@@ -264,6 +277,10 @@ political_decisions = {
 				}
 			}
 		}
+		
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	
 	wakandan_emancipation_dec = {
@@ -287,6 +304,10 @@ political_decisions = {
 				duration = 730
 			}
 		}
+		
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	
 	civilize_africa_dec = {
@@ -305,12 +326,20 @@ political_decisions = {
 			treasury = -2000000
 			set_country_flag = civilize_africa_flag
 		}
+		
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	
 	wewuzkang_dec = {
 		potential = {
 			tag = WAK
 			has_country_flag = wakanda_forever_flag
+			
+			USA = {
+				NOT = { has_country_flag = blm_agitation_flag }
+			}
 		}
 		
 		allow = {
@@ -334,6 +363,10 @@ political_decisions = {
 					duration = 36500
 				}
 			}
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

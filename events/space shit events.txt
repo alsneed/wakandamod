@@ -1,0 +1,197 @@
+country_event = {
+
+	id =  40116 # First attempt
+
+	trigger = {
+		has_country_flag = moon_landing_in_progress
+		not = { has_global_flag = Moon_Is_Landed }
+		not = { has_country_flag = NoGoToMoon }
+		not = { has_country_flag = YesGoToMoonAgain }
+		not = { has_country_flag = YesGoToMoon }
+		not = { has_country_flag = YesGoToMoonThird }
+		money = 1000000
+		is_greater_power = yes # Nation is a great power
+		year = 1899 # Will happen sometime after 1866
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.6
+			year = 1901
+		}
+		modifier = {
+			factor = 0.6
+			year = 1902
+		}
+		modifier = {
+			factor = 0.6
+			year = 1903
+		}
+	}
+
+	title = "Moon Landing - Attempt?"
+	desc = "EVTDESC2934"
+	picture = "moon_attempt"
+	
+
+	option = {
+		name = "To infinity and beyond!" # Support the mission
+		ai_chance = { factor = 25 }
+		money = -1000000
+		set_country_flag = YesGoToMoon
+	}
+	option = {
+		name = "Soon, soon..." # Consider the idea later
+		ai_chance = { factor = 45 }
+		prestige = -5
+	}
+	option = {
+		name = "The risk of failure... we can't" # Reject the idea
+		ai_chance = { factor = 30 }
+		set_country_flag = NoGoToMoon
+		prestige = -10
+	}
+}
+
+country_event = {
+	
+	id = 40117 # First attempt fails, try again?
+	
+	trigger = {
+		has_country_flag = YesGoToMoon
+		not = { has_global_flag = MoonDiscovered }
+		not = { has_country_flag = NoGoToMoon }
+		year = 1899 # Will happen sometime after 1868
+	}
+	
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.6
+			year = 1901
+		}
+		modifier = {
+			factor = 0.6
+			year = 1902
+		}
+		modifier = {
+			factor = 0.6
+			year = 1903
+		}
+	}
+
+	title = "Moon Landing - Launch Failure!"
+	desc = "How embarassing, we couldn't even get into the air never mind reach escape velocity. This is a collosal embarassment and waste of money."
+	picture = "moon_launch_fail"
+
+	option = {
+		name = "Science demands success" # Fund second attempt
+		ai_chance = { factor = 60 }
+		money = -1500000
+		set_country_flag = YesGoToMoonAgain
+		clr_country_flag = YesGoToMoon
+	}
+	option = {
+		name = "To hell with it!" # Reject second attempt
+		ai_chance = { factor = 40 }
+		clr_country_flag = YesGoToMoon
+		set_country_flag = NoGoToMoon
+		prestige = -30
+	}
+}
+
+
+country_event = {
+
+	id = 40118 # Our Mission to the Moon is lost
+
+	trigger = {
+		has_country_flag = YesGoToMoonAgain
+		not = { has_global_flag = NileDiscovered }
+		not = { has_country_flag = NoGoToNile }
+		year = 1899 # Will happen sometime after 1869
+	}
+
+	mean_time_to_happen =  {
+		months = 24
+
+		modifier = {
+			factor = 0.3
+			year = 1901
+		}
+		modifier = {
+			factor = 0.6
+			year = 1902
+		}
+		modifier = {
+			factor = 0.8
+			year = 1903
+		}
+	}
+
+	title = "Moon Landing - Midflight Explosion!"
+	desc = "Disaster! Our space craft exploded on its way to the moon. Think of the amount of money we've lost on this grandest of enterprises, what a waste... the astronauts you say? Well, err..."
+	picture = "moon_explosion"
+
+	option = {
+		name = "For god's sake - GET IT RIGHT!" # Fund third attempt
+		ai_chance = { factor = 60 }
+		money = -2000000
+		set_country_flag = YesGoToMoonThird
+		clr_country_flag = YesGoToMoonAgain
+	}
+	option = {
+		name = "Never again!" # Reject second attempt
+		ai_chance = { factor = 40 }
+		clr_country_flag = YesGoToMoonAgain
+		set_country_flag = NoGoToMoon
+		prestige = -40
+	}
+}
+
+country_event = {
+
+	id = 40119 # We've landed on the moon!
+
+	trigger = {
+		or = {
+			has_country_flag = YesGoToMoonAgain
+			has_country_flag = YesGoToMoonThird
+		}
+		not = { has_global_flag = MoonDiscovered }
+		not = { has_country_flag = NoGoToMoon }
+		year = 1900
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.4
+			year = 1901
+		}
+		modifier = {
+			factor = 0.7
+			year = 1902
+		}
+		modifier = {
+			factor = 0.9
+			year = 1903
+		}
+	}
+
+	title = "Moon Landing - Success!"
+	desc = "We've done it, we've defied all doubts and fears over our project and achieved one of the - if not the - greatest technological feats in history, our nations flag is on the moon!"
+	major = yes
+
+	option = {
+		name = "One small step for a man, one giant leap for mankind..." # Success
+		prestige = 500
+		set_global_flag = Moon_Is_Landed
+		clr_country_flag = YesGoToMoonAgain
+		clr_country_flag = YesGoToMoonThird
+	}
+}

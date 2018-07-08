@@ -1,0 +1,85 @@
+// space program foundation
+political_decisions = {
+found_space_program = {
+		picture = "nasa"
+		allow_multiple_instances = yes
+
+        potential = {
+			is_greater_power = yes
+			year = 1890
+			NOT = { has_country_flag = has_space_program }
+				
+				 
+			OR = { 
+				
+			tag = WAK
+			tag = KEK
+				
+			}
+				
+		}
+		
+        allow = {
+			money = 5000000
+			OR = {
+				
+			has_country_modifier = vib_rush_mod
+			has_country_modifier = white_pride_mod
+				
+				}
+				
+				
+                	}
+
+			effect = {
+				
+			prestige = 56
+			money = -5000000
+			add_country_modifier = {
+			name = space_program
+						duration = -1
+						}
+			set_country_flag = has_space_program
+					
+				}
+				
+				
+		
+		
+	}
+	
+	
+        attempt_moon_landing = {
+		picture = "moon"
+                potential = {
+			is_greater_power = yes
+			NOT = { has_global_flag = Moon_Is_Landed }
+			NOT = { has_country_flag = moon_landing_in_progress}
+			has_country_flag = has_space_program
+			year = 1900
+			
+			OR = {
+			tag = KEK
+			tag = WAK
+			}
+		
+			
+		}
+                allow = {
+			money = 1000000
+			
+			}
+
+          	effect = {
+			prestige = 10
+			set_country_flag = moon_landing_in_progress
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+	
+	

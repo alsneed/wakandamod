@@ -1,6 +1,6 @@
-color = { 0 140 0 }
+color = { 0 100 0 }
 fascist_dictatorship = { 0 93 0 }
-proletarian_dictatorship = { 64 91 64 }
+proletarian_dictatorship = { 221 91 64 }
 democracy = { 64 140 105 }
 graphical_culture = PrussianGC
 

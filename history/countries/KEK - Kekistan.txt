@@ -12,10 +12,8 @@ culture = maltese
 culture = french
 culture = dutch
 culture = flemish
-culture = sorbian
 culture = walloon
 culture = arpitan
-culture = english
 culture = english
 culture = czech
 culture = polish
@@ -26,9 +24,11 @@ culture = greek
 culture = occitan
 culture = slovak
 culture = hungarian
+culture = sephardic
+
 
 religion = jewish
-government = presidential_dicatorship
+government = presidential_dictatorship
 plurality = 0.15
 nationalvalue = nv_order
 literacy = 0.87

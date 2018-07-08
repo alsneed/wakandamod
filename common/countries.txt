@@ -5,6 +5,7 @@ REB 	= 	"countries/rebels.txt"
 
 #Wakanda mod
 WAK		= "countries/Wakanda.txt"
+KEK		= "countries/Kekistan.txt"
 
 ### NEW NATIONS MOD ###
 

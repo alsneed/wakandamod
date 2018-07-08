@@ -38,6 +38,10 @@ consciousness = 0
 nonstate_consciousness = 0
 is_releasable_vassal = no
 
+// OOB TBH =================
+oob = "KEK_oob.txt"
+========================
+
 #==================reforms===========================
 # Political reforms
 slavery = no_slavery

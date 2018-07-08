@@ -1,0 +1,9 @@
+leader = {
+	name = "Cuckgoy"
+	picture = cuckgoy
+	date = 1836.1.1
+	type = land
+	personality = gutsy
+	background = old_school
+	prestige = 2.0
+}

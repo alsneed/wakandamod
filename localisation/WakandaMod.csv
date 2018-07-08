@@ -18,10 +18,6 @@ WAK_fascist;Crocodile Cult;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 WAK_ADJ;Wakandan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 wakandan;Wakandan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 wakandan_mutant;Wakandan Mutant;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakandan_isolation_mod;Wakandan Isolationism;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakandan_isolation_mod_desc;Our current strategy is to keep the existence of Wakanda a secret. Only some patriarchs of the Ethiopian Apostolic Church know of Wakanda outside of Wakanda.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakanda_forever_mod;Wakanda Awakens;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakanda_forever_mod_desc;Our secret reform is complete. The knowledge obtained from the wh*toids combined with our vast Vibranium resources enables us to rapid advance..;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 wakandan_isolation_flag;Wakandan Isolationism;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 wakanda_forever_flag;Wakandan Awakenening;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 wakanda_forever_dec_title;Wakanda Forever!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -38,5 +34,9 @@ wakanda_ass_mod;Wakandan Assimilation;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 wakanda_ass_mod_desc;We have reclaimed Great Wakanda from Ethiopian and Somali warlords. Mj. General Ayodolfu suggests an aggressive assimilation initiative, which he dubbed 'Lebensraum', to which the King agreed.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 king_wewuz_mod;King Wewuz IV The Usurper;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 king_wewuz_mod_desc;King Wewuz IV, dubbed 'The Usurper' was born in 1801. He ended the long rule of the White Gorilla Cult, which ruled Wakanda with an iron but fair fist. Following the end of the rule, he had most of the White Gorilla Cultists executed, forcing them into exile.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-king_dazryte_mod_desc;King Dazryte I, dubbed 'The Just' is an illegitimate child of Kign Wewuz IV and a Wakandan Mutant. Due to this, Dazryte has an amazing IQ of 245, only seen deeply within Tibetan monasteries and Area 51. He is a big civil rights activist, greatly condeming his father's and other predecessor actions, and just seems to have an aura of charisma around him. We hope he has benevolent motives...;x
-king_dazryte_mod;King Dazryte I
+king_dazryte_mod_desc;King Dazryte I, dubbed 'The Just' is an illegitimate child of Kign Wewuz IV and a Wakandan Mutant. Due to this, Dazryte has an amazing IQ of 245, only seen deeply within Tibetan monasteries and Area 51. He is a big civil rights activist, greatly condeming his father's and other predecessor actions, and just seems to have an aura of charisma around him. We hope he has benevolent motives...;;;;;;;;;;;;;;x
+king_dazryte_mod;King Dazryte I;;;;;;;;;;;;;;x
+wakandan_isolation_mod;Wakandan Isolationism;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+wakandan_isolation_mod_desc;Our current strategy is to keep the existence of Wakanda a secret. Only some patriarchs of the Ethiopian Apostolic Church know of Wakanda outside of Wakanda.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+wakanda_forever_mod;Wakanda Awakens;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+wakanda_forever_mod_desc;Our secret reform is complete. The knowledge obtained from the wh*toids combined with our vast Vibranium resources enables us to rapid advance..;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x

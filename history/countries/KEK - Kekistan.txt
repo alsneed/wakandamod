@@ -1,5 +1,6 @@
 capital = 599
-primary_culture = ashkenazi
+primary_culture = north_german
+culture = ashkenazi
 culture = south_german
 culture = swiss_french
 culture = swiss_german
@@ -9,7 +10,6 @@ culture = swedish
 culture = finnish
 culture = maltese
 culture = french
-culture = north_german
 culture = dutch
 culture = flemish
 culture = sorbian
@@ -23,6 +23,9 @@ culture = north_italian
 culture = south_italian
 culture = volga_german
 culture = greek
+culture = occitan
+culture = slovak
+culture = hungarian
 
 religion = jewish
 government = presidential_dicatorship
@@ -67,7 +70,7 @@ centralization = federalism
 colonial_policy = no_colonies 
 
 #==================upper house====================
-ruling_party = WAK_conservative
+ruling_party = KEK_conservative
 upper_house = {
 	fascist = 0
 	liberal = 10

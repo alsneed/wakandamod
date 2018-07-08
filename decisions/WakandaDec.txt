@@ -95,6 +95,19 @@ political_decisions = {
 					days = 14
 				}
 			}
+			
+			any_country = {
+				limit = {
+					any_owned_province = {
+						is_core = WAK
+					}
+				}
+				
+				relation = {
+					who = WAK
+					value = -200
+				}				
+			}
 		}
 		
 		ai_will_do = {
@@ -314,6 +327,7 @@ political_decisions = {
 		potential = {
 			tag = WAK
 			has_country_flag = wakanda_forever_flag
+			NOT = { has_country_flag = civilize_africa_flag }
 		}
 		
 		allow = {

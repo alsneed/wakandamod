@@ -43,7 +43,7 @@ vib_rush_mod = {
 
 kara_bogan_mod = {
 	org_regain = 1.00
-	cb_generation_speed_modifier = 1.00
+	cb_generation_speed_modifier = 2.00
 	global_pop_militancy_modifier = -0.05
 	icon = 15
 }
@@ -68,6 +68,7 @@ mutant_convert_resist_mod = {
 }
 
 wakandan_tech_mod = {
+	education_efficiency_modifier = 2.00
 	research_points_modifier = 2.00
 	icon = 7
 }

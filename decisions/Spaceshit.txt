@@ -1,11 +1,12 @@
 // space program foundation
 political_decisions = {
-found_space_program = {
+
+
+	found_space_program = {
 		picture = "nasa"
 		allow_multiple_instances = yes
 
         potential = {
-			is_greater_power = yes
 			year = 1890
 			NOT = { has_country_flag = has_space_program }
 				
@@ -25,9 +26,9 @@ found_space_program = {
 				
 			has_country_modifier = vib_rush_mod
 			has_country_modifier = white_pride_mod
-				
+			is_greater_power = yes
 				}
-				
+			war = no
 				
                 	}
 
@@ -52,7 +53,7 @@ found_space_program = {
         attempt_moon_landing = {
 		picture = "moon"
                 potential = {
-			is_greater_power = yes
+			
 			NOT = { has_global_flag = Moon_Is_Landed }
 			NOT = { has_country_flag = moon_landing_in_progress}
 			has_country_flag = has_space_program
@@ -67,6 +68,8 @@ found_space_program = {
 		}
                 allow = {
 			money = 1000000
+			is_greater_power = yes
+			war = no
 			
 			}
 
@@ -79,6 +82,7 @@ found_space_program = {
 			factor = 1
 		}
 	}
+	
 }
 
 	

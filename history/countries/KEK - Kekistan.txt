@@ -22,6 +22,7 @@ culture = polish
 culture = north_italian
 culture = south_italian
 culture = volga_german
+culture = greek
 
 religion = jewish
 government = presidential_dicatorship
@@ -78,10 +79,7 @@ upper_house = {
 }
 
 #==================tech school====================
-schools = army_tech_school
-
-#==================army===========================
-oob = "WAK_oob.txt"
+schools = culture_tech_school
 
 #==================techs==========================
 #army doc

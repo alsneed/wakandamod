@@ -1,3 +1,4 @@
+
 country_event = {
 
 	id =  40116 # First attempt
@@ -11,7 +12,7 @@ country_event = {
 		not = { has_country_flag = YesGoToMoonThird }
 		money = 1000000
 		is_greater_power = yes # Nation is a great power
-		year = 1899 # Will happen sometime after 1866
+		year = 1899 # Will happen sometime after 1866 was it autism????
 	}
 
 	mean_time_to_happen =  {

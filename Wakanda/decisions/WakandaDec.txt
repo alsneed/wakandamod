@@ -15,7 +15,7 @@ political_decisions = {
 			}
 			
 			add_country_modifier = {
-				name = king_wewuz_mod
+				name = first_king_mod
 				duration = 15400
 			}
 		}
@@ -98,15 +98,21 @@ political_decisions = {
 			
 			any_country = {
 				limit = {
-					any_owned_province = {
-						is_core = WAK
+					capital_scope = {
+						OR = {
+							continent = africa
+							continent = central_africa
+							continent = west_africa
+							continent = east_africa
+							continent = south_west_africa
+						}
 					}
 				}
 				
 				relation = {
 					who = WAK
-					value = -200
-				}				
+					value = 100
+				}	
 			}
 		}
 		

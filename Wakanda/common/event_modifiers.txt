@@ -79,36 +79,34 @@ my_ancestor_mod = {
 	icon = 18
 }
 
-king_wewuz_mod = {
+first_king_mod = {
+	badboy = -0.1
+	non_accepted_pop_militancy_modifier = 0.5
+	influence_modifier = -1.00
+	ruling_party_support = -0.5
+	icon = 5
+}
+
+reactionary_king_mod = {
+	land_organisation = 1.00
+	naval_organisation = 1.00
+	factory_output = 0.50
+	mobilisation_size = 0.10
+	unit_start_experience = 1.00
+	badboy = 0.08
+	global_pop_militancy_modifier = 0.02
+	icon = 5
+}
+
+conservative_king_mod = {
 	prestige = 0.01
-	non_accepted_pop_militancy_modifier = 0.6
-	diplomatic_points_modifier = 0.10
-	influence_modifier = 0.03
-	ruling_party_support = 0.08
-	badboy = -0.15
-	icon = 17
-}
-
-wakanda_ass_mod = {
-	assimilation_rate = 40
-	pop_militancy_modifier = -0.5
-	pop_consciousness_modifier = 0.5
-	}
-	
-	
-king_dazryte_mod = {
-	prestige = 0.02
-	core_pop_militancy_modifier = -0.10
-	non_accepted_pop_militancy_modifier = -0.2
-	diplomatic_points_modifier = 0.25
-	influence_modifier = 0.25
-	ruling_party_support = 0.60
-	org_regain = 0.9
-	badboy = -0.25
-	icon = 17
-}
-
-	
+	global_pop_militancy_modifier = -0.05
+	influence_modifier = 1.00
+	global_pop_consciousness_modifier = 0.02
+	max_military_spending = 0.50
+	supply_consumption = -0.50
+	icon = 5
+}		
 
 ##################################################################################################
 # scriptable and usable for event-system below.

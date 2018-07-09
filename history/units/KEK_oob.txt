@@ -1,7 +1,7 @@
 leader = {
 	name = "Cuckgoy"
 	picture = cuckgoy
-	date = 1836.1.1
+	date = 1890.1.1
 	type = land
 	personality = gutsy
 	background = old_school

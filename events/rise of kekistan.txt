@@ -38,13 +38,13 @@ province_event = {
 					is_core = SAX
 		
 		}
-		not = { average_consciousness = 3 }
+		
 		 has_global_flag = anti_white_begin_flag
-		year = 1840
+		
 
 	
 	mean_time_to_happen = {
-		months = 36
+		days = 3
 		
 	}
 	
@@ -52,12 +52,11 @@ province_event = {
 		name = "EVTOPTA160502"
 		any_pop = {
 			limit = { is_primary_culture = no }
-			militancy = 5
-			consciousness = 3
-			reduce_pop = 0.98
+			militancy = -5
+			consciousness = -3
 			add_province_modifier = {
 					name = race_realism
-					duration = 1825
+					duration = 1488
 				}
 		
 		}
@@ -95,7 +94,8 @@ province_event = {
 					
 					
 					
-					has_global_flag = anti_white_begin_flag
+				has_global_flag = anti_white_begin_flag
+				has_province_modifier = race_realism
 				}
 				
 				OR = {
@@ -113,12 +113,15 @@ province_event = {
 					is_core = SAX
 				
 					}
-				average_consciousness = 4
-				any_neighbor_province = { is_core = KEK }
+				any_neighbor_province = { 
+				
+				
+				
+				}
 			}
 			
 			mean_time_to_happen = {
-				months = 20
+				days = 3
 
 				}
 			
@@ -176,7 +179,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 12
+		days = 3
 		modifier = {
 			factor = 0.75
 			year = 1850

@@ -120,7 +120,7 @@ political_decisions = {
 		potential = {
 			tag = WAK
 			has_country_flag = wakanda_forever_flag
-			1873 = { NOT = { owned_by = THIS } }
+			NOT = { is_core = 1873 }
 		}
 		
 		allow = {

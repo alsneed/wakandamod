@@ -47,7 +47,8 @@ kara_bogan_mod = {
 }
 
 new_terra_mod = {
-	immigrant_attract = 2.00
+	farm_RGO_size = 2.00
+	immigrant_attract = 1.00
 	life_rating = 1
 	icon = 7
 }

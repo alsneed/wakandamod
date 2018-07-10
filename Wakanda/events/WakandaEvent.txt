@@ -182,10 +182,14 @@ province_event = {
 	allow_multiple_instances = no
 	
 	trigger = {
-		war = no
 		is_core = WAK
 		owned_by = WAK
+		
+		NOT = { has_province_modifier = new_terra_refused_mod }
+		NOT = { has_province_modifier = new_terra_mod }
+		
 		owner = {
+			war = no
 			money = 100000
 			has_country_flag = wakanda_forever_flag
 		}
@@ -200,7 +204,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		years = 5
 		
 		modifier = {
 			factor = 0.5
@@ -213,10 +217,10 @@ province_event = {
 		owner = {
 			treasury = -100000
 		}
-		RGO_size = 100
+		
 		add_province_modifier = {
 			name = new_terra_mod
-			duration = 730
+			duration = -1
 		}
 	}
 	

@@ -36,6 +36,11 @@ province_event = {
 					is_core = PRU
 					is_core = BAV
 					is_core = SAX
+					is_core = POL
+					is_core = BEL
+					is_core = NET
+					is_core = PER
+					is_core = ITA
 		
 		}
 		
@@ -50,8 +55,7 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA160502"
-		any_pop = {
-			limit = { is_primary_culture = no }
+		any_province = {
 			militancy = -5
 			consciousness = -3
 			add_province_modifier = {
@@ -70,13 +74,13 @@ province_event = {
 	#Kekistani Nationalism Sentiment
 		province_event = {
 			id = 14881002
-			title = "EVTNAME160020" #The Taiping Sect Spreads!
-			desc = "EVTDESC160020"
+			title = "Kekistani Sect Spreads!" 
+			desc = "EDIT THIS"
 			
 			trigger = {
 				owner = {
 					OR = { 
-					is_culture_group = germanic
+								is_culture_group = germanic
 								is_culture_group = beneluxian
 								is_culture_group = pan_swiss
 								is_culture_group = scandinavian
@@ -98,22 +102,10 @@ province_event = {
 				has_province_modifier = race_realism
 				}
 				
-				OR = {
 				
-					is_core = FRA
-					is_core = GER
-					is_core = CZE
-					is_core = KUK
-					is_core = DEN
-					is_core = ITA
-					is_core = ENG
-					is_core = AUS
-					is_core = PRU
-					is_core = BAV
-					is_core = SAX
-				
-					}
 				any_neighbor_province = { 
+				
+				core = KEK
 				
 				
 				
@@ -121,7 +113,7 @@ province_event = {
 			}
 			
 			mean_time_to_happen = {
-				days = 3
+				days = 2
 
 				}
 			
@@ -175,6 +167,7 @@ country_event = {
 			}
 		
 		NOT = { has_global_flag = kek_praised }
+		has_global_flag = anti_white_begin_flag
 		
 	}
 	

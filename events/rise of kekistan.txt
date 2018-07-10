@@ -54,7 +54,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA160502"
+		name = "dae hate low iq niggers praizze kek"
 		any_province = {
 			militancy = -5
 			consciousness = -3

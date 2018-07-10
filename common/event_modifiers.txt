@@ -80,8 +80,8 @@ king_dazryte_mod = {
 	icon = 17
 	
 	
-	race_realism = {
-	assimilation_rate = 4
+race_realism = {
+	assimilation_rate = 0.06
 	pop_militancy_modifier = -0.3
 	
 }

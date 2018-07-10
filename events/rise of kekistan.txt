@@ -58,10 +58,8 @@ province_event = {
 		any_province = {
 			militancy = -5
 			consciousness = -3
-			add_province_modifier = {
-					name = race_realism
-					duration = 1488
-				}
+			
+			add_province_modifier = race_realism_mod
 		
 		}
 	
@@ -99,7 +97,7 @@ province_event = {
 					
 					
 				has_global_flag = anti_white_begin_flag
-				has_province_modifier = race_realism
+				has_province_modifier = race_realism_mod
 				}
 				
 				
@@ -219,8 +217,8 @@ country_event = {
 			
 			}
 			add_province_modifier = {
-				name = race_realism
-				duration = 730
+				name = race_realism_mod
+				duration = 1488
 			}
 		}
 		any_country = {
@@ -238,8 +236,8 @@ country_event = {
 					}
 				}
 				add_province_modifier = {
-					name = race_realism
-					duration = 730
+					name = race_realism_mod
+					duration = 1488
 				}
 			}
 		}

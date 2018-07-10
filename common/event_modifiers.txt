@@ -80,12 +80,13 @@ king_dazryte_mod = {
 	icon = 17
 	
 	
-race_realism = {
-	assimilation_rate = 0.06
-	pop_militancy_modifier = -0.3
-	
+race_realism_mod = {
+	immigrant_attract = 2.5
+	farm_RGO_size = 0.1
+	mine_RGO_size = 0.1
+	pop_consciousness_modifier = -0.02
+	icon = 7
 }
-
 	
 
 ##################################################################################################

@@ -1,5 +1,3 @@
-
-
 #===========wakanda=============
 
 wakandan_isolation_mod = {

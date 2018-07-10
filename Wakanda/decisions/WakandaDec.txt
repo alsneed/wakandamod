@@ -11,108 +11,151 @@ political_decisions = {
 		effect = {
 			add_country_modifier = {
 				name = wakandan_isolation_mod
-				duration = 36500
+				duration = -1
 			}
 			
 			add_country_modifier = {
 				name = first_king_mod
-				duration = 15400
+				duration = -1
 			}
 		}
 	}
 	
-	wakanda_forever_dec = {
-		
+	#cursed decision
+	#wakanda_forever_dec = {
+	#	potential = {
+	#		tag = WAK
+	#		NOT = { 
+	#			has_country_flag = wakanda_forever_flag
+	#			year = 1890
+	#		}
+	#	}
+	#	
+	#	allow = {
+	#		war = no
+	#		has_country_flag = wakandan_isolation_flag
+	#	}
+	#	
+	#	effect = {
+	#		prestige = 50
+	#		
+	#		add_country_modifier = {
+	#			name = wakanda_forever_mod
+	#			duration = -1
+	#		}
+	#		
+	#		set_country_flag = wakanda_forever_flag
+	#		
+	#		ETH = {
+	#			all_core = {
+	#				add_core = WAK
+	#			}
+	#		}
+	#		
+	#		1866 = { 
+	#			life_rating = 20
+	#			secede_province = WAK
+	#		}
+	#		
+	#		1867 = { 
+	#			life_rating = 20 
+	#			secede_province = WAK
+	#		}
+	#		
+	#		remove_country_modifier = wakandan_isolation_mod
+	#		clr_country_flag = wakandan_isolation_flag
+	#		
+	#		any_country = {
+	#			limit = {
+	#				OR = {
+	#					is_culture_group = germanic
+	#					is_culture_group = beneluxian
+	#					is_culture_group = pan_swiss
+	#					is_culture_group = scandinavian
+	#					is_culture_group = british
+	#					is_culture_group = italian
+	#					is_culture_group = iberian
+	#					is_culture_group = french
+	#					is_culture_group = hungarian_culture_group
+	#					is_culture_group = polish_culture_group
+	#					is_culture_group = baltic
+	#					is_culture_group = iranian_turanian
+	#					is_culture_group = neo_european_cultures
+	#					is_culture_group = american_cultures
+	#				}
+	#			}
+	#			
+	#			country_event = {
+	#				id = 14880
+	#				days = 14
+	#			}
+	#		}
+	#		
+	#		any_country = {
+	#			limit = {
+	#				capital_scope = {
+	#					OR = {
+	#						continent = africa
+	#						continent = central_africa
+	#						continent = west_africa
+	#						continent = east_africa
+	#						continent = south_west_africa
+	#					}
+	#				}
+	#			}
+	#			
+	#			relation = {
+	#				who = WAK
+	#				value = 100
+	#			}	
+	#		}
+	#	}
+	#	
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
+	
+	expand_waterfront_dec = {
 		potential = {
 			tag = WAK
-			NOT = { 
-				has_country_flag = wakanda_forever_flag
-				year = 1890
-			}
+			has_country_flag = wakanda_forever_flag
+			1873 = { NOT = { owned_by = THIS } }
 		}
 		
 		allow = {
-			war = no
-			has_country_flag = wakandan_isolation_flag
+			total_num_of_ports = 1
 		}
-		
+
 		effect = {
-			prestige = 50
-			
-			add_country_modifier = {
-				name = wakanda_forever_mod
-				duration = 36500
+		
+			WRL = {
+				all_core = {
+					add_core = WAK
+				}			
 			}
-			
-			set_country_flag = wakanda_forever_flag
-			nationalize = yes
-			news = yes
-			
 			ENG_2024 = { add_core = WAK }
-			ETH_1859 = { add_core = WAK }
-			ETH_1865 = { add_core = WAK }
-			SOM_1868 = { add_core = WAK }
-			SOM_1872 = { add_core = WAK }
-			ETH_1852 = { add_core = WAK }
-			ETH_1853 = { add_core = WAK }
-			ENG_1848 = { add_core = WAK }
 			1177 = { add_core = WAK }
 			
-			#colonizable land
-			1875 = { life_rating = 20 }
-			1866 = { life_rating = 20 }
-			1867 = { life_rating = 20 }
-			1870 = { life_rating = 20 }
-			2024 = { life_rating = 20 }
-			2027 = { life_rating = 20 }
-			2032 = { life_rating = 20 }
-			
-			remove_country_modifier = wakandan_isolation_mod
-			clr_country_flag = wakandan_isolation_flag
-			
-			any_country = {
-				limit = {
-					OR = {
-						is_culture_group = germanic
-						is_culture_group = beneluxian
-						is_culture_group = pan_swiss
-						is_culture_group = scandinavian
-						is_culture_group = british
-						is_culture_group = italian
-						is_culture_group = iberian
-						is_culture_group = french
-						is_culture_group = hungarian_culture_group
-						is_culture_group = polish_culture_group
-						is_culture_group = baltic
-						is_culture_group = iranian_turanian
-						is_culture_group = neo_european_cultures
-						is_culture_group = american_cultures
-					}
-				}
-				
-				country_event = {
-					id = 14880
-					days = 14
-				}
+			1875 = { 
+				life_rating = 20 
+				secede_province = WAK
 			}
-			
-			any_country = {
-				limit = {
-					capital_scope = {
-						OR = {
-							continent = africa
-							continent = central_africa
-							continent = west_africa
-							continent = east_africa
-							continent = south_west_africa
-						}
-					}
-				}
-				
-				relation = {
-					who = WAK
-					value = 100
-				}	
+			1870 = { 
+				life_rating = 20 
+				secede_province = WAK
+			}
+			2024 = { 
+				life_rating = 20 
+				secede_province = WAK
+			}
+			2027 = { 
+				life_rating = 20 
+				secede_province = WAK
+			}
+			2032 = { 
+				life_rating = 20 
+				secede_province = WAK
 			}
 		}
 		
@@ -120,6 +163,7 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
 	
 	expand_vib_mine_dec = {
 	
@@ -173,7 +217,18 @@ political_decisions = {
 		}
 		
 		allow = {
-			all_core = { owned_by = WAK }
+			all_core = { 
+				OR = {
+					owned_by = WAK
+					owner = {
+						OR = {
+							is_our_vassal = WAK
+							in_sphere = WAK
+						}
+					}
+				}					
+			}
+			
 			war = no
 			nationalism_n_imperialism = 1
 			
@@ -260,9 +315,8 @@ political_decisions = {
 			mass_politics = 1
 			invention = the_decline_of_the_west_and_the_lost_generation
 			government = absolute_monarchy
-			has_country_flag = reactionary_king_flag
+			has_country_flag = reactionary_king_mod
 			has_global_flag = anti_white_begin_flag
-			
 		}
 		
 		effect = {

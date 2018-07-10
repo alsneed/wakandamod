@@ -242,7 +242,7 @@ country_event = {
 	
 	trigger = {
 		tag = WAK
-		has_country_flag = first_king_flag
+		has_country_modifier = first_king_mod
 		year = 1850
 	
 		
@@ -277,7 +277,6 @@ country_event = {
 	option = {
 		name = "dead nigger"
 		
-		#remove first king modifier + flag
 		clr_country_flag = first_king_flag
 		remove_country_modifier = first_king_mod
 		
@@ -303,36 +302,36 @@ country_event = {
 	
 	option = {
 		name = "Reactionary prince"
-		random_list = {
-			80 = {
-				country_event = {
-					id = 14887
-					days = 3
-				}
-			}
+		
+		country_event = {
+			id = 14887
+			days = 3
+		}
 			
-			20 = {
-				country_event = {
-					id = 14889
-					days = 3
-				}
-			}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "conservative prince"
+		country_event = {
+			id = 14888
+			days = 3
 		}
 	}
 	
 	option = {
-		name = "liberal prince"
+		name = "No bias"
 		random_list = {
-			80 = {
+			50 = {
 				country_event = {
 					id = 14888
 					days = 3
 				}
 			}
 			
-			20 = {
+			50 = {
 				country_event = {
-					id = 14889
+					id = 14887
 					days = 3
 				}
 			}
@@ -356,13 +355,17 @@ country_event = {
 	option = {
 		name = "Long live the kang!"
 		set_country_flag = reactionary_king_flag
+		add_country_modifier = {
+			name = reactionary_king_mod
+			duration = -1
+		}
 	}
 }
 
-#libral king victory
+#conservative king victory
 country_event = {
 	id = 14888
-	title = "liberal king"
+	title = "conservative king"
 	desc = ""
 	picture = ""
 	
@@ -374,7 +377,12 @@ country_event = {
 	
 	option = {
 		name = "Long live the kang!"
-		set_country_flag = liberal_king_flag
+		set_country_flag = conservative_king_flag
+		
+		add_country_modifier = {
+			name = conservative_king_mod
+			duration = -1
+		}
 	}
 }
 
@@ -400,41 +408,365 @@ country_event = {
 #unciv nation turns civ
 country_event = {
 	id = 14889
-	title = "Civilization is here"
+	title = "Uplift"
 	desc = "we are civilized"
 	picture = ""
 	
 	is_triggered_only = no
 	fire_only_once = no     
 	allow_multiple_instances = no
-	news = yes
 	
 	trigger = {
 		WAK = {
 			has_country_flag = civilize_africa_flag
 			is_greater_power = yes
-			
-			OR = {
-				is_our_vassal = THIS
-				in_sphere = THIS
-			}
 		}
-		civilized = no	
+		
+		any_country = {
+			limit = {
+				OR = {
+					is_our_vassal = WAK
+					in_sphere = WAK
+				}
+				civilized = no
+			}
+		}	
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		years = 4
 	}
 	
-	immediate = {
-		civilized = yes
+	option = {
+		name = "Up lift them"
+		
+		random_country = {
+			limit = {
+				civilized = no
+				OR = {
+					is_our_vassal = WAK
+					in_sphere = WAK
+				}
+			}
+			add_country_modifier = {
+				name = wakandan_tech_mod
+				duration = -1
+			}
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "On a second thought..."
+	}
+}
+
+#wakanda forever
+country_event = {
+	id = 14890
+	title = "Wakanda awakening"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = no
+	fire_only_once = yes    
+	allow_multiple_instances = no
+	news = yes
+	major = yes
+	
+	trigger = {
+		tag = WAK
+		has_country_flag = wakandan_isolation_flag
+	}
+
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = {
 		name = "Wakanda forever"
+		prestige = 50
+			
 		add_country_modifier = {
-			name = wakandan_tech_mod
-			duration = 7300
+			name = wakanda_forever_mod
+			duration = -1
+		}
+		
+		set_country_flag = wakanda_forever_flag
+		
+		ETH = {
+			all_core = {
+				add_core = WAK
+			}
+		}
+		
+		1866 = { 
+			life_rating = 20
+			secede_province = WAK
+		}
+		
+		1867 = { 
+			life_rating = 20 
+			secede_province = WAK
+		}
+		
+		remove_country_modifier = wakandan_isolation_mod
+		clr_country_flag = wakandan_isolation_flag
+		
+		any_country = {
+			limit = {
+				OR = {
+					is_culture_group = germanic
+					is_culture_group = beneluxian
+					is_culture_group = pan_swiss
+					is_culture_group = scandinavian
+					is_culture_group = british
+					is_culture_group = italian
+					is_culture_group = iberian
+					is_culture_group = french
+					is_culture_group = hungarian_culture_group
+					is_culture_group = polish_culture_group
+					is_culture_group = baltic
+					is_culture_group = iranian_turanian
+					is_culture_group = neo_european_cultures
+					is_culture_group = american_cultures
+				}
+			}
+			
+			country_event = {
+				id = 14880
+				days = 14
+			}
+		}
+		
+		any_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						continent = africa
+						continent = central_africa
+						continent = west_africa
+						continent = east_africa
+						continent = south_west_africa
+					}
+				}
+			}
+			
+			relation = {
+				who = WAK
+				value = 100
+			}	
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "Nevermind"
+	}
+}
+
+#first king abdication
+country_event = {
+	id = 14891
+	title = "king abdication"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = no
+	fire_only_once = no        
+	allow_multiple_instances = no
+	major = yes
+	
+	trigger = {
+		has_country_modifier = first_king_mod
+		NOT = {
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Down with the kang!"
+		remove_country_modifier = first_king_mod
+	}
+}
+
+#reactionary king abdication
+country_event = {
+	id = 14892
+	title = "reactionary king abdication"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = no
+	fire_only_once = no        
+	allow_multiple_instances = no
+	major = yes
+	
+	trigger = {
+		has_country_modifier = reactionary_king_mod
+		NOT = {
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Down with the kang!"
+		remove_country_modifier = reactionary_king_mod
+	}
+}
+
+#conservative king abdication
+country_event = {
+	id = 14893
+	title = "conservative king abdication"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = no
+	fire_only_once = no        
+	allow_multiple_instances = no
+	major = yes
+	
+	trigger = {
+		has_country_modifier = conservative_king_mod
+		NOT = {
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Down with the kang!"
+		remove_country_modifier = conservative_king_mod
+	}
+}
+
+#first king restoration
+country_event = {
+	id = 14893
+	title = "first king restoration"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = no
+	fire_only_once = no        
+	allow_multiple_instances = no
+	major = yes
+	
+	trigger = {
+		has_country_flag = first_king_flag
+		NOT = { has_country_modifier = first_king_mod }
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Long live the kang!"
+		add_country_modifier = {
+			name = first_king_mod
+			duration = -1
+		}
+	}
+}
+
+#reactionary king restoration
+country_event = {
+	id = 14893
+	title = "reactionary king restoration"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = no
+	fire_only_once = no        
+	allow_multiple_instances = no
+	major = yes
+	
+	trigger = {
+		has_country_flag = reactionary_king_flag
+		NOT = { has_country_modifier = reactionary_king_mod }
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Long live the kang!"
+		add_country_modifier = {
+			name = reactionary_king_mod
+			duration = -1
+		}
+	}
+}
+
+#conservative king restoration
+country_event = {
+	id = 14893
+	title = "conservative king restoration"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = no
+	fire_only_once = no        
+	allow_multiple_instances = no
+	major = yes
+	
+	trigger = {
+		has_country_flag = conservative_king_flag
+		NOT = { has_country_modifier = conservative_king_mod }
+		OR = {
+			government = absolute_monarchy
+			government = prussian_constitutionalism
+			government = hms_government
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Long live the kang!"
+		add_country_modifier = {
+			name = conservative_king_mod
+			duration = -1
 		}
 	}
 }

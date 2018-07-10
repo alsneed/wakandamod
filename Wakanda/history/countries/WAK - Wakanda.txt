@@ -156,7 +156,7 @@ medicine = 1
 
 #==================init effects====================
 set_country_flag = wakandan_isolation_flag
-set_country_flag = king_wewuz_flag
+set_country_flag = first_king_flag
 decision = wakandan_isolation_dec
 
 

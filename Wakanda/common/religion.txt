@@ -2,6 +2,15 @@
 #Colors: RGB - https://tug.org/pracjourn/2007-4/walden/color.pdf
 # Uses all 'modifiers' possible thats exported as a Modifier.
 
+wakandan_group = {
+	wakandan_animist = {
+		icon = 14
+		color = { 0.5 0.0 0.0 }
+	}
+	
+	#possible extensions: panther god, lion god ...etc
+}
+
 christian = {
 
 	catholic = {

@@ -1226,79 +1226,79 @@
 1864 = {
 	aristocrats = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 8750
 	}
 	
 	bureaucrats = {
 		culture = wakandan_mutant
-		religion = catholic
+		religion = wakandan_animist
 		size = 5500
 	}
 
 	clergymen = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 9000
 	}
 
 	artisans = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 18500
 	}
 
 	soldiers = {
 		culture = wakandan_mutant
-		religion = catholic
+		religion = wakandan_animist
 		size = 11000
 	}
 
 	farmers = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 153750
 	}
 
 	slaves = {
 		culture = wakandan_mutant
-		religion = catholic
+		religion = wakandan_animist
 		size = 2700
 	}
 	
 	aristocrats = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 5000
 	}
 
 	clergymen = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 5550
 	}
 
 	artisans = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 1075
 	}
 
 	soldiers = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 2750
 	}
 
 	farmers = {
 		culture =wakandan_mutant
-		religion = catholic
+		religion = wakandan_animist
 		size = 70000
 	}
 
 	slaves = {
 		culture = wakandan_mutant
-		religion = catholic
+		religion = wakandan_animist
 		size = 700
 	}
 }

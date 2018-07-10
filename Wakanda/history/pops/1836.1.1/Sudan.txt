@@ -1718,67 +1718,67 @@
 1847 = {
 	aristocrats = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 5250
 	}
 	
 	bureaucrats = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 1600
 	}
 
 	artisans = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 14000
 	}
 
 	soldiers = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 3000
 	}
 
 	farmers = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 129000
 	}
 	
 	farmers = {
 		culture = wakandan_mutant
-		religion = catholic
+		religion = wakandan_animist
 		size = 129000
 	}
 
 	aristocrats = {
 		culture = wakandan_mutant
-		religion = catholic
+		religion = wakandan_animist
 		size = 1250
 	}
 
 	artisans = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 3500
 	}
 
 	soldiers = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 7500
 	}
 
 	farmers = {
 		culture = wakandan
-		religion = coptic
+		religion = wakandan_animist
 		size = 6475
 	}
 	
 	slaves = {
 		culture = wakandan_mutant
-		religion = catholic
+		religion = wakandan_animist
 		size = 1100
 	}
 

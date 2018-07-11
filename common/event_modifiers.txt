@@ -9,6 +9,7 @@ wakandan_isolation_mod = {
 	global_pop_militancy_modifier = -1.00
 	icon = 8
 } 
+
 white_guilt_mod = {
 	global_population_growth = -0.002
 	prestige = -0.25
@@ -65,7 +66,7 @@ wakanda_ass_mod = {
 	assimilation_rate = 40
 	pop_militancy_modifier = -0.5
 	pop_consciousness_modifier = 0.5
-	}
+}
 	
 	
 king_dazryte_mod = {
@@ -78,15 +79,10 @@ king_dazryte_mod = {
 	org_regain = 0.9
 	badboy = -0.25
 	icon = 17
-	
-	
-race_realism_mod = {
-	immigrant_attract = 2.5
-	farm_RGO_size = 0.1
-	mine_RGO_size = 0.1
-	pop_consciousness_modifier = -0.02
-	icon = 7
 }
+	
+	
+
 	
 
 ##################################################################################################

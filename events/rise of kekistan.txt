@@ -7,21 +7,26 @@ province_event = {
 	
 	trigger = {
 		OR = {
-						is_culture_group = germanic
-						is_culture_group = beneluxian
-						is_culture_group = pan_swiss
-						is_culture_group = scandinavian
-						is_culture_group = british
-						is_culture_group = italian
-						is_culture_group = iberian
-						is_culture_group = french
-						is_culture_group = hungarian_culture_group
-						is_culture_group = polish_culture_group
-						is_culture_group = baltic
-						is_culture_group = iranian_turanian
-						is_culture_group = neo_european_cultures
-						is_culture_group = american_cultures
+		
+			primary_culture = {
+				is_culture_group =		germanic
+				is_culture_group =		beneluxian
+				is_culture_group =		pan_swiss
+				is_culture_group =		scandinavian
+				is_culture_group =		british
+				is_culture_group =		italian
+				is_culture_group =		iberian
+				is_culture_group =		french
+				is_culture_group =		hungarian_culture_group
+				is_culture_group =		polish_culture_group
+				is_culture_group =		baltic
+				is_culture_group =		iranian_turanian
+				is_culture_group =		neo_european_cultures
+				is_culture_group =		american_cultures
+				
 			}
+				
+		}
 		
 		OR = {
 		
@@ -59,7 +64,7 @@ province_event = {
 			militancy = -5
 			consciousness = -3
 			
-			add_province_modifier = race_realism_mod
+			set_province_flag = race_realism
 		
 		}
 	
@@ -69,36 +74,18 @@ province_event = {
 }
 
 
-	#Kekistani Nationalism Sentiment
+#Kekistani Nationalism Sentiment
+
 		province_event = {
-			id = 14881002
+			id = 1488101
 			title = "Kekistani Sect Spreads!" 
 			desc = "EDIT THIS"
 			
 			trigger = {
-				owner = {
-					OR = { 
-								is_culture_group = germanic
-								is_culture_group = beneluxian
-								is_culture_group = pan_swiss
-								is_culture_group = scandinavian
-								is_culture_group = british
-								is_culture_group = italian
-								is_culture_group = iberian
-								is_culture_group = french
-								is_culture_group = hungarian_culture_group
-								is_culture_group = polish_culture_group
-								is_culture_group = baltic
-								is_culture_group = iranian_turanian
-								is_culture_group = neo_european_cultures
-								is_culture_group = american_cultures
-					}
-					
-					
-					
+				
 				has_global_flag = anti_white_begin_flag
-				has_province_modifier = race_realism_mod
-				}
+				has_province_flag = race_realism 
+				
 				
 				
 				any_neighbor_province = { 
@@ -134,9 +121,9 @@ province_event = {
 		
 		
 		
-		#Main Rebellion Event
+		#Kekistan Spawn
 country_event = {
-	id = 1488103
+	id = 1488102
 	title = "The Kekistani Uprising!" #The Kekistani Uprising praizze kekke
 	desc = "EDIT THIS"
 	picture = "rebellion"
@@ -163,7 +150,8 @@ country_event = {
 					is_core = SAX
 			
 			}
-		
+			
+		year = 1877
 		NOT = { has_global_flag = kek_praised }
 		has_global_flag = anti_white_begin_flag
 		
@@ -216,11 +204,10 @@ country_event = {
 			core = KEK
 			
 			}
-			add_province_modifier = {
-				name = race_realism_mod
-				duration = 1488
-			}
-		}
+			set_province_flag = race_realism
+				
+			
+		
 		any_country = {
 			limit = { substate_of = THIS }
 			any_pop = {
@@ -235,10 +222,7 @@ country_event = {
 						core = KEK
 					}
 				}
-				add_province_modifier = {
-					name = race_realism_mod
-					duration = 1488
-				}
+				set_province_flag = race_realism
 			}
 		}
 		set_global_flag = kek_praised

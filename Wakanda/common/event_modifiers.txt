@@ -17,7 +17,7 @@ white_guilt_mod = {
 }
 
 white_pride_mod = {
-	global_population_growth = 0.005
+	global_population_growth = 0.0004
 	core_pop_militancy_modifier = -0.1
 	land_organisation = 0.50
 	naval_organisation = 0.50
@@ -32,7 +32,7 @@ wakanda_forever_mod = {
 }
 
 vib_rush_mod = {
-	immigrant_attract = 5		
+	immigrant_attract = 0.5		
 	life_rating = 0.5
 	population_growth = 0.01
 	mine_RGO_size = 1.00
@@ -106,6 +106,26 @@ conservative_king_mod = {
 	supply_consumption = -0.50
 	icon = 5
 }		
+
+white_stagnate_mod = {
+	prestige = -0.01
+	global_population_growth = -0.02
+	global_assimilation_rate = -0.1
+	icon = 14 
+}
+
+black_bull_init_mod = {
+	global_population_growth = 0.04
+	global_assimilation_rate = 1
+	icon = 17
+}
+
+bull_breed_mod = {
+	population_growth = 1
+	immigrant_attract = -5
+	immigrant_push = 1
+	icon = 19
+}
 
 ##################################################################################################
 # scriptable and usable for event-system below.

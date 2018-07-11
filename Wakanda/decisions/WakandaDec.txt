@@ -190,7 +190,7 @@ political_decisions = {
 				RGO_size = 500000
 				add_province_modifier = {
 					name = vib_rush_mod
-					duration = 3650
+					duration = -1
 				}
 			}
 		
@@ -437,6 +437,31 @@ political_decisions = {
 					duration = 36500
 				}
 			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	blacked_com_dec = {
+		potential = {
+			tag = WAK
+			has_country_flag = wakanda_forever_flag
+			NOT = { has_global_flag = blacked_colonization_flag }
+		}
+		
+		allow = {
+			total_pop = 8000000
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = black_bull_init_mod
+				duration = -1
+			}
+			
+			set_global_flag = blacked_colonization_flag
 		}
 		
 		ai_will_do = {

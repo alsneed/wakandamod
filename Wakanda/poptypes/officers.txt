@@ -78,6 +78,13 @@ luxury_needs = {
 country_migration_target = {
 	factor = 1
 	
+	#this pop won't choose country with blacked influence flag after blacked colonization
+	modifier = {
+		factor = -500
+		THIS = { is_culture_group = wakandan_african }
+		has_country_flag = blacked_influence_flag
+	}
+	
 	modifier = {
 		factor = 0
 		border_policy = quota_immigration

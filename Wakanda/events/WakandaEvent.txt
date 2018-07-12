@@ -1,3 +1,108 @@
+#wakanda forever
+country_event = {
+	id = 14890
+	title = "Wakanda awakening"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = no
+	fire_only_once = yes    
+	allow_multiple_instances = no
+	news = yes
+	major = yes
+	
+	trigger = {
+		tag = WAK
+		has_country_flag = wakandan_isolation_flag
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Wakanda forever"
+		prestige = 50
+			
+		add_country_modifier = {
+			name = wakanda_forever_mod
+			duration = -1
+		}
+		
+		set_country_flag = wakanda_forever_flag
+		
+		ETH = {
+			all_core = {
+				add_core = WAK
+			}
+		}
+		
+		1866 = { 
+			life_rating = 20
+			secede_province = WAK
+		}
+		
+		1867 = { 
+			life_rating = 20 
+			secede_province = WAK
+		}
+		
+		remove_country_modifier = wakandan_isolation_mod
+		clr_country_flag = wakandan_isolation_flag
+		
+		any_country = {
+			limit = {
+				OR = {
+					is_culture_group = germanic
+					is_culture_group = beneluxian
+					is_culture_group = pan_swiss
+					is_culture_group = scandinavian
+					is_culture_group = british
+					is_culture_group = italian
+					is_culture_group = iberian
+					is_culture_group = french
+					is_culture_group = hungarian_culture_group
+					is_culture_group = polish_culture_group
+					is_culture_group = baltic
+					is_culture_group = iranian_turanian
+					is_culture_group = neo_european_cultures
+					is_culture_group = american_cultures
+				}
+			}
+			
+			country_event = {
+				id = 14880
+				days = 14
+			}
+		}
+		
+		any_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						continent = africa
+						continent = central_africa
+						continent = west_africa
+						continent = east_africa
+						continent = south_west_africa
+					}
+				}
+			}
+			
+			relation = {
+				who = WAK
+				value = 100
+			}	
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "Nevermind"
+	}
+}
+
 #Wakanda Awakens
 country_event = {
 	id = 14880
@@ -34,12 +139,12 @@ country_event = {
 		add_casus_belli = {
 			target = FROM
 			type = humiliate
-			months = 240
+			months = 600
 		}
 	}
 }
 
-#wakanda declares white crusade
+#wakanda declares white crusade=================================================================
 country_event = {
 	id = 14881
 	title = "Wakanda declares white crusade"
@@ -170,7 +275,7 @@ country_event = {
 	}
 }
 
-#desert -> farm
+#desert -> farm=================================================================================
 province_event = {
 	id = 14883
 	title = "Terraform land"
@@ -233,7 +338,7 @@ province_event = {
 	}
 }
 
-#illness
+#illness========================================================================================
 country_event = {
 	id = 14884
 	title = "Illness 1"
@@ -247,7 +352,7 @@ country_event = {
 	trigger = {
 		tag = WAK
 		has_country_modifier = first_king_mod
-		year = 1850
+		year = 1845
 	
 		
 	}
@@ -409,15 +514,15 @@ country_event = {
 	}
 }
 
-#unciv nation turns civ
+#unciv calls for civilization===================================================================
 country_event = {
-	id = 14889
-	title = "Uplift"
-	desc = "we are civilized"
+	id = 14896
+	title = "Petitions for civilization"
+	desc = ""
 	picture = ""
 	
 	is_triggered_only = no
-	fire_only_once = no     
+	fire_only_once = yes     
 	allow_multiple_instances = no
 	
 	trigger = {
@@ -426,15 +531,11 @@ country_event = {
 			is_greater_power = yes
 		}
 		
-		any_country = {
-			limit = {
-				OR = {
-					is_our_vassal = WAK
-					in_sphere = WAK
-				}
-				civilized = no
-			}
-		}	
+		OR = {
+			vassal_of = WAK
+			in_sphere = WAK
+		}
+		civilized = no
 	}
 
 	mean_time_to_happen = {
@@ -442,21 +543,44 @@ country_event = {
 	}
 	
 	option = {
+		name = "Calls it"
+		country_event = {
+			id = 14889
+			days = 1
+		}
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+#unciv nation turns civ
+country_event = {
+	id = 14889
+	title = "Uplift it"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = yes
+	fire_only_once = yes     
+	allow_multiple_instances = no
+	
+	#event trigger
+	
+	option = {
 		name = "Up lift them"
 		
-		random_country = {
-			limit = {
-				civilized = no
-				OR = {
-					is_our_vassal = WAK
-					in_sphere = WAK
-				}
-			}
+		FROM = {
 			add_country_modifier = {
 				name = wakandan_tech_mod
 				duration = -1
 			}
+			civilized = yes
 		}
+		relation = {
+			who = FROM
+			value = 200
+		}		
+		create_alliance = FROM
 		
 		ai_chance = { factor = 100 }
 	}
@@ -466,112 +590,9 @@ country_event = {
 	}
 }
 
-#wakanda forever
-country_event = {
-	id = 14890
-	title = "Wakanda awakening"
-	desc = ""
-	picture = ""
-	
-	is_triggered_only = no
-	fire_only_once = yes    
-	allow_multiple_instances = no
-	news = yes
-	major = yes
-	
-	trigger = {
-		tag = WAK
-		has_country_flag = wakandan_isolation_flag
-	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = "Wakanda forever"
-		prestige = 50
-			
-		add_country_modifier = {
-			name = wakanda_forever_mod
-			duration = -1
-		}
-		
-		set_country_flag = wakanda_forever_flag
-		
-		ETH = {
-			all_core = {
-				add_core = WAK
-			}
-		}
-		
-		1866 = { 
-			life_rating = 20
-			secede_province = WAK
-		}
-		
-		1867 = { 
-			life_rating = 20 
-			secede_province = WAK
-		}
-		
-		remove_country_modifier = wakandan_isolation_mod
-		clr_country_flag = wakandan_isolation_flag
-		
-		any_country = {
-			limit = {
-				OR = {
-					is_culture_group = germanic
-					is_culture_group = beneluxian
-					is_culture_group = pan_swiss
-					is_culture_group = scandinavian
-					is_culture_group = british
-					is_culture_group = italian
-					is_culture_group = iberian
-					is_culture_group = french
-					is_culture_group = hungarian_culture_group
-					is_culture_group = polish_culture_group
-					is_culture_group = baltic
-					is_culture_group = iranian_turanian
-					is_culture_group = neo_european_cultures
-					is_culture_group = american_cultures
-				}
-			}
-			
-			country_event = {
-				id = 14880
-				days = 14
-			}
-		}
-		
-		any_country = {
-			limit = {
-				capital_scope = {
-					OR = {
-						continent = africa
-						continent = central_africa
-						continent = west_africa
-						continent = east_africa
-						continent = south_west_africa
-					}
-				}
-			}
-			
-			relation = {
-				who = WAK
-				value = 100
-			}	
-		}
-		
-		ai_chance = { factor = 100 }
-	}
-	
-	option = {
-		name = "Nevermind"
-	}
-}
 
-#first king abdication
+#first king abdication==========================================================================
 country_event = {
 	id = 14891
 	title = "king abdication"
@@ -771,6 +792,192 @@ country_event = {
 		add_country_modifier = {
 			name = conservative_king_mod
 			duration = -1
+		}
+	}
+}
+
+#blacked influence==============================================================================
+country_event = {
+	id = 14894
+	title = "Blacked influence"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = no
+	fire_only_once = yes        
+	allow_multiple_instances = yes
+	
+	trigger = {
+		has_global_flag = blacked_colonization_flag
+
+		NOT = { has_country_flag = blacked_influence_flag }
+		NOT = { has_country_flag = blacked_colonized_flag }
+		
+		OR = {
+			is_culture_group = germanic
+			is_culture_group = beneluxian
+			is_culture_group = pan_swiss
+			is_culture_group = scandinavian
+			is_culture_group = british
+			is_culture_group = italian
+			is_culture_group = iberian
+			is_culture_group = french
+			is_culture_group = hungarian_culture_group
+			is_culture_group = polish_culture_group
+			is_culture_group = baltic
+			is_culture_group = neo_european_cultures
+			is_culture_group = american_cultures
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = "Fucking roasties"
+		add_country_modifier = {
+			name = white_stagnate_mod
+			duration = -1
+		}
+		set_country_flag = blacked_influence_flag
+	}
+}
+
+#blacked desire
+country_event = {
+	id = 14897
+	title = "Blacked bull desire rises"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = no
+	fire_only_once = yes        
+	allow_multiple_instances = yes
+	
+	trigger = {
+		has_country_flag = blacked_influence_flag
+		NOT = { has_country_flag = blacked_desire_flag }
+		NOT = { has_country_flag = blacked_colonized_flag }
+		any_owned_province = {
+			limit = {
+				is_core = THIS
+			}
+			
+			any_pop = {
+				OR = {
+					culture = wakandan
+					culture = wakandan_mutant
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 5
+	}
+	
+	option = {
+		name = "This can't be good"
+		WAK = {
+			country_event = {
+				id = 14895
+				days = 1
+			}
+		}
+		set_country_flag = blacked_desire_flag
+	}
+}
+
+#colonize candidate
+country_event = {
+	id = 14895
+	title = "Blacked colonization candidate"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = yes
+	fire_only_once = no        
+	allow_multiple_instances = yes
+	
+	#event trigger
+	
+	option = {
+		name = "Uncage the bull"
+		FROM = {
+			random_owned = {
+				limit = {
+					terrain = farmlands
+					is_colonial = no
+					is_core = FROM
+					
+					any_pop = {
+						OR = {
+							culture = wakandan
+							culture = wakandan_mutant
+						}
+					}
+				}
+				
+				set_province_flag = blacked_candidate_flag
+			}
+		}
+	}
+	
+	option = {
+		name = "Restrain the bull"
+		militancy = 5
+	}
+}
+
+#bull uncaged
+province_event = {
+	id = 14898
+	title = "Black bulls arrive"
+	desc = ""
+	picture = ""
+	
+	is_triggered_only = no
+	fire_only_once = yes        
+	allow_multiple_instances = no
+	
+	trigger = {
+		has_province_flag = blacked_candidate_flag
+		has_global_flag = g_pop_pull_5
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "Oh no"
+		
+		any_pop = {
+			
+			NOT = {
+				OR = {
+					culture = wakandan
+					culture = wakandan_mutant				
+				}
+			}
+			reduce_pop = 1.00
+		}
+		
+		any_pop = {
+			pop_reduce = 10000
+		}
+		
+		add_province_modifier = {
+			name = bull_breed_mod
+			duration = -1
+		}
+		
+		clr_province_flag = blacked_candidate_flag
+		
+		owner = {
+			clr_country_flag = blacked_desire_flag
+			set_country_flag = blacked_colonized_flag
 		}
 	}
 }

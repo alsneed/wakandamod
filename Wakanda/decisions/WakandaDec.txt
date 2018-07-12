@@ -222,7 +222,7 @@ political_decisions = {
 					owned_by = WAK
 					owner = {
 						OR = {
-							is_our_vassal = WAK
+							vassal_of = WAK
 							in_sphere = WAK
 						}
 					}
@@ -233,8 +233,8 @@ political_decisions = {
 			nationalism_n_imperialism = 1
 			
 			OR = {
-				has_country_flag = reactionary_king_flag
-				has_country_flag = conservative_king_flag
+				has_country_modifier = reactionary_king_mod
+				has_country_modifier = conservative_king_mod
 			}
 			
 			OR = {
@@ -452,7 +452,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			total_pop = 8000000
+			total_pops = 8000000
 		}
 		
 		effect = {
@@ -462,6 +462,7 @@ political_decisions = {
 			}
 			
 			set_global_flag = blacked_colonization_flag
+			border_policy = open_borders
 		}
 		
 		ai_will_do = {

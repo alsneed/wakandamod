@@ -3,7 +3,7 @@
 wakandan_isolation_mod = {
 	cb_generation_speed_modifier = -1.00
 	prestige = -10.00
-	supply_consumption = -2.00
+	supply_consumption = -1.00
 	global_pop_militancy_modifier = -1.00
 	icon = 8
 }
@@ -49,7 +49,7 @@ kara_bogan_mod = {
 new_terra_mod = {
 	farm_RGO_size = 2.00
 	immigrant_attract = 1.00
-	life_rating = 1
+	life_rating = 0.10
 	icon = 7
 }
 
@@ -69,6 +69,7 @@ mutant_convert_resist_mod = {
 wakandan_tech_mod = {
 	education_efficiency_modifier = 2.00
 	research_points_modifier = 2.00
+	global_population_growth = 0.0006
 	icon = 7
 }
 

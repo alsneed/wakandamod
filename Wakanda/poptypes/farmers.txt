@@ -41,6 +41,13 @@ luxury_needs = {
 country_migration_target = {
 	factor = 1
 
+	#wakandan pops always choose country with blacked influence flag after blacked colonization
+	modifier = {
+		factor = 500
+		THIS = { is_culture_group = wakandan_african }
+		has_country_flag = blacked_influence_flag
+	}
+	
 	modifier = {
 		factor = 0
 		border_policy = quota_immigration
@@ -1129,6 +1136,16 @@ promote_to = {
 	soldiers =
 	{
 		factor = 0.01
+		
+		#wakandan in black influenced country do not contirbute to craftsman, clerks, soldier, or officer
+		modifier = {
+			factor = -500
+			THIS = { is_culture_group = wakandan_african }
+			country = {
+				has_country_flag = blacked_influence_flag
+			}
+		}
+		
 		group = {
 			modifier = {
 				factor = -4
@@ -1288,6 +1305,16 @@ promote_to = {
 
 	craftsmen = {
 		factor = 0.01
+		
+		#wakandan in black influenced country do not contirbute to craftsman, clerks, soldier, or officer
+		modifier = {
+			factor = -500
+			THIS = { is_culture_group = wakandan_african }
+			country = {
+				has_country_flag = blacked_influence_flag
+			}
+		}
+		
 		group = {
 			modifier = {
 				factor = -5

@@ -28,13 +28,14 @@ white_pride_mod = {
 
 wakanda_forever_mod = {
 	research_points_modifier = 1.00
+	education_efficiency_modifier = 0.50
 	icon = 7
 }
 
 vib_rush_mod = {
 	immigrant_attract = 0.5		
 	life_rating = 0.5
-	population_growth = 0.01
+	population_growth = 0.001
 	mine_RGO_size = 1.00
 	icon = 11
 }
@@ -47,8 +48,8 @@ kara_bogan_mod = {
 }
 
 new_terra_mod = {
-	farm_RGO_size = 2.00
-	immigrant_attract = 1.00
+	farm_RGO_size = 1.00
+	immigrant_attract = 2.00
 	life_rating = 0.10
 	icon = 7
 }
@@ -74,8 +75,8 @@ wakandan_tech_mod = {
 }
 
 my_ancestor_mod = {
-	non_accepted_pop_militancy_modifier = 0.1
-	non_accepted_pop_consciousness_modifier = 0.1
+	non_accepted_pop_militancy_modifier = 0.20
+	non_accepted_pop_consciousness_modifier = 0.40
 	icon = 18
 }
 
@@ -88,12 +89,12 @@ first_king_mod = {
 }
 
 reactionary_king_mod = {
-	land_organisation = 1.00
-	naval_organisation = 1.00
+	land_organisation = 0.50
+	naval_organisation = 0.50
 	factory_output = 0.50
 	mobilisation_size = 0.10
 	unit_start_experience = 1.00
-	badboy = 0.08
+	badboy = 0.05
 	global_pop_militancy_modifier = 0.02
 	icon = 5
 }
@@ -116,7 +117,7 @@ white_stagnate_mod = {
 }
 
 black_bull_init_mod = {
-	global_population_growth = 0.04
+	global_population_growth = 0.001
 	global_assimilation_rate = 1
 	icon = 17
 }

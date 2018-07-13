@@ -452,7 +452,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			total_pops = 8000000
+			total_pops = 10000000
 		}
 		
 		effect = {

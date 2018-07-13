@@ -1,18 +1,12 @@
-#wakanda forever
+#isolationism debate
 country_event = {
-	id = 14890
-	title = "Wakanda awakening"
+	id = 148901
+	title = "Isolationism debate"
 	desc = ""
-	picture = ""
 	
-	is_triggered_only = no
 	fire_only_once = yes    
-	allow_multiple_instances = no
-	news = yes
-	major = yes
 	
 	trigger = {
-		tag = WAK
 		has_country_flag = wakandan_isolation_flag
 	}
 
@@ -21,7 +15,33 @@ country_event = {
 	}
 	
 	option = {
-		name = "Wakanda forever"
+		name = "End isolationsm"
+		country_event = {
+			id = 14890
+			days = 1
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = "remain hidden"
+	}
+}
+
+#wakanda forever
+country_event = {
+	id = 14890
+	title = "EVTNAME14890"
+	desc = "some non localised event description"
+	
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes    
+	
+	#event triggered
+	
+	option = {
+		name = "EVT14890OPTA"
 		prestige = 50
 			
 		add_country_modifier = {
@@ -70,10 +90,10 @@ country_event = {
 				}
 			}
 			
-			country_event = {
-				id = 14880
-				days = 14
-			}
+			#country_event = {
+			#	id = 14880
+			#	days = 14
+			#}
 		}
 		
 		any_country = {
@@ -94,12 +114,6 @@ country_event = {
 				value = 100
 			}	
 		}
-		
-		ai_chance = { factor = 100 }
-	}
-	
-	option = {
-		name = "Nevermind"
 	}
 }
 
@@ -309,7 +323,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 5
+		months = 36
 		
 		modifier = {
 			factor = 0.5
@@ -521,9 +535,8 @@ country_event = {
 	desc = ""
 	picture = ""
 	
-	is_triggered_only = no
+	major = yes
 	fire_only_once = yes     
-	allow_multiple_instances = no
 	
 	trigger = {
 		WAK = {
@@ -539,7 +552,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 4
+		months = 48
 	}
 	
 	option = {
@@ -548,8 +561,6 @@ country_event = {
 			id = 14889
 			days = 1
 		}
-		
-		ai_chance = { factor = 100 }
 	}
 }
 
@@ -602,7 +613,6 @@ country_event = {
 	is_triggered_only = no
 	fire_only_once = no        
 	allow_multiple_instances = no
-	major = yes
 	
 	trigger = {
 		has_country_modifier = first_king_mod
@@ -635,7 +645,6 @@ country_event = {
 	is_triggered_only = no
 	fire_only_once = no        
 	allow_multiple_instances = no
-	major = yes
 	
 	trigger = {
 		has_country_modifier = reactionary_king_mod
@@ -668,7 +677,6 @@ country_event = {
 	is_triggered_only = no
 	fire_only_once = no        
 	allow_multiple_instances = no
-	major = yes
 	
 	trigger = {
 		has_country_modifier = conservative_king_mod
@@ -701,7 +709,6 @@ country_event = {
 	is_triggered_only = no
 	fire_only_once = no        
 	allow_multiple_instances = no
-	major = yes
 	
 	trigger = {
 		has_country_flag = first_king_flag
@@ -736,7 +743,6 @@ country_event = {
 	is_triggered_only = no
 	fire_only_once = no        
 	allow_multiple_instances = no
-	major = yes
 	
 	trigger = {
 		has_country_flag = reactionary_king_flag
@@ -771,7 +777,6 @@ country_event = {
 	is_triggered_only = no
 	fire_only_once = no        
 	allow_multiple_instances = no
-	major = yes
 	
 	trigger = {
 		has_country_flag = conservative_king_flag
@@ -851,7 +856,7 @@ country_event = {
 	desc = ""
 	picture = ""
 	
-	is_triggered_only = no
+	major = yes
 	fire_only_once = yes        
 	allow_multiple_instances = yes
 	
@@ -874,7 +879,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		years = 5
+		months = 60
 	}
 	
 	option = {

@@ -1,42 +1,44 @@
-WAK_absolute_monarchy;Great Wakanda;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_proletarian_dictatorship;Wakanda Commune;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_bourgeois_dictatorship;Wakanda;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_fascist_dictatorship;Wakandan Empire;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_presidential_dictatorship;Kara Boga Military Government;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_prussian_constitutionalism;Kingdom of Wakanda;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_hms_government;Empire of Wakanda;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_democracy;Wakanda Republic;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_dominion;Kekistan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_colonial_company;Kekistani Trade Company;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_reactionary;White Gorilla Cult;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_liberal;Lion Cult;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_conservative;Panther Cult;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_anarcho_liberal;Snake Cult;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_socialist;Gibs Clan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_communist;Hyena Clan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_fascist;Crocodile Cult;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-WAK_ADJ;Wakandan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakandan;Wakandan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakandan_mutant;Wakandan Mutant;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakandan_isolation_flag;Wakandan Isolationism;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakanda_forever_flag;Wakandan Awakenening;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakanda_forever_dec_title;Wakanda Forever!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakanda_forever_dec_desc;For millenia, the BLACK nation of Wakanda has been backwards. The impact of the Vibranium Meteorite has benefited our great BLACK nation massively. The impact of the meteor was seen as a sign of God by the Amhara peoples of Gonder and has caused a large scale mission to Wakanda in 1821, converting almost all of the country to Coptic faith. King Wewuz IV The Usurper has ordered reform: he sent our best scholars abroad to Britain and Austria in order to study the wh*toid technology, way of life and culture.. And with the ascension of Queen Victoria, our brothers have finally returned. This is the advent of Wakanda, the bane of colonizer wh*toids....;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakandan_emancipation_dec_title;Embrace Wakandan Mutants;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakandan_emancipation_dec_desc;The Springtime of the Peoples has reached the Wakandan mutants. They have started to see themselves as an own entity, an own nation, describing their status as second class citizens as opressive. In order to avoid further chaos, we should embrace our BLACK brothers so the wh*toids can not stand a chance against the united Wakanda.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-PROV2025;Birnin Zana;;;;;;;;;;;;;;x
-PROV2031;Mena Ngai;;;;;;;;;;;;;;x
-PROV2026;Birnin Bash';;;;;;;;;;;;;;x
-PROV2028;Birnin S'yan;;;;;;;;;;;;;;x
-PROV1847;Birnin Djata;;;;;;;;;;;;;;x
-PROV1864;Birnin Azzaria;;;;;;;;;;;;;;x
-wakanda_ass_mod;Wakandan Assimilation;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakanda_ass_mod_desc;We have reclaimed Great Wakanda from Ethiopian and Somali warlords. Mj. General Ayodolfu suggests an aggressive assimilation initiative, which he dubbed 'Lebensraum', to which the King agreed.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-first_king_mod;King Wewuz IV The Usurper;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-first_king_mod_desc;King Wewuz IV, dubbed 'The Usurper' was born in 1801. He ended the long rule of the White Gorilla Cult, which ruled Wakanda with an iron but fair fist. Following the end of the rule, he had most of the White Gorilla Cultists executed, forcing them into exile.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-king_dazryte_mod_desc;King Dazryte I, dubbed 'The Just' is an illegitimate child of Kign Wewuz IV and a Wakandan Mutant. Due to this, Dazryte has an amazing IQ of 245, only seen deeply within Tibetan monasteries and Area 51. He is a big civil rights activist, greatly condeming his father's and other predecessor actions, and just seems to have an aura of charisma around him. We hope he has benevolent motives...;;;;;;;;;;;;;;x
-king_dazryte_mod;King Dazryte I;;;;;;;;;;;;;;x
-wakandan_isolation_mod;Wakandan Isolationism;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakandan_isolation_mod_desc;Our current strategy is to keep the existence of Wakanda a secret. Only some patriarchs of the Ethiopian Apostolic Church know of Wakanda outside of Wakanda.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakanda_forever_mod;Wakanda Awakens;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-wakanda_forever_mod_desc;Our secret reform is complete. The knowledge obtained from the wh*toids combined with our vast Vibranium resources enables us to rapid advance..;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME14890;wakanda forever;;;;;;;;;;;;;;x;
+EVTDESC14890;wakanda forever major event.;;;;;;;;;;;;;;x;
+EVT14890OPTA;wakanda forever;;;;;;;;;;;;;;x;
+EVT14890OPTB;nevermind;;;;;;;;;;;;;;x;
+WAK_absolute_monarchy;Great Wakanda;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_proletarian_dictatorship;Wakanda Commune;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_bourgeois_dictatorship;Wakanda;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_fascist_dictatorship;Wakandan Empire;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_presidential_dictatorship;Kara Boga Military Government;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_prussian_constitutionalism;Kingdom of Wakanda;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_hms_government;Empire of Wakanda;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_democracy;Wakanda Republic;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_dominion;Kekistan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_colonial_company;Kekistani Trade Company;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_reactionary;White Gorilla Cult;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_liberal;Lion Cult;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_conservative;Panther Cult;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_anarcho_liberal;Snake Cult;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_socialist;Gibs Clan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_communist;Hyena Clan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_fascist;Crocodile Cult;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+WAK_ADJ;Wakandan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+wakandan;Wakandan;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+wakandan_mutant;Wakandan Mutant;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+wakandan_isolation_flag;Wakandan Isolationism;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+wakanda_forever_flag;Wakandan Awakenening;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+wakandan_emancipation_dec_title;Embrace Wakandan Mutants;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+wakandan_emancipation_dec_desc;The Springtime of the Peoples has reached the Wakandan mutants. They have started to see themselves as an own entity, an own nation, describing their status as second class citizens as opressive. In order to avoid further chaos, we should embrace our BLACK brothers so the wh*toids can not stand a chance against the united Wakanda.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+PROV2025;Birnin Zana;;;;;;;;;;;;;;x;
+PROV2031;Mena Ngai;;;;;;;;;;;;;;x;
+PROV2026;Birnin Bash';;;;;;;;;;;;;;x;
+PROV2028;Birnin S'yan;;;;;;;;;;;;;;x;
+PROV1847;Birnin Djata;;;;;;;;;;;;;;x;
+PROV1864;Birnin Azzaria;;;;;;;;;;;;;;x;
+wakanda_ass_mod;Wakandan Assimilation;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+wakanda_ass_mod_desc;We have reclaimed Great Wakanda from Ethiopian and Somali warlords. Mj. General Ayodolfu suggests an aggressive assimilation initiative, which he dubbed 'Lebensraum', to which the King agreed.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+first_king_mod;King Wewuz IV The Usurper;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+first_king_mod_desc;King Wewuz IV, dubbed 'The Usurper' was born in 1801. He ended the long rule of the White Gorilla Cult, which ruled Wakanda with an iron but fair fist. Following the end of the rule, he had most of the White Gorilla Cultists executed, forcing them into exile.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+king_dazryte_mod_desc;King Dazryte I, dubbed 'The Just' is an illegitimate child of Kign Wewuz IV and a Wakandan Mutant. Due to this, Dazryte has an amazing IQ of 245, only seen deeply within Tibetan monasteries and Area 51. He is a big civil rights activist, greatly condeming his father's and other predecessor actions, and just seems to have an aura of charisma around him. We hope he has benevolent motives...;;;;;;;;;;;;;;x;
+king_dazryte_mod;King Dazryte I;;;;;;;;;;;;;;x;
+wakandan_isolation_mod;Wakandan Isolationism;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+wakandan_isolation_mod_desc;Our current strategy is to keep the existence of Wakanda a secret. Only some patriarchs of the Ethiopian Apostolic Church know of Wakanda outside of Wakanda.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+wakanda_forever_mod;Wakanda Awakens;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;
+wakanda_forever_mod_desc;Our secret reform is complete. The knowledge obtained from the wh*toids combined with our vast Vibranium resources enables us to rapid advance..;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;

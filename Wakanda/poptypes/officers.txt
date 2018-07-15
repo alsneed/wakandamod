@@ -685,6 +685,16 @@ promote_to = {
 soldiers = {
 
 		factor = 0.01
+		
+		#wakandan in black influenced country always go to farmer / laberor sometimes through soldier
+		modifier = {
+			factor = 500
+			THIS = { is_culture_group = wakandan_african }
+			country = {
+				has_country_flag = blacked_influence_flag
+			}
+		}
+		
 		group = {
 			modifier = {
 				factor = -4

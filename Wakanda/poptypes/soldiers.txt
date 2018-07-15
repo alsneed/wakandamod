@@ -695,6 +695,16 @@ promote_to = {
 
 	officers = {
 		factor = 0.01
+		
+		#wakandan in black influenced country do not contirbute to craftsman, clerks, soldier, or officer
+		modifier = {
+			factor = -500
+			THIS = { is_culture_group = wakandan_african }
+			country = {
+				has_country_flag = blacked_influence_flag
+			}
+		}
+		
 		modifier = {
 			factor = -1
 			NOT = { literacy = 0.30 }
@@ -733,6 +743,16 @@ promote_to = {
 	
 	farmers = { #and labourers
 		factor = 0.01
+		
+		#wakandan in black influenced country always go to farmer / laberor sometimes through soldier
+		modifier = {
+			factor = 500
+			THIS = { is_culture_group = wakandan_african }
+			country = {
+				has_country_flag = blacked_influence_flag
+			}
+		}
+		
 		modifier = {
 			factor = 5.0
 			soldiers = 0.03
@@ -793,6 +813,16 @@ promote_to = {
 
 	craftsmen = {
 		factor = 0.01
+		
+		#wakandan in black influenced country do not contirbute to craftsman, clerks, soldier, or officer
+		modifier = {
+			factor = -500
+			THIS = { is_culture_group = wakandan_african }
+			country = {
+				has_country_flag = blacked_influence_flag
+			}
+		}
+		
 		group = {
 			modifier = {
 				factor = -5

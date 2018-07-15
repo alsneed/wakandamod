@@ -17,7 +17,7 @@ white_guilt_mod = {
 }
 
 white_pride_mod = {
-	global_population_growth = 0.0004
+	global_population_growth = 0.004
 	core_pop_militancy_modifier = -0.1
 	land_organisation = 0.50
 	naval_organisation = 0.50
@@ -70,13 +70,13 @@ mutant_convert_resist_mod = {
 wakandan_tech_mod = {
 	education_efficiency_modifier = 2.00
 	research_points_modifier = 2.00
-	global_population_growth = 0.0006
 	icon = 7
 }
 
 my_ancestor_mod = {
-	non_accepted_pop_militancy_modifier = 0.20
-	non_accepted_pop_consciousness_modifier = 0.40
+	goods_demand = 0.1
+	non_accepted_pop_militancy_modifier = 0.40
+	non_accepted_pop_consciousness_modifier = 0.20
 	icon = 18
 }
 
@@ -91,8 +91,8 @@ first_king_mod = {
 reactionary_king_mod = {
 	land_organisation = 0.50
 	naval_organisation = 0.50
-	factory_output = 0.50
-	mobilisation_size = 0.10
+	factory_output = 0.15
+	mobilisation_size = 0.5
 	unit_start_experience = 1.00
 	badboy = 0.05
 	global_pop_militancy_modifier = 0.02
@@ -111,21 +111,24 @@ conservative_king_mod = {
 
 white_stagnate_mod = {
 	prestige = -0.01
-	global_population_growth = -0.02
-	global_assimilation_rate = -0.1
+	global_population_growth = -0.002
+	global_assimilation_rate = -0.5
+	global_pop_militancy_modifier = 0.1
 	icon = 14 
 }
 
 black_bull_init_mod = {
-	global_population_growth = 0.001
-	global_assimilation_rate = 1
+	global_population_growth = 0.01
 	icon = 17
 }
 
 bull_breed_mod = {
-	population_growth = 1
+	population_growth = 0.1
 	immigrant_attract = -5
-	immigrant_push = 1
+	icon = 19
+}
+
+black_bull_candidate_mod = {
 	icon = 19
 }
 

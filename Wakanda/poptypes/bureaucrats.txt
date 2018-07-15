@@ -72,11 +72,22 @@ luxury_needs = {
 country_migration_target = {
 	factor = 1
 
-	#wakandan pops always choose country with blacked influence flag after blacked colonization
+	#europe boost
 	modifier = {
-		factor = 500
+		factor = 2
 		THIS = { is_culture_group = wakandan_african }
 		has_country_flag = blacked_influence_flag
+		capital_scope = {
+			continent = europe
+		}
+	}
+	
+	#wakandan pops never choose country with no blacked influence flag after blacked colonization
+	modifier = {
+		factor = -100
+		THIS = { is_culture_group = wakandan_african }
+		NOT = { has_country_flag = blacked_influence_flag } 
+		has_global_flag = blacked_colonization_flag
 	}
 	
 	modifier = {
@@ -218,6 +229,7 @@ country_migration_target = {
 			government = dominion
 			government = colonial_company
 		}
+		THIS = { NOT = { is_culture_group = wakandan_african } }
 	}
 	
 	modifier = {
@@ -239,6 +251,7 @@ country_migration_target = {
 			government = dominion
 			government = colonial_company
 		}
+		THIS = { NOT = { is_culture_group = wakandan_african } }
 	}
 	
 	modifier = {
@@ -267,6 +280,14 @@ country_migration_target = {
 
 migration_target = {
 	factor = 0.01
+	
+	##wakandan pops wants to move to europe more after blacked influence
+	#modifier = {
+	#	factor = 5
+	#	THIS = { is_culture_group = wakandan_african }
+	#	continent = europe
+	#	has_global_flag =  blacked_colonization_flag
+	#}
 	
 	modifier = {
 		factor = 0.1

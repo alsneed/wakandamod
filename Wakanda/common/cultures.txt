@@ -2824,7 +2824,8 @@ east_african = {
 		color = {156 156 89}
 		first_names = { Okeyo Wanyanga Jaramobi Oluoch Oso Othiamba Waga Okoth Odongo Nyikaano Odaago Reth Kwa Dhyang Kolo Omaaro Wat Okwa }
 
-		last_names = { Kony Oculi Oneko p'Bitek Orombi Ramogi Luwum Obote Ocollo Tugo Tuga Tugi Ju Mono Ajalo Adugo Poolo Moolo }
+		last_names = { Kony Oculi Oneko p'Bitek Orombi Ramogi Luwum Obote Ocollo Tugo Tuga Tugi Ju Mono Ajalo Adugo Poolo Moolo 
+		}
 	}
 	maasai = {
 		color = {134 57 84}
@@ -2942,13 +2943,13 @@ east_african = {
 		color = {101 101 39}
 		first_names = { Okeyo Wanyanga Jaramobi Oluoch Oso Othiamba Waga Okoth Odongo Nyikaano Odaago Reth Kwa Dhyang Kolo Omaaro Wat Okwa }
 
-		last_names = { Kony Oculi Oneko p'Bitek Orombi Ramogi Luwum Obote Ocollo Tugo Tuga Tugi Ju Mono Ajalo Adugo Poolo Moolo }
+		last_names = { Kony Oculi Oneko p'Bitek Orombi Ramogi Luwum Obote Ocollo Tugo Tuga Tugi Ju Mono Ajalo Adugo Poolo Moolo 
+		}
 	}
 }
 
 wakandan_african = {
 	leader = african
-	is_overseas = no
 	unit = ZuluGC
 	wakandan = {
 		color = {127 129 168}

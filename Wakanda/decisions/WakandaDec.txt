@@ -208,12 +208,8 @@ political_decisions = {
 		
 		potential = {
 			has_country_flag = wakanda_forever_flag
-			NOT = { 
-				AND = {
-					has_global_flag = anti_white_begin_flag
-					has_global_flag = white_genocide_flag
-				}
-			}
+			NOT = { has_global_flag = anti_white_begin_flag }
+			NOT = { has_global_flag = white_genocide_flag }
 		}
 		
 		allow = {
@@ -315,7 +311,7 @@ political_decisions = {
 			mass_politics = 1
 			invention = the_decline_of_the_west_and_the_lost_generation
 			government = absolute_monarchy
-			has_country_flag = reactionary_king_mod
+			has_country_modifier= reactionary_king_mod
 			has_global_flag = anti_white_begin_flag
 		}
 		
@@ -392,12 +388,12 @@ political_decisions = {
 		
 		allow = {
 			is_greater_power = yes
-			money = 2000000
+			money = 1000000
 		}
 		
 		effect = {
 			prestige = 30
-			treasury = -2000000
+			treasury = -1000000
 			set_country_flag = civilize_africa_flag
 		}
 		
@@ -411,9 +407,7 @@ political_decisions = {
 			tag = WAK
 			has_country_flag = wakanda_forever_flag
 			
-			USA = {
-				NOT = { has_country_flag = blm_agitation_flag }
-			}
+			NOT = { has_global_flag = foreign_african_agitation_flag }
 		}
 		
 		allow = {
@@ -430,13 +424,14 @@ political_decisions = {
 			
 			add_accepted_culture = misri
 			
-			USA = {
-				set_country_flag = blm_agitation_flag
-				add_country_modifier = {
-					name = my_ancestor_mod
-					duration = 36500
-				}
-			}
+			set_global_flag = foreign_african_agitation_flag
+			#USA = {
+			#	set_country_flag = blm_agitation_flag
+			#	add_country_modifier = {
+			#		name = my_ancestor_mod
+			#		duration = 36500
+			#	}
+			#}
 		}
 		
 		ai_will_do = {
@@ -462,7 +457,7 @@ political_decisions = {
 			}
 			
 			set_global_flag = blacked_colonization_flag
-			border_policy = open_borders
+			political_reform = open_borders
 		}
 		
 		ai_will_do = {

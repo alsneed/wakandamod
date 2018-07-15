@@ -468,6 +468,13 @@ demotion_chance = {
 migration_chance = {
 	factor = 1
 	
+	#wakandan in blacked influence country want to move around after blacked colonization
+	modifier = {
+		factor = 10
+		THIS = { is_culture_group = wakandan_african }
+		has_country_flag = blacked_influence_flag
+	}
+	
 	group = {
 		modifier = {
 			factor = -0.1
@@ -917,12 +924,41 @@ emigration_chance = {
 	factor = 0.5
 	
 	#wakandan pops outside of wakanda never emigrate after blacked colonization
+	#wakandan pops never emigrate before blacked colonization after wakanda forever
 	modifier = {
 		factor = -500
+				
 		THIS = { is_culture_group = wakandan_african }
 		country = {
-			has_country_flag = blacked_influence_flag
+			OR = {
+				AND = {
+					has_country_flag = wakanda_forever_flag
+					NOT = { has_global_flag = blacked_colonization_flag }
+				}
+				
+				has_country_flag = blacked_influence_flag
+			}
 		}
+	}
+	
+	#wakandan pops not in black influence countries want to emigrate after blacked colonization
+	modifier = {
+		factor = 1.2
+		is_culture_group = wakandan_african
+		
+		#NOT = {
+		#	OR = {
+		#		type = clerks
+		#		type = craftsmen
+		#		type = officers
+		#		type = soldiers
+		#	}
+		#}
+		
+		country = {
+			NOT = { has_country_flag = blacked_influence_flag }
+		}
+		has_global_flag =  blacked_colonization_flag
 	}
 	
 	modifier = {
@@ -1501,9 +1537,26 @@ assimilation_chance = {
 	#wakandan pops outside of wakanda never assimilates after blacked colonization
 	modifier = {
 		factor = -500
-		THIS = { is_culture_group = wakandan_african }
+		is_culture_group = wakandan_african
 		country = {
 			has_country_flag = blacked_influence_flag
+		}
+	}
+	
+	#african pops inside of wakanda asimilates fast after wakanda forever
+	modifier = {
+		factor = 300
+		OR = {
+			is_culture_group = west_african
+			is_culture_group = central_african
+			is_culture_group = east_african
+			is_culture_group = southern_african
+			is_culture_group = african_diaspora_cultures
+			has_pop_culture = misri
+		}
+		
+		country = {
+			has_country_flag = wakanda_forever_flag
 		}
 	}
 	

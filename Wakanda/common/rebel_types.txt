@@ -5818,25 +5818,23 @@ blm_rebels = {
 	# <this is the government in the country> = <this is what the rebels want>
 	government = {
 		proletarian_dictatorship = proletarian_dictatorship
-		presidential_dictatorship = proletarian_dictatorship
-		bourgeois_dictatorship = proletarian_dictatorship
-		fascist_dictatorship = proletarian_dictatorship
-		absolute_monarchy = proletarian_dictatorship
-		prussian_constitutionalism = proletarian_dictatorship
-		hms_government = proletarian_dictatorship
-		french_bourbon = proletarian_dictatorship
-		dominion = proletarian_dictatorship
-		democracy = proletarian_dictatorship
-		theocracy = proletarian_dictatorship
-		colonial_company = proletarian_dictatorship
+		presidential_dictatorship = presidential_dictatorship
+		bourgeois_dictatorship = bourgeois_dictatorship
+		fascist_dictatorship = fascist_dictatorship
+		absolute_monarchy = absolute_monarchy
+		prussian_constitutionalism = prussian_constitutionalism
+		hms_government = hms_government
+		french_bourbon = hms_government
+		dominion = dominion
+		democracy = democracy
+		theocracy = theocracy
+		colonial_company = colonial_company
 	}
 	
 	
 	defection = none				
 	independence = none				# Does not strive for independence
 	defect_delay = 18
-	
-	ideology = reactionary
 	
 	allow_all_cultures = yes
 	allow_all_religions = yes
@@ -5852,7 +5850,7 @@ blm_rebels = {
 
 	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
 	will_rise = {
-		factor = 0.5
+		factor = 1.0
 		modifier = {
 			war = yes
 			factor = 0.8
@@ -5876,12 +5874,9 @@ blm_rebels = {
 		factor = 1.1
 		
 		modifier = {
-			factor = 0
+			factor = -2
 			country = { 
-				OR = {
-					NOT = { tag = USA }
-					NOT = { has_country_flag = blm_agitation_flag }
-				}
+				NOT = { has_country_modifier = my_ancestor_mod }
 			}
 		}
 		modifier = {
@@ -5889,21 +5884,26 @@ blm_rebels = {
 			pop_majority_ideology = liberal
 		}
 		modifier = {
-			factor = 1.1
-			pop_majority_ideology = anarcho_liberal
-		}
-		modifier = {
 			factor = 1.5
 			pop_majority_ideology = socialist
 		}
 		modifier = {
-			factor = 2.2
+			factor = 2.0
 			pop_majority_ideology = communist
 		}
 		modifier = {
-			factor = 4.00
+			factor = 5.00
 			culture = afro_american
 		}
+		
+		modifier = {
+			factor = 4.00
+			OR = {
+				culture = wakandan
+				culture = wakandan_mutant
+			}
+		}
+		
 		modifier = {
 			factor = 0.8
 			is_primary_culture = no
@@ -5977,44 +5977,15 @@ blm_rebels = {
 		}
 	}
 	demands_enforced_effect = {
-		primary_culture = afro_american
-		add_accepted_culture = yankee
 	
-		clr_country_flag = theocratic_government
-		set_country_flag = communist_gov
-		clr_country_flag = absolute_monarchy_gov
-		clr_country_flag = semi_constitutional_monarchy_gov
-		clr_country_flag = constitutional_monarchy_gov
-		clr_country_flag = democracy_gov
-		clr_country_flag = presidential_dictatorship_gov
-		clr_country_flag = fascist_gov
-		clr_country_flag = anarcho_liberal_gov
-		ruling_party_ideology = communist
-		political_reform = all_voting_pops
-		political_reform = none_voting
-		political_reform = party_appointed
-		political_reform = no_meeting
-		political_reform = state_press
-		political_reform = underground_parties
-		political_reform = debtors_prisons
-		political_reform = no_slavery
-		political_reform = mandatory_service
-		random_owned = { limit = { owner = { NOT = { trade_unions = no_trade_unions } } } owner = { political_reform = state_controlled } }
 		social_reform = good_minimum_wage
 		social_reform = eight_hours
 		social_reform = good_subsidies
 		social_reform = good_pensions
-		social_reform = good_health_care
-		social_reform = good_schools
-		nationalize = yes
+		social_reform = good_safety
 		
-		remove_country_modifier = my_ancestor_mod
 		
-		add_country_modifier = {
-			name = national_confusion
-			duration = 365
-		}
 		prestige_factor = -0.25	
-		plurality = -25
+		treasury = -100000
 	}
 }

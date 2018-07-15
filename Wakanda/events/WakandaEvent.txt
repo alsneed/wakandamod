@@ -90,10 +90,10 @@ country_event = {
 				}
 			}
 			
-			#country_event = {
-			#	id = 14880
-			#	days = 14
-			#}
+			country_event = {
+				id = 14880
+				days = 14
+			}
 		}
 		
 		any_country = {
@@ -304,6 +304,8 @@ province_event = {
 		is_core = WAK
 		owned_by = WAK
 		
+		is_colonial = no
+		
 		NOT = { has_province_modifier = new_terra_refused_mod }
 		NOT = { has_province_modifier = new_terra_mod }
 		
@@ -430,7 +432,15 @@ country_event = {
 			id = 14887
 			days = 3
 		}
+		
+		any_pop = {
+			limit = {
+				has_pop_culture = wakandan
+			}
 			
+			militancy = 1
+			consciousness = 1
+		}
 		ai_chance = { factor = 100 }
 	}
 	
@@ -439,6 +449,15 @@ country_event = {
 		country_event = {
 			id = 14888
 			days = 3
+		}
+		
+		any_pop = {
+			limit = {
+				has_pop_culture = wakandan_mutant
+			}
+			
+			militancy = 1
+			consciousness = 1
 		}
 	}
 	
@@ -535,8 +554,7 @@ country_event = {
 	desc = ""
 	picture = ""
 	
-	major = yes
-	fire_only_once = yes     
+	major = yes    
 	
 	trigger = {
 		WAK = {
@@ -549,17 +567,30 @@ country_event = {
 			in_sphere = WAK
 		}
 		civilized = no
+		
+		capital_scope = {
+			OR = {
+				continent = africa
+				continent = central_africa
+				continent = west_africa
+				continent = east_africa
+				continent = south_west_africa
+			}
+		}
 	}
 
 	mean_time_to_happen = {
-		months = 48
+		months = 12
 	}
 	
 	option = {
 		name = "Calls it"
-		country_event = {
-			id = 14889
-			days = 1
+		
+		WAK = {
+			country_event = {
+				id = 14889
+				days = 1
+			}
 		}
 	}
 }
@@ -571,8 +602,7 @@ country_event = {
 	desc = ""
 	picture = ""
 	
-	is_triggered_only = yes
-	fire_only_once = yes     
+	is_triggered_only = yes     
 	allow_multiple_instances = no
 	
 	#event trigger
@@ -581,11 +611,72 @@ country_event = {
 		name = "Up lift them"
 		
 		FROM = {
+			civilized = yes
 			add_country_modifier = {
 				name = wakandan_tech_mod
 				duration = -1
 			}
-			civilized = yes
+			
+			activate_technology = post_napoleonic_thought
+			
+			#light ar
+			activate_technology = flintlock_rifles
+
+			#heavy arm
+			activate_technology = bronze_muzzle_loaded_artillery
+
+			#military sci
+			activate_technology = military_staff_system
+
+			#army comp
+			activate_technology = army_command_principle
+
+			#navy doc
+			activate_technology = post_nelsonian_thought
+
+			#ship construct
+			activate_technology = clipper_design
+
+			#financial instritution
+			activate_technology = private_banks
+
+			#monetary sys
+			activate_technology = no_standard
+
+			#ETnC
+			activate_technology = early_classical_theory_and_critique
+
+			#market func
+			activate_technology = freedom_of_trade
+
+			#org
+			activate_technology = guild_based_production
+
+			#phil
+			activate_technology = late_enlightenment_philosophy
+			#social thought
+			activate_technology = enlightenment_thought
+
+			#pol thought
+			activate_technology = malthusian_thought
+
+			#psy
+			activate_technology = introspectionism
+
+			#power
+			activate_technology = piston_steam_engine
+
+			#mech
+			activate_technology = mechanical_production
+
+			#metal
+			activate_technology = mechanized_mining
+
+			#infra
+			activate_technology = experimental_railroad
+
+			#chem
+			activate_technology = basic_chemistry
 		}
 		relation = {
 			who = FROM
@@ -600,8 +691,6 @@ country_event = {
 		name = "On a second thought..."
 	}
 }
-
-
 
 #first king abdication==========================================================================
 country_event = {
@@ -807,9 +896,9 @@ country_event = {
 	title = "Blacked influence"
 	desc = ""
 	picture = ""
+	major = yes
 	
-	is_triggered_only = no
-	fire_only_once = yes        
+	is_triggered_only = no      
 	allow_multiple_instances = yes
 	
 	trigger = {
@@ -833,10 +922,12 @@ country_event = {
 			is_culture_group = neo_european_cultures
 			is_culture_group = american_cultures
 		}
+		
+		number_of_states = 3
 	}
 	
 	mean_time_to_happen = {
-		months = 4
+		months = 12
 	}
 	
 	option = {
@@ -855,24 +946,36 @@ country_event = {
 	title = "Blacked bull desire rises"
 	desc = ""
 	picture = ""
-	
-	major = yes
-	fire_only_once = yes        
+       
 	allow_multiple_instances = yes
 	
 	trigger = {
 		has_country_flag = blacked_influence_flag
 		NOT = { has_country_flag = blacked_desire_flag }
 		NOT = { has_country_flag = blacked_colonized_flag }
+		
+		#any_pop = {
+		#	AND = {
+		#		OR = {
+		#			has_pop_culture = wakandan
+		#			has_pop_culture = wakandan_mutant				
+		#		}
+		#
+		#		location = {
+		#			is_core = THIS
+		#			owned_by = THIS					
+		#		}
+		#	}
+		#}
+		
 		any_owned_province = {
-			limit = {
-				is_core = THIS
-			}
-			
+			is_core = THIS
+			terrain = farmlands
+			is_colonial = no
 			any_pop = {
 				OR = {
-					culture = wakandan
-					culture = wakandan_mutant
+					has_pop_culture = wakandan
+					has_pop_culture = wakandan_mutant				
 				}
 			}
 		}
@@ -880,6 +983,14 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 60
+		
+		modifier = {
+			factor = 0.5
+			OR = {
+				vassal_of = WAK
+				in_sphere = WAK
+			}
+		}
 	}
 	
 	option = {
@@ -901,8 +1012,7 @@ country_event = {
 	desc = ""
 	picture = ""
 	
-	is_triggered_only = yes
-	fire_only_once = no        
+	is_triggered_only = yes      
 	allow_multiple_instances = yes
 	
 	#event trigger
@@ -912,21 +1022,24 @@ country_event = {
 		FROM = {
 			random_owned = {
 				limit = {
-					terrain = farmlands
 					is_colonial = no
 					is_core = FROM
 					
 					any_pop = {
 						OR = {
-							culture = wakandan
-							culture = wakandan_mutant
+							has_pop_culture = wakandan
+							has_pop_culture = wakandan_mutant
 						}
 					}
 				}
 				
-				set_province_flag = blacked_candidate_flag
+				add_province_modifier = {
+					name = black_bull_candidate_mod
+					duration = -1
+				}
 			}
 		}
+		ai_chance = { factor = 100 }
 	}
 	
 	option = {
@@ -942,47 +1055,113 @@ province_event = {
 	desc = ""
 	picture = ""
 	
-	is_triggered_only = no
-	fire_only_once = yes        
-	allow_multiple_instances = no
-	
 	trigger = {
-		has_province_flag = blacked_candidate_flag
-		has_global_flag = g_pop_pull_5
+		has_province_modifier = black_bull_candidate_mod
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		days = 1
 	}
 	
 	option = {
 		name = "Oh no"
 		
 		any_pop = {
-			
-			NOT = {
-				OR = {
-					culture = wakandan
-					culture = wakandan_mutant				
-				}
+			limit = {
+				NOT = { culture = wakandan }
+				NOT = { culture = wakandan_mutant }				
 			}
-			reduce_pop = 1.00
+			reduce_pop = 0
 		}
 		
-		any_pop = {
-			pop_reduce = 10000
-		}
+		#any_pop = {
+		#	reduce_pop = 100
+		#}
 		
 		add_province_modifier = {
 			name = bull_breed_mod
 			duration = -1
 		}
 		
-		clr_province_flag = blacked_candidate_flag
+		remove_province_modifier = black_bull_candidate_mod
 		
 		owner = {
 			clr_country_flag = blacked_desire_flag
 			set_country_flag = blacked_colonized_flag
 		}
+	}
+}
+
+#my ancestor add
+country_event = {
+	id = 14900
+	title = "muh ancestor"
+	desc = ""
+	picture = ""
+	
+	trigger = {
+		has_global_flag = foreign_african_agitation_flag
+		any_owned_province = {
+			any_pop = {
+				has_pop_culture = afro_american
+			}
+		}
+		NOT = { has_country_modifier = my_ancestor_mod }
+		
+		NOT = {
+			AND = {
+				social_spending = 0.99
+				NOT = { poor_tax = 0.3 }
+				wage_reform = good_minimum_wage
+				work_hours = eight_hours
+				safety_regulations = good_safety
+				unemployment_subsidies = good_subsidies
+				pensions = good_pensions
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Shiet"
+		
+		add_country_modifier = {
+			name = my_ancestor_mod
+			duration = -1
+		}
+	}
+}
+
+#my ancestor remove
+country_event = {
+	id = 14901
+	title = "muh ancestor removed"
+	desc = ""
+	picture = ""
+	
+	trigger = {
+		has_country_modifier = my_ancestor_mod
+		AND = {
+			social_spending = 0.99
+			NOT = { poor_tax = 0.3 }
+			wage_reform = good_minimum_wage
+			work_hours = eight_hours
+			safety_regulations = good_safety
+			unemployment_subsidies = good_subsidies
+			pensions = good_pensions
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "good"
+		
+		remove_country_modifier = my_ancestor_mod
 	}
 }

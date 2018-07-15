@@ -5874,7 +5874,7 @@ blm_rebels = {
 		factor = 1.1
 		
 		modifier = {
-			factor = -2
+			factor = 0
 			country = { 
 				NOT = { has_country_modifier = my_ancestor_mod }
 			}
@@ -5893,14 +5893,14 @@ blm_rebels = {
 		}
 		modifier = {
 			factor = 5.00
-			culture = afro_american
+			has_pop_culture = afro_american
 		}
 		
 		modifier = {
 			factor = 4.00
 			OR = {
-				culture = wakandan
-				culture = wakandan_mutant
+				has_pop_culture = wakandan
+				has_pop_culture = wakandan_mutant
 			}
 		}
 		

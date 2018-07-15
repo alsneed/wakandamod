@@ -580,7 +580,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 24
 	}
 	
 	option = {
@@ -890,6 +890,80 @@ country_event = {
 	}
 }
 
+#my ancestor add ===============================================================================
+country_event = {
+	id = 14900
+	title = "muh ancestor"
+	desc = ""
+	picture = ""
+	
+	trigger = {
+		has_global_flag = foreign_african_agitation_flag
+		any_owned_province = {
+			any_pop = {
+				has_pop_culture = afro_american
+			}
+		}
+		NOT = { has_country_modifier = my_ancestor_mod }
+		
+		NOT = {
+			AND = {
+				social_spending = 0.99
+				NOT = { poor_tax = 0.3 }
+				wage_reform = good_minimum_wage
+				work_hours = eight_hours
+				safety_regulations = good_safety
+				unemployment_subsidies = good_subsidies
+				pensions = good_pensions
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Shiet"
+		
+		add_country_modifier = {
+			name = my_ancestor_mod
+			duration = -1
+		}
+	}
+}
+
+#my ancestor remove
+country_event = {
+	id = 14901
+	title = "muh ancestor removed"
+	desc = ""
+	picture = ""
+	
+	trigger = {
+		has_country_modifier = my_ancestor_mod
+		AND = {
+			social_spending = 0.99
+			NOT = { poor_tax = 0.3 }
+			wage_reform = good_minimum_wage
+			work_hours = eight_hours
+			safety_regulations = good_safety
+			unemployment_subsidies = good_subsidies
+			pensions = good_pensions
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "good"
+		
+		remove_country_modifier = my_ancestor_mod
+	}
+}
+
 #blacked influence==============================================================================
 country_event = {
 	id = 14894
@@ -923,11 +997,11 @@ country_event = {
 			is_culture_group = american_cultures
 		}
 		
-		number_of_states = 3
+		number_of_states = 4
 	}
 	
 	mean_time_to_happen = {
-		months = 12
+		months = 24
 	}
 	
 	option = {
@@ -1092,33 +1166,16 @@ province_event = {
 	}
 }
 
-#my ancestor add
-country_event = {
-	id = 14900
-	title = "muh ancestor"
+#breeding ground removed
+province_event = {
+	id = 14902
+	title = "Breeding ground removed"
 	desc = ""
 	picture = ""
 	
 	trigger = {
-		has_global_flag = foreign_african_agitation_flag
-		any_owned_province = {
-			any_pop = {
-				has_pop_culture = afro_american
-			}
-		}
-		NOT = { has_country_modifier = my_ancestor_mod }
-		
-		NOT = {
-			AND = {
-				social_spending = 0.99
-				NOT = { poor_tax = 0.3 }
-				wage_reform = good_minimum_wage
-				work_hours = eight_hours
-				safety_regulations = good_safety
-				unemployment_subsidies = good_subsidies
-				pensions = good_pensions
-			}
-		}
+		has_province_modifier = bull_breed_mod
+		NOT = { has_country_flag = blacked_influence_flag }
 	}
 	
 	mean_time_to_happen = {
@@ -1126,42 +1183,9 @@ country_event = {
 	}
 	
 	option = {
-		name = "Shiet"
+		name = "ok"
 		
-		add_country_modifier = {
-			name = my_ancestor_mod
-			duration = -1
-		}
+		remove_province_modifier = bull_breed_mod
 	}
 }
 
-#my ancestor remove
-country_event = {
-	id = 14901
-	title = "muh ancestor removed"
-	desc = ""
-	picture = ""
-	
-	trigger = {
-		has_country_modifier = my_ancestor_mod
-		AND = {
-			social_spending = 0.99
-			NOT = { poor_tax = 0.3 }
-			wage_reform = good_minimum_wage
-			work_hours = eight_hours
-			safety_regulations = good_safety
-			unemployment_subsidies = good_subsidies
-			pensions = good_pensions
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = "good"
-		
-		remove_country_modifier = my_ancestor_mod
-	}
-}

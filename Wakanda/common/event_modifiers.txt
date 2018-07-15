@@ -28,7 +28,7 @@ white_pride_mod = {
 
 wakanda_forever_mod = {
 	research_points_modifier = 1.00
-	education_efficiency_modifier = 0.50
+	education_efficiency_modifier = 1.00
 	icon = 7
 }
 
@@ -95,7 +95,7 @@ reactionary_king_mod = {
 	mobilisation_size = 0.5
 	unit_start_experience = 1.00
 	badboy = 0.05
-	global_pop_militancy_modifier = 0.02
+	non_accepted_pop_militancy_modifier = 0.02
 	icon = 5
 }
 
@@ -119,6 +119,7 @@ white_stagnate_mod = {
 
 black_bull_init_mod = {
 	global_population_growth = 0.01
+	assimilation_rate = 0.5
 	icon = 17
 }
 

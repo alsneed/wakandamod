@@ -197,8 +197,8 @@ country_event = {
 			}
 			
 			reduce_pop = 0.50
-			militancy = 10
-			consciousness = 10
+			militancy = 100
+			consciousness = 100
 		}
 		
 		relation = {
@@ -239,10 +239,27 @@ country_event = {
 	trigger = {
 		tag = WAK
 		has_global_flag = white_genocide_flag
+		
+		any_pop = {
+			is_culture_group = germanic
+			is_culture_group = beneluxian
+			is_culture_group = pan_swiss
+			is_culture_group = scandinavian
+			is_culture_group = british
+			is_culture_group = italian
+			is_culture_group = iberian
+			is_culture_group = french
+			is_culture_group = hungarian_culture_group
+			is_culture_group = polish_culture_group
+			is_culture_group = baltic
+			is_culture_group = iranian_turanian
+			is_culture_group = neo_european_cultures
+			is_culture_group = american_cultures
+		}
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 120
 	}
 	
 	option = {
@@ -381,7 +398,7 @@ country_event = {
 		name = "This can't be good"
 		country_event = {
 			id = 14885
-			days = 2
+			days = 365
 		}
 	}
 }
@@ -580,7 +597,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 48
 	}
 	
 	option = {
@@ -1001,7 +1018,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 24
+		months = 60
 	}
 	
 	option = {
@@ -1175,7 +1192,9 @@ province_event = {
 	
 	trigger = {
 		has_province_modifier = bull_breed_mod
-		NOT = { has_country_flag = blacked_influence_flag }
+		owner = {
+			NOT = { has_country_flag = blacked_influence_flag }
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -1189,3 +1208,129 @@ province_event = {
 	}
 }
 
+#rape gang discovered
+province_event = {
+	id = 14903
+	title = "Rape gang discovered"
+	desc = ""
+	picture = ""
+	
+	trigger = {
+		
+		any_pop = {
+			OR = {
+				has_pop_culture = wakandan
+				has_pop_culture = wakandan_mutant
+			}
+		}
+	
+		OR = {
+			is_primary_culture = yes
+			is_accepted_culture = yes
+		}
+		
+		NOT = { has_province_modifier = bull_breed_mod }
+		NOT = { has_province_modifier = rape_gang_mod }
+		
+		owner = {
+			has_country_flag = blacked_colonized_flag
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		
+		modifier = {
+			factor 0.3
+			owner = {
+				any_owned_province = {
+					has_province_modifier = rape_gang_mod
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		any_pop = {
+			limit = {
+				NOT = {
+					has_pop_culture = wakandan
+					has_pop_culture = wakandan_mutant
+				}
+			}
+			reduce_pop = 0.85
+		}
+		
+		any_pop = {
+			limit = {
+				OR = {
+					has_pop_culture = wakandan
+					has_pop_culture = wakandan_mutant
+				}
+			}
+			reduce_pop = 10
+		}
+	}
+	
+	option = {
+		name = "Punish them"
+		owner = {
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = wakandan
+						has_pop_culture = wakandan_mutant
+					}
+				}
+				
+				militancy = 5
+				consciousness = 5
+			}
+			any_pop = {
+				limit = {
+					
+					NOT = {
+						has_pop_culture = wakandan
+						has_pop_culture = wakandan_mutant
+					}
+				}
+			}
+		}
+		
+		add_province_modifier = {
+			name = rape_gang_mod
+			duration = 365
+		}
+	}
+	
+	option = {
+		name = "Let them go..."
+		owner = {
+			any_pop = {
+				limit = {
+					
+					NOT = {
+						has_pop_culture = wakandan
+						has_pop_culture = wakandan_mutant
+					}
+				}
+				militancy = 5
+				consciousness = 5
+			}
+			
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = wakandan
+						has_pop_culture = wakandan_mutant
+					}
+				}
+			}
+		}
+		
+		add_province_modifier = {
+			name = rape_gang_mod
+			duration = 365
+		}
+	}
+}

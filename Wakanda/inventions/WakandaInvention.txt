@@ -13,39 +13,39 @@ vib_fabric_inv = {
 	
 	effect = {
 		infantry = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		guard = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		engineer = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		artillery = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		dragoon = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		hussar = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		cavalry = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		irregular = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		cuirassier = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 	}
@@ -66,39 +66,39 @@ vib_armor_inv = {
 	
 	effect = {
 		infantry = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		guard = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		engineer = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		artillery = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		dragoon = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		hussar = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		cavalry = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		irregular = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 		cuirassier = {
-			defence = 5
+			defence = 10
 			supply_consumption = 0.20
 		}
 	}

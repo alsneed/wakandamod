@@ -5850,7 +5850,7 @@ blm_rebels = {
 
 	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
 	will_rise = {
-		factor = 1.0
+		factor = 0.5
 		modifier = {
 			war = yes
 			factor = 0.8
@@ -5880,7 +5880,7 @@ blm_rebels = {
 			}
 		}
 		modifier = {
-			factor = 2.0
+			factor = 1.5
 			pop_majority_ideology = liberal
 		}
 		modifier = {
@@ -5888,16 +5888,16 @@ blm_rebels = {
 			pop_majority_ideology = socialist
 		}
 		modifier = {
-			factor = 2.0
+			factor = 1.5
 			pop_majority_ideology = communist
 		}
 		modifier = {
-			factor = 5.00
+			factor = 2.00
 			has_pop_culture = afro_american
 		}
 		
 		modifier = {
-			factor = 4.00
+			factor = 1.8
 			OR = {
 				has_pop_culture = wakandan
 				has_pop_culture = wakandan_mutant
@@ -5905,7 +5905,7 @@ blm_rebels = {
 		}
 		
 		modifier = {
-			factor = 0.8
+			factor = 1.8
 			is_primary_culture = no
 			is_accepted_culture = no
 		}
@@ -5952,12 +5952,6 @@ blm_rebels = {
 			name = war_torn
 			duration = 365
 		}
-		any_pop = {
-			ideology = {
-				value = reactionary
-				factor = 0.05
-			}
-		}
 		owner = { war_exhaustion = 2.5 }
 	}
 
@@ -5984,8 +5978,7 @@ blm_rebels = {
 		social_reform = good_pensions
 		social_reform = good_safety
 		
-		
 		prestige_factor = -0.25	
-		treasury = -100000
+		treasury = -200000
 	}
 }

@@ -468,9 +468,9 @@ demotion_chance = {
 migration_chance = {
 	factor = 1
 	
-	#wakandan in blacked influence country want to move around after blacked colonization
+	#wakandan in blacked influence country like to move around after blacked colonization
 	modifier = {
-		factor = 10
+		factor = 5
 		THIS = { is_culture_group = wakandan_african }
 		has_country_flag = blacked_influence_flag
 	}
@@ -943,7 +943,7 @@ emigration_chance = {
 	
 	#wakandan pops not in black influence countries want to emigrate after blacked colonization
 	modifier = {
-		factor = 1.2
+		factor = 1.3
 		is_culture_group = wakandan_african
 		
 		#NOT = {

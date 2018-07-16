@@ -316,7 +316,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			badboy = 25
+			badboy = 50
 			clr_global_flag = anti_white_begin_flag
 			set_global_flag = white_genocide_flag
 			

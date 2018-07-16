@@ -111,7 +111,7 @@ conservative_king_mod = {
 
 white_stagnate_mod = {
 	prestige = -0.01
-	global_population_growth = -0.002
+	global_population_growth = -0.005
 	global_assimilation_rate = -0.5
 	global_pop_militancy_modifier = 0.1
 	icon = 14 
@@ -119,18 +119,24 @@ white_stagnate_mod = {
 
 black_bull_init_mod = {
 	global_population_growth = 0.01
-	assimilation_rate = 0.5
+	assimilation_rate = 1.00
 	icon = 17
 }
 
 bull_breed_mod = {
-	population_growth = 0.1
+	population_growth = 0.2
 	immigrant_attract = -5
 	icon = 19
 }
 
 black_bull_candidate_mod = {
 	icon = 19
+}
+
+rape_gang_mod = {
+	immigrant_attract = -5
+	immigrant_push = 0.50
+	icon = 20
 }
 
 ##################################################################################################

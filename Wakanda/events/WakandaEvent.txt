@@ -172,9 +172,9 @@ country_event = {
 	#decision trigger
 	
 	option = {
-		name "Submit"
+		name = "Submit"
 		
-		prestige = -200.00
+		prestige = -1000.00
 		
 		any_pop = {
 			limit = {
@@ -196,7 +196,7 @@ country_event = {
 				}
 			}
 			
-			reduce_pop = 0.50
+			reduce_pop = 0.05
 			militancy = 100
 			consciousness = 100
 		}
@@ -226,7 +226,7 @@ country_event = {
 }
 
 #white genocide in wakanda owned states
-country_event = {
+province_event = {
 	id = 14882
 	title = "A world... free of whites"
 	desc = ""
@@ -237,34 +237,67 @@ country_event = {
 	allow_multiple_instances = no
 	
 	trigger = {
-		tag = WAK
 		has_global_flag = white_genocide_flag
+		owner = {
+			NOT = {
+				OR = {
+					is_culture_group = germanic
+					is_culture_group = beneluxian
+					is_culture_group = pan_swiss
+					is_culture_group = scandinavian
+					is_culture_group = british
+					is_culture_group = italian
+					is_culture_group = iberian
+					is_culture_group = french
+					is_culture_group = hungarian_culture_group
+					is_culture_group = polish_culture_group
+					is_culture_group = baltic
+					is_culture_group = iranian_turanian
+					is_culture_group = neo_european_cultures
+					is_culture_group = american_cultures
+				}
+			}
+			
+			capital_scope = {
+				or = {
+					continent = africa
+					continent = west_africa
+					continent = central_africa
+					continent = east_africa
+					continent = south_west_africa
+				}
+			}
+		}
 		
 		any_pop = {
-			is_culture_group = germanic
-			is_culture_group = beneluxian
-			is_culture_group = pan_swiss
-			is_culture_group = scandinavian
-			is_culture_group = british
-			is_culture_group = italian
-			is_culture_group = iberian
-			is_culture_group = french
-			is_culture_group = hungarian_culture_group
-			is_culture_group = polish_culture_group
-			is_culture_group = baltic
-			is_culture_group = iranian_turanian
-			is_culture_group = neo_european_cultures
-			is_culture_group = american_cultures
+			OR = {
+				is_culture_group = germanic
+				is_culture_group = beneluxian
+				is_culture_group = pan_swiss
+				is_culture_group = scandinavian
+				is_culture_group = british
+				is_culture_group = italian
+				is_culture_group = iberian
+				is_culture_group = french
+				is_culture_group = hungarian_culture_group
+				is_culture_group = polish_culture_group
+				is_culture_group = baltic
+				is_culture_group = iranian_turanian
+				is_culture_group = neo_european_cultures
+				is_culture_group = american_cultures
+			}
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 120
+		days = 2
 	}
 	
 	option = {
 		name = "Kill them"
-		badboy = 40
+		owner = {
+			badboy = 10
+		}
 		any_pop = {
 			limit = {
 				OR = {
@@ -285,23 +318,26 @@ country_event = {
 				}
 			}
 			
-			reduce_pop = 0.50
+			reduce_pop = 0
 		}
 	}
 	
 	option = {
 		name = "Spare them"
-		prestige = -5
-		any_pop = {
-			limit = {
-				OR = {
-					is_primary_culture = yes
-					is_accepted_culture = yes
+		
+		owner = {
+			prestige = -5
+			any_pop = {
+				limit = {
+					OR = {
+						is_primary_culture = yes
+						is_accepted_culture = yes
+					}
 				}
+				
+				militancy = 2
+				consciousness = 2
 			}
-			
-			militancy = 2
-			consciousness = 2
 		}
 	}
 }
@@ -1268,7 +1304,7 @@ province_event = {
 					has_pop_culture = wakandan_mutant
 				}
 			}
-			reduce_pop = 10
+			reduce_pop = 3
 		}
 	}
 	
@@ -1299,7 +1335,7 @@ province_event = {
 		
 		add_province_modifier = {
 			name = rape_gang_mod
-			duration = 365
+			duration = 1825
 		}
 	}
 	
@@ -1330,7 +1366,35 @@ province_event = {
 		
 		add_province_modifier = {
 			name = rape_gang_mod
-			duration = 365
+			duration = 1825
+		}
+	}
+}
+
+#bull breed less
+province_event = {
+	id = 14904
+	title = "Bull breeding reduced"
+	desc = ""
+	picture = ""
+	
+	trigger = {
+		total_pops = 1000000 
+		has_province_modifier = bull_breed_mod
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Thank god"
+		
+		remove_province_modifier = bull_breed_mod
+		
+		add_province_modifier = {
+			name = bull_breed_less_mod
+			duration = -1
 		}
 	}
 }

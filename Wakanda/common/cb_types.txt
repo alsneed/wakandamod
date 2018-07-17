@@ -7023,30 +7023,39 @@ demand_state_white_europe = {
 		has_global_flag = white_genocide_flag
 		
 		THIS = {
-			capital_scope = { continent = africa }
+			capital_scope = { 
+				OR = {
+					continent = africa
+					continent = central_africa
+					continent = west_africa
+					continent = east_africa
+					continent = south_west_africa
+				}
+			}
 			civilized = yes
 		}
 		
 		is_vassal = no
 		
-		any_pop = {
-			OR = {
-				is_culture_group = germanic
-				is_culture_group = beneluxian
-				is_culture_group = pan_swiss
-				is_culture_group = scandinavian
-				is_culture_group = british
-				is_culture_group = italian
-				is_culture_group = iberian
-				is_culture_group = french
-				is_culture_group = hungarian_culture_group
-				is_culture_group = polish_culture_group
-				is_culture_group = baltic
-				is_culture_group = iranian_turanian
-				is_culture_group = neo_european_cultures
-				is_culture_group = american_cultures
-			}
+		#has_country_modifier = white_pride_mod
+		
+		OR = {
+			is_culture_group = germanic
+			is_culture_group = beneluxian
+			is_culture_group = pan_swiss
+			is_culture_group = scandinavian
+			is_culture_group = british
+			is_culture_group = italian
+			is_culture_group = iberian
+			is_culture_group = french
+			is_culture_group = hungarian_culture_group
+			is_culture_group = polish_culture_group
+			is_culture_group = baltic
+			is_culture_group = iranian_turanian
+			is_culture_group = neo_european_cultures
+			is_culture_group = american_cultures
 		}
+		
 	}
 
 	badboy_factor = 0

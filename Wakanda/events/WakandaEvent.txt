@@ -3,6 +3,7 @@ country_event = {
 	id = 148901
 	title = "Isolationism debate"
 	desc = ""
+	picture = "isolationdebate"
 	
 	fire_only_once = yes    
 	
@@ -15,7 +16,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "End isolationsm"
+		name = "We must end isolationsm!"
 		country_event = {
 			id = 14890
 			days = 1
@@ -24,15 +25,16 @@ country_event = {
 	}
 	
 	option = {
-		name = "remain hidden"
+		name = "We must remain hidden!"
 	}
 }
 
 #wakanda forever
 country_event = {
 	id = 14890
-	title = "EVTNAME14890"
-	desc = "some non localised event description"
+	title = "Wakanda Forever!"
+	desc = "Centuries ago, an alien meteor struck the mountains of Birnin Bash', and brought with it  an untold amount of precious metal - Vibranium. Through decades of research, our remote ancestors discovered the magic of this strange metal: an unparalleled ability to absorb all forms of vibration. To avoid exploitation by the foreign powers, we have chosen to isolate ourselves from the world. Though devoid of diplomatic contacts, we occasionally sold minuscule amount of vibranium in exchange for money and the privilege to study in the world's leading institutes. Now with the threat of wh*toid imperialism looming over the horizon, we must recall our scholars and reveal our great nation to the global communities. It is our destiny to become the defender of Africa and the bane of wh*toid colonialism... "
+	picture = "wakandaforever"
 	
 	major = yes
 	is_triggered_only = yes
@@ -41,7 +43,7 @@ country_event = {
 	#event triggered
 	
 	option = {
-		name = "EVT14890OPTA"
+		name = "Wakanda Forever!"
 		prestige = 50
 			
 		add_country_modifier = {
@@ -121,8 +123,8 @@ country_event = {
 country_event = {
 	id = 14880
 	title = "Wakanda Awakens..."
-	desc = ""
-	picture = ""
+	desc = "News from the once obscure African mountains have reached the heart of our nation. A race of technologically advanced barbarians - the Wakandans, have revealed themselves to the world as the guardians of Africa.They seek to halt all future colonization efforts of European powers from further exploiting the their \"brethrens\". They have deemed the imperial aggression as the fault of all white people caused primarily by the imperfections of "wh*toid" genes. In consequence, they have issued an official demand for our nation to publicly apologize for simply being white..."
+	picture = "wakandaforever"
 	
 	is_triggered_only = yes
 	fire_only_once = yes        
@@ -162,7 +164,8 @@ country_event = {
 country_event = {
 	id = 14881
 	title = "Wakanda declares white crusade"
-	desc = ""
+	desc = "The build up to this was a long time coming but finally the negroid menace reveals itself in its true form. After the Wakandan declaration of the counter-colonization to all African nations the black-as-night, unending masses of Africa set their sights on the elder continent, determined to take it over and delete any trace of its existence by any means necessary; millions of Africans are preparing to take the long standing bastion of the Caucasian peoples down once and for all. This event has triggered mixed responses in nations all over Europe, the limp-wristed ones joyous at the sound of the incoming “liberators” while the rest prepare themselves physically and mentally for what is to come. The question remains however: how will our state respond to this new threat?"
+	picture = "whitoidcrusade"
 	
 	major = yes
 	is_triggered_only = yes
@@ -172,7 +175,7 @@ country_event = {
 	#decision trigger
 	
 	option = {
-		name = "Submit"
+		name = "We must submit to the superior africans..."
 		
 		prestige = -1000.00
 		
@@ -205,10 +208,11 @@ country_event = {
 			who = WAK
 			value = 200
 		}
+		ai_chance = { factor = 20 }
 	}
 	
 	option = {
-		name = "Refuse"
+		name = "We must secure the existence of our people and a future for white children."
 		
 		prestige = 20
 		
@@ -221,7 +225,7 @@ country_event = {
 			who = WAK
 			value = -200
 		}
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 80 }
 	}
 }
 
@@ -229,8 +233,8 @@ country_event = {
 province_event = {
 	id = 14882
 	title = "A world... free of whites"
-	desc = ""
-	picture = ""
+	desc = "The final sieges on the last wh*toid strongholds are drawing to an end, many of them falling without even a shot being fired after their women prostrated themselves freely before our irresistible, superior troops making the wh*toids surrender shortly after due to complete demoralization. As the wh*tes are being rounded up in all subjugated territories many are debating on what should we do with them,however ultimately the final decision rests upon your shoulders, my kang."
+	picture = "worldfreeofwhites"
 	
 	is_triggered_only = no
 	fire_only_once = no        
@@ -294,7 +298,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Kill them"
+		name = "Kill them."
 		owner = {
 			badboy = 10
 		}
@@ -323,7 +327,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Spare them"
+		name = "Spare them."
 		
 		owner = {
 			prestige = -5
@@ -347,7 +351,7 @@ province_event = {
 	id = 14883
 	title = "Terraform land"
 	desc = ""
-	picture = ""
+	picture = "terraform"
 	
 	is_triggered_only = no
 	fire_only_once = no        
@@ -411,8 +415,8 @@ province_event = {
 country_event = {
 	id = 14884
 	title = "Illness 1"
-	desc = ""
-	picture = ""
+	desc = "The King of wakanda has ruled for long, our peoples have been brought gigantic leaps forwards under his benevolent reign but it seems now that it is drawing to a close as the king’s death is declining due to reasons unknown, it is theorized that it may be due to the extensive exposure to vibranium however this is uncertain . The people of Wakanda are still in the dark to this information and only his closest relatives, his personal doctors and the council are privy to the information and it is unsure how long the king has to live."
+	picture = "illking"
 	
 	is_triggered_only = no
 	fire_only_once = yes        
@@ -431,7 +435,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This can't be good"
+		name = "This can't be good..."
 		country_event = {
 			id = 14885
 			days = 365
@@ -443,8 +447,8 @@ country_event = {
 country_event = {
 	id = 14885
 	title = "Dies"
-	desc = ""
-	picture = ""
+	desc = "The day feared by the highest echelons of the Wakandan state has arrived, the king has perished in his sleep, his body was found lifeless this morning in his bed next by his two wh*toid slaves. This has caused great commotion in the palace as preparations are being done to render the news public and for his future funeral."
+	picture = "deadnigger"
 	
 	is_triggered_only = yes
 	fire_only_once = yes        
@@ -453,7 +457,7 @@ country_event = {
 	#event trigger
 	
 	option = {
-		name = "dead nigger"
+		name = "Looks like another ritual is in order."
 		
 		clr_country_flag = first_king_flag
 		remove_country_modifier = first_king_mod
@@ -470,7 +474,7 @@ country_event = {
 	id = 14886
 	title = "Wakanda succession"
 	desc = ""
-	picture = ""
+	picture = "wakandansucession"
 	
 	is_triggered_only = yes
 	fire_only_once = yes        
@@ -515,7 +519,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "No bias"
+		name = "The ritual will continue uninterfere."
 		random_list = {
 			50 = {
 				country_event = {
@@ -539,7 +543,7 @@ country_event = {
 	id = 14887
 	title = "reactionary king"
 	desc = ""
-	picture = ""
+	picture = "kingvictory"
 	
 	is_triggered_only = yes
 	fire_only_once = yes        
@@ -562,7 +566,7 @@ country_event = {
 	id = 14888
 	title = "conservative king"
 	desc = ""
-	picture = ""
+	picture = "kingvictory"
 	
 	is_triggered_only = yes
 	fire_only_once = yes        
@@ -586,7 +590,7 @@ country_event = {
 	id = 14889
 	title = "panther king"
 	desc = ""
-	picture = ""
+	picture = "kingvictory"
 	
 	is_triggered_only = yes
 	fire_only_once = yes        
@@ -605,7 +609,6 @@ country_event = {
 	id = 14896
 	title = "Petitions for civilization"
 	desc = ""
-	picture = ""
 	
 	major = yes    
 	
@@ -653,7 +656,7 @@ country_event = {
 	id = 14889
 	title = "Uplift it"
 	desc = ""
-	picture = ""
+	picture = "africacallsforciv"
 	
 	is_triggered_only = yes     
 	allow_multiple_instances = no
@@ -750,7 +753,7 @@ country_event = {
 	id = 14891
 	title = "king abdication"
 	desc = ""
-	picture = ""
+	picture = "niggerabdication"
 	
 	is_triggered_only = no
 	fire_only_once = no        
@@ -782,7 +785,7 @@ country_event = {
 	id = 14892
 	title = "reactionary king abdication"
 	desc = ""
-	picture = ""
+	picture = "niggerabdication"
 	
 	is_triggered_only = no
 	fire_only_once = no        
@@ -814,7 +817,7 @@ country_event = {
 	id = 14893
 	title = "conservative king abdication"
 	desc = ""
-	picture = ""
+	picture = "niggerabdication"
 	
 	is_triggered_only = no
 	fire_only_once = no        
@@ -846,7 +849,7 @@ country_event = {
 	id = 14893
 	title = "first king restoration"
 	desc = ""
-	picture = ""
+	picture = "niggerestoration"
 	
 	is_triggered_only = no
 	fire_only_once = no        
@@ -880,7 +883,7 @@ country_event = {
 	id = 14893
 	title = "reactionary king restoration"
 	desc = ""
-	picture = ""
+	picture = "niggerestoration"
 	
 	is_triggered_only = no
 	fire_only_once = no        
@@ -914,7 +917,7 @@ country_event = {
 	id = 14893
 	title = "conservative king restoration"
 	desc = ""
-	picture = ""
+	picture = "niggerestoration"
 	
 	is_triggered_only = no
 	fire_only_once = no        
@@ -948,7 +951,7 @@ country_event = {
 	id = 14900
 	title = "muh ancestor"
 	desc = ""
-	picture = ""
+	picture = "blm"
 	
 	trigger = {
 		has_global_flag = foreign_african_agitation_flag
@@ -991,7 +994,7 @@ country_event = {
 	id = 14901
 	title = "muh ancestor removed"
 	desc = ""
-	picture = ""
+	picture = "blmend"
 	
 	trigger = {
 		has_country_modifier = my_ancestor_mod
@@ -1022,7 +1025,7 @@ country_event = {
 	id = 14894
 	title = "Blacked influence"
 	desc = ""
-	picture = ""
+	picture = "blackedinfluence"
 	major = yes
 	
 	is_triggered_only = no      
@@ -1072,7 +1075,7 @@ country_event = {
 	id = 14897
 	title = "Blacked bull desire rises"
 	desc = ""
-	picture = ""
+	picture = "blackeddesirerise"
        
 	allow_multiple_instances = yes
 	
@@ -1137,7 +1140,7 @@ country_event = {
 	id = 14895
 	title = "Blacked colonization candidate"
 	desc = ""
-	picture = ""
+	picture = "colonizecandidate"
 	
 	is_triggered_only = yes      
 	allow_multiple_instances = yes
@@ -1180,7 +1183,7 @@ province_event = {
 	id = 14898
 	title = "Black bulls arrive"
 	desc = ""
-	picture = ""
+	picture = "bulluncaged"
 	
 	trigger = {
 		has_province_modifier = black_bull_candidate_mod
@@ -1249,7 +1252,7 @@ province_event = {
 	id = 14903
 	title = "Rape gang discovered"
 	desc = ""
-	picture = ""
+	picture = "rapegang"
 	
 	trigger = {
 		
@@ -1277,7 +1280,7 @@ province_event = {
 		months = 240
 		
 		modifier = {
-			factor 0.3
+			factor 0.5
 			owner = {
 				any_owned_province = {
 					has_province_modifier = rape_gang_mod
@@ -1335,7 +1338,7 @@ province_event = {
 		
 		add_province_modifier = {
 			name = rape_gang_mod
-			duration = 1825
+			duration = 2920
 		}
 	}
 	
@@ -1366,7 +1369,7 @@ province_event = {
 		
 		add_province_modifier = {
 			name = rape_gang_mod
-			duration = 1825
+			duration = 730
 		}
 	}
 }
@@ -1376,7 +1379,7 @@ province_event = {
 	id = 14904
 	title = "Bull breeding reduced"
 	desc = ""
-	picture = ""
+	picture = "blackreduceintensity"
 	
 	trigger = {
 		total_pops = 1000000 

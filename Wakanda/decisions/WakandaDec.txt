@@ -117,6 +117,7 @@ political_decisions = {
 	#}
 	
 	expand_waterfront_dec = {
+		picture = "waterfront"
 		potential = {
 			tag = WAK
 			has_country_flag = wakanda_forever_flag
@@ -299,7 +300,7 @@ political_decisions = {
 	}
 	
 	white_genocide_dec = {
-		
+		picture = "whitegenocide"
 		potential = {
 			has_country_flag = wakanda_forever_flag
 			NOT = { has_global_flag = white_genocide_flag }
@@ -380,6 +381,7 @@ political_decisions = {
 	}
 	
 	civilize_africa_dec = {
+		picture = "civilizeafrica"
 		potential = {
 			tag = WAK
 			has_country_flag = wakanda_forever_flag
@@ -403,6 +405,7 @@ political_decisions = {
 	}
 	
 	wewuzkang_dec = {
+		picture = "wewuzkang"
 		potential = {
 			tag = WAK
 			has_country_flag = wakanda_forever_flag
@@ -419,6 +422,7 @@ political_decisions = {
 			EGY = {
 				all_core = {
 					add_core = WAK
+					#remove_core = EGY
 				}
 			}
 			
@@ -440,6 +444,7 @@ political_decisions = {
 	}
 	
 	blacked_com_dec = {
+		picture = "blackedcom"
 		potential = {
 			tag = WAK
 			has_country_flag = wakanda_forever_flag

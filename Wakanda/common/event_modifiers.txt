@@ -54,7 +54,7 @@ new_terra_mod = {
 	icon = 7
 }
 
-new_terra_refused_mod {
+new_terra_refused_mod = {
 	pop_militancy_modifier = 0.01
 	pop_consciousness_modifier = 0.01
 	icon = 8
@@ -124,7 +124,7 @@ black_bull_init_mod = {
 }
 
 bull_breed_mod = {
-	population_growth = 0.2
+	population_growth = 0.5
 	immigrant_attract = -5
 	icon = 19
 }

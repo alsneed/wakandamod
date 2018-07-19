@@ -128,6 +128,10 @@ country_event = {
 		}
 		any_pop = { 
 			limit = {
+				#misri won't revolt against wakanda
+				NOT = {
+					country = { tag = WAK }
+				}
 				has_pop_culture = misri
 				location = {
 					any_core = { primary_culture = misri }
@@ -144,8 +148,13 @@ country_event = {
 			}
 			militancy = 10
 		}
+		
 		any_owned = {
 			limit = {
+				#wakandan owned provinces won't be agitated
+				NOT = {
+					owner = { tag = WAK }
+				}
 				any_core = {
 					OR = {
 						primary_culture = mashriqi
@@ -168,6 +177,12 @@ country_event = {
 			modifier = {
 				factor = 0.75
 				war_policy = anti_military
+			}
+			
+			#wakanda always pick this
+			modifier = {
+				factor = 2
+				tag = WAK
 			}
 		}
 	}

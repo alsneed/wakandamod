@@ -1316,6 +1316,19 @@ nationalist_rebels = {
 	spawn_chance = {
 		factor = 3
 		
+		#africans nationalists in wakanda never want to rebel
+		modifier = {
+			factor = 0
+			OR = {
+				is_culture_group = west_african
+				is_culture_group = central_african
+				is_culture_group = east_african
+				is_culture_group = southern_african
+				is_culture_group = african_diaspora_cultures
+				has_pop_culture = misri
+			}
+			has_country_flag = wakanda_forever_flag
+		}
 		modifier = {
 			factor = 0.01
 			is_primary_culture = yes
@@ -5892,12 +5905,12 @@ blm_rebels = {
 			pop_majority_ideology = communist
 		}
 		modifier = {
-			factor = 2.00
+			factor = 2.0
 			has_pop_culture = afro_american
 		}
 		
 		modifier = {
-			factor = 1.8
+			factor = 2.0
 			OR = {
 				has_pop_culture = wakandan
 				has_pop_culture = wakandan_mutant

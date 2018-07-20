@@ -2,7 +2,7 @@
 country_event = {
 	id = 148901
 	title = "Isolationism debate"
-	desc = ""
+	desc = "148901DESC"
 	picture = "isolationdebate"
 	
 	fire_only_once = yes    
@@ -33,7 +33,7 @@ country_event = {
 country_event = {
 	id = 14890
 	title = "Wakanda Forever!"
-	desc = "Centuries ago, an alien meteor struck the mountains of Birnin Bash', and brought with it  an untold amount of precious metal - Vibranium. Through decades of research, our remote ancestors discovered the magic of this strange metal: an unparalleled ability to absorb all forms of vibration. To avoid exploitation by the foreign powers, we have chosen to isolate ourselves from the world. Though devoid of diplomatic contacts, we occasionally sold minuscule amount of vibranium in exchange for money and the privilege to study in the world's leading institutes. Now with the threat of wh*toid imperialism looming over the horizon, we must recall our scholars and reveal our great nation to the global communities. It is our destiny to become the defender of Africa and the bane of wh*toid colonialism... "
+	desc = "14890DESC"
 	picture = "wakandaforever"
 	
 	major = yes
@@ -123,7 +123,7 @@ country_event = {
 country_event = {
 	id = 14880
 	title = "Wakanda Awakens..."
-	desc = "News from the once obscure African mountains have reached the heart of our nation. A race of technologically advanced barbarians - the Wakandans, have revealed themselves to the world as the guardians of Africa.They seek to halt all future colonization efforts of European powers from further exploiting the their \"brethrens\". They have deemed the imperial aggression as the fault of all white people caused primarily by the imperfections of "wh*toid" genes. In consequence, they have issued an official demand for our nation to publicly apologize for simply being white..."
+	desc = "14880DESC"
 	picture = "wakandaforever"
 	
 	is_triggered_only = yes
@@ -164,7 +164,7 @@ country_event = {
 country_event = {
 	id = 14881
 	title = "Wakanda declares white crusade"
-	desc = "The build up to this was a long time coming but finally the negroid menace reveals itself in its true form. After the Wakandan declaration of the counter-colonization to all African nations the black-as-night, unending masses of Africa set their sights on the elder continent, determined to take it over and delete any trace of its existence by any means necessary; millions of Africans are preparing to take the long standing bastion of the Caucasian peoples down once and for all. This event has triggered mixed responses in nations all over Europe, the limp-wristed ones joyous at the sound of the incoming “liberators” while the rest prepare themselves physically and mentally for what is to come. The question remains however: how will our state respond to this new threat?"
+	desc = "14881DESC"
 	picture = "whitoidcrusade"
 	
 	major = yes
@@ -233,7 +233,7 @@ country_event = {
 province_event = {
 	id = 14882
 	title = "A world... free of whites"
-	desc = "The final sieges on the last wh*toid strongholds are drawing to an end, many of them falling without even a shot being fired after their women prostrated themselves freely before our irresistible, superior troops making the wh*toids surrender shortly after due to complete demoralization. As the wh*tes are being rounded up in all subjugated territories many are debating on what should we do with them,however ultimately the final decision rests upon your shoulders, my kang."
+	desc = "14882DESC"
 	picture = "worldfreeofwhites"
 	
 	is_triggered_only = no
@@ -415,7 +415,7 @@ province_event = {
 country_event = {
 	id = 14884
 	title = "Illness 1"
-	desc = "The King of wakanda has ruled for long, our peoples have been brought gigantic leaps forwards under his benevolent reign but it seems now that it is drawing to a close as the king’s death is declining due to reasons unknown, it is theorized that it may be due to the extensive exposure to vibranium however this is uncertain . The people of Wakanda are still in the dark to this information and only his closest relatives, his personal doctors and the council are privy to the information and it is unsure how long the king has to live."
+	desc = "14884DESC"
 	picture = "illking"
 	
 	is_triggered_only = no
@@ -425,20 +425,20 @@ country_event = {
 	trigger = {
 		tag = WAK
 		has_country_modifier = first_king_mod
-		year = 1845
+		year = 1840
 	
 		
 	}
 
 	mean_time_to_happen = {
-		days = 4
+		months = 6
 	}
 	
 	option = {
 		name = "This can't be good..."
 		country_event = {
 			id = 14885
-			days = 365
+			days = 730
 		}
 	}
 }
@@ -447,7 +447,7 @@ country_event = {
 country_event = {
 	id = 14885
 	title = "Dies"
-	desc = "The day feared by the highest echelons of the Wakandan state has arrived, the king has perished in his sleep, his body was found lifeless this morning in his bed next by his two wh*toid slaves. This has caused great commotion in the palace as preparations are being done to render the news public and for his future funeral."
+	desc = "14885DESC"
 	picture = "deadnigger"
 	
 	is_triggered_only = yes
@@ -636,7 +636,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 48
+		months = 24
 	}
 	
 	option = {
@@ -1392,6 +1392,9 @@ province_event = {
 	
 	option = {
 		name = "Thank god"
+		owner = {
+			set_country_flag = blacked_spread_flag
+		}
 		
 		remove_province_modifier = bull_breed_mod
 		

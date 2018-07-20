@@ -2348,7 +2348,36 @@ free_allied_cores = {
 	can_use = {
 		NOT = { is_our_vassal = THIS }
 		is_vassal = no
-		number_of_states = 2
+		OR = {
+			number_of_states = 2
+			
+			#civilized african country can free allied african core regardless only 1 state
+			AND = {
+				THIS = {
+					civilized = yes
+					capital_scope = { 
+						OR = {
+							continent = africa
+							continent = central_africa
+							continent = west_africa
+							continent = east_africa
+							continent = south_west_africa
+						}
+					}
+				}
+				
+				civilized = no
+				capital_scope = { 
+					OR = {
+						continent = africa
+						continent = central_africa
+						continent = west_africa
+						continent = east_africa
+						continent = south_west_africa
+					}
+				}
+			}
+		}
 		THIS = { NOT = { has_country_modifier = neutrality } }
 		NOT = { has_country_modifier = neutrality }
 		OR = {

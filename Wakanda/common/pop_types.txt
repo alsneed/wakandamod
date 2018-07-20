@@ -470,9 +470,11 @@ migration_chance = {
 	
 	#wakandan in blacked influence country like to move around after blacked colonization
 	modifier = {
-		factor = 5
+		factor = 3
 		THIS = { is_culture_group = wakandan_african }
-		has_country_flag = blacked_influence_flag
+		country = {
+			has_country_flag = blacked_spread_flag
+		}
 	}
 	
 	group = {

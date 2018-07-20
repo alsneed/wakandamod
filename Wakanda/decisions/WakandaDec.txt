@@ -363,7 +363,7 @@ political_decisions = {
 	
 		allow = {
 			war = no
-			has_country_flag = reactionary_king_flag
+			has_country_modifier = reactionary_king_mod
 		}
 		
 		effect = {

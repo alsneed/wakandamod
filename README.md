@@ -12,4 +12,4 @@ Contribution:
 bill, kokeko, Dornan
 
 Special thanks:
-Switches, Bomber Harris
+Switches, Bomber Harris, KMSZ

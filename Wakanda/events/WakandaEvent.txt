@@ -350,7 +350,7 @@ province_event = {
 province_event = {
 	id = 14883
 	title = "Terraform land"
-	desc = ""
+	desc = "14883DESC"
 	picture = "terraform"
 	
 	is_triggered_only = no
@@ -391,7 +391,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Turn it"
+		name = "Proceed."
 		owner = {
 			treasury = -100000
 		}
@@ -403,7 +403,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Don't turn it"
+		name = "Another time perhaps."
 		add_province_modifier = {
 			name = new_terra_refused_mod
 			duration = 730
@@ -565,7 +565,7 @@ country_event = {
 country_event = {
 	id = 14888
 	title = "conservative king"
-	desc = ""
+	desc = "14888DESC"
 	picture = "kingvictory"
 	
 	is_triggered_only = yes
@@ -585,7 +585,7 @@ country_event = {
 	}
 }
 
-#conservatice king victory
+#conservatice king victory (Scrap)
 country_event = {
 	id = 14889
 	title = "panther king"
@@ -608,7 +608,7 @@ country_event = {
 country_event = {
 	id = 14896
 	title = "Petitions for civilization"
-	desc = ""
+	desc = "14896DESC"
 	
 	major = yes    
 	
@@ -640,7 +640,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Calls it"
+		name = "It has to be done."
 		
 		WAK = {
 			country_event = {
@@ -654,8 +654,8 @@ country_event = {
 #unciv nation turns civ
 country_event = {
 	id = 14889
-	title = "Uplift it"
-	desc = ""
+	title = "14889TITLE"
+	desc = "14889DESC"
 	picture = "africacallsforciv"
 	
 	is_triggered_only = yes     
@@ -751,8 +751,8 @@ country_event = {
 #first king abdication==========================================================================
 country_event = {
 	id = 14891
-	title = "king abdication"
-	desc = ""
+	title = "Kang Abdication"
+	desc = "14891DESC"
 	picture = "niggerabdication"
 	
 	is_triggered_only = no
@@ -783,8 +783,8 @@ country_event = {
 #reactionary king abdication
 country_event = {
 	id = 14892
-	title = "reactionary king abdication"
-	desc = ""
+	title = "Kang Abdication"
+	desc = "14892DESC"
 	picture = "niggerabdication"
 	
 	is_triggered_only = no
@@ -815,8 +815,8 @@ country_event = {
 #conservative king abdication
 country_event = {
 	id = 14893
-	title = "conservative king abdication"
-	desc = ""
+	title = "Kang Abdication"
+	desc = "14893DESC"
 	picture = "niggerabdication"
 	
 	is_triggered_only = no
@@ -846,9 +846,9 @@ country_event = {
 
 #first king restoration
 country_event = {
-	id = 14893
-	title = "first king restoration"
-	desc = ""
+	id = 14889
+	title = "Kang Restoration"
+	desc = "14889DESC"
 	picture = "niggerestoration"
 	
 	is_triggered_only = no
@@ -880,9 +880,9 @@ country_event = {
 
 #reactionary king restoration
 country_event = {
-	id = 14893
-	title = "reactionary king restoration"
-	desc = ""
+	id = 14905
+	title = "Kang Restoration"
+	desc = "14905DESC"
 	picture = "niggerestoration"
 	
 	is_triggered_only = no
@@ -914,9 +914,9 @@ country_event = {
 
 #conservative king restoration
 country_event = {
-	id = 14893
-	title = "conservative king restoration"
-	desc = ""
+	id = 14906
+	title = "Kang Restoration"
+	desc = "14906DESC"
 	picture = "niggerestoration"
 	
 	is_triggered_only = no
@@ -949,8 +949,8 @@ country_event = {
 #my ancestor add ===============================================================================
 country_event = {
 	id = 14900
-	title = "muh ancestor"
-	desc = ""
+	title = "My Ancestor :)"
+	desc = "14900DESC"
 	picture = "blm"
 	
 	trigger = {
@@ -980,7 +980,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Shiet"
+		name = "Shit."
 		
 		add_country_modifier = {
 			name = my_ancestor_mod
@@ -992,8 +992,8 @@ country_event = {
 #my ancestor remove
 country_event = {
 	id = 14901
-	title = "muh ancestor removed"
-	desc = ""
+	title = "BLM Calms Down"
+	desc = "14901DESC"
 	picture = "blmend"
 	
 	trigger = {
@@ -1014,7 +1014,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "good"
+		name = "At last."
 		
 		remove_country_modifier = my_ancestor_mod
 	}
@@ -1023,8 +1023,8 @@ country_event = {
 #blacked influence==============================================================================
 country_event = {
 	id = 14894
-	title = "Blacked influence"
-	desc = ""
+	title = "The BBC Influence"
+	desc = "14894DESC"
 	picture = "blackedinfluence"
 	major = yes
 	
@@ -1061,7 +1061,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "Fucking roasties"
+		name = "This can't be happening..."
 		add_country_modifier = {
 			name = white_stagnate_mod
 			duration = -1
@@ -1073,8 +1073,8 @@ country_event = {
 #blacked desire
 country_event = {
 	id = 14897
-	title = "Blacked bull desire rises"
-	desc = ""
+	title = "Black Bull Desire Rises"
+	desc = "14897DESC"
 	picture = "blackeddesirerise"
        
 	allow_multiple_instances = yes
@@ -1124,7 +1124,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "This can't be good"
+		name = "Fucking Roasties!"
 		WAK = {
 			country_event = {
 				id = 14895
@@ -1138,8 +1138,8 @@ country_event = {
 #colonize candidate
 country_event = {
 	id = 14895
-	title = "Blacked colonization candidate"
-	desc = ""
+	title = "Black Colonization Candidate"
+	desc = "14895DESC"
 	picture = "colonizecandidate"
 	
 	is_triggered_only = yes      
@@ -1182,7 +1182,7 @@ country_event = {
 province_event = {
 	id = 14898
 	title = "Black bulls arrive"
-	desc = ""
+	desc = "14898DESC"
 	picture = "bulluncaged"
 	
 	trigger = {
@@ -1194,7 +1194,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Oh no"
+		name = "Oh no no no no..."
 		
 		any_pop = {
 			limit = {
@@ -1225,8 +1225,8 @@ province_event = {
 #breeding ground removed
 province_event = {
 	id = 14902
-	title = "Breeding ground removed"
-	desc = ""
+	title = "Breeding Ground removed"
+	desc = "14902DESC"
 	picture = ""
 	
 	trigger = {
@@ -1241,7 +1241,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "ok"
+		name = "They have served us well."
 		
 		remove_province_modifier = bull_breed_mod
 	}
@@ -1250,8 +1250,8 @@ province_event = {
 #rape gang discovered
 province_event = {
 	id = 14903
-	title = "Rape gang discovered"
-	desc = ""
+	title = "Rape Gang Discovered"
+	desc = "14903DESC"
 	picture = "rapegang"
 	
 	trigger = {
@@ -1377,8 +1377,8 @@ province_event = {
 #bull breed less
 province_event = {
 	id = 14904
-	title = "Bull breeding reduced"
-	desc = ""
+	title = "Bull Breeding Reduced"
+	desc = "14904DESC"
 	picture = "blackreduceintensity"
 	
 	trigger = {
@@ -1391,7 +1391,7 @@ province_event = {
 	}
 	
 	option = {
-		name = "Thank god"
+		name = "Thank god."
 		owner = {
 			set_country_flag = blacked_spread_flag
 		}

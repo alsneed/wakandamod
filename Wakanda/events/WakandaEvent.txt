@@ -846,9 +846,9 @@ country_event = {
 
 #first king restoration
 country_event = {
-	id = 14889
+	id = 14907
 	title = "Kang Restoration"
-	desc = "14889DESC"
+	desc = "14907DESC"
 	picture = "niggerestoration"
 	
 	is_triggered_only = no
